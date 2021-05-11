@@ -27,7 +27,6 @@ contract Proxy {
         masterCopy = _masterCopy;
     }
 
-
     /**
     * @dev GSVE moddifier that burns W/GST2 or W/Chi 
     * burn happens if the caller has provided the gnosis proxy with gas token allowances
@@ -46,7 +45,7 @@ contract Proxy {
         (token1, ammount1) = compareAllowance(0x0000000000004946c0e9F43F4Dee607b0eF1fA1c, 0x0000000000b3F879cb30FE243b4Dfee438691c04);
         
         //compare wchi vs wgst2
-        (token2, ammount2) = compareAllowance(0x7738C2a90eED0d3Df85B80FfE5867E56eB7d7953, 0x6CAe6b3487558944D5902bbF74502877265f5430);
+        (token2, ammount2) = compareAllowance(0x2AFcdFE6F5847E1da27dc85bc5524231bd3C4aAB, 0x488B23Ca519c219B3D49C10b79e13f3ebfb4B71b);
 
         address token;
         uint256 amount; 
