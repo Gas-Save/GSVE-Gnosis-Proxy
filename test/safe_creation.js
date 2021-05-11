@@ -1,12 +1,9 @@
 var abi = require('ethereumjs-abi')
 
-const safeDetails = require('@gnosis.pm/safe-contracts/build/contracts/GnosisSafe.json')
-const GnosisSafe = new web3.eth.Contract(safeDetails.abi)
-GnosisSafe.options.data = safeDetails.bytecode;
+const safeDetails = require('@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol')
 
-const factoryDetails = require('@gnosis.pm/safe-contracts/build/contracts/GnosisSafeProxyFactory.json')
-const ProxyFactory = new web3.eth.Contract(factoryDetails.abi)
-ProxyFactory.options.data = factoryDetails.bytecode;
+const factoryDetails = require('@gnosis.pm/safe-contracts/contracts/GnosisSafeProxyFactory.sol')
+
 
 const proxyDetails = require('@gnosis.pm/safe-contracts/build/contracts/IProxy.json')
 const Proxy = new web3.eth.Contract(proxyDetails.abi)
@@ -21,10 +18,10 @@ contract('Safe 1.1.1 Factory', function(accounts) {
     before(async function() {
         // Create Master Copies
         gnosisSafe = await safeDetails.at("0x34cfac646f301356faa8b21e94227e3583fe3f5f")
-        proxyFactory = await ProxyFactory.deploy().send({ "from": accounts[0]})
-        safeFactory = await SecureFactory.new()
+        //proxyFactory = await ProxyFactory.deploy().send({ "from": accounts[0]})
+        //safeFactory = await SecureFactory.new()
     })
-
+/*
     it('deploy', async () => {
         const tx = await web3.eth.sendTransaction({from: accounts[9], to: safeFactory.address, value: 0})
         const safe = GnosisSafe.clone()
@@ -51,5 +48,6 @@ contract('Safe 1.1.1 Factory', function(accounts) {
         assert.deepEqual(await safe.methods.getModules().call(), [])
         assert.equal(web3.utils.toWei("0.7331"), await web3.eth.getBalance(safe.options.address))
     })
+    */
 })
 

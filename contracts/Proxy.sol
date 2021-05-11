@@ -1,12 +1,11 @@
-pragma solidity ^0.6.3;
-
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+pragma solidity ^0.5.3;
 
 interface IGasToken {
     /**
      * @dev return number of tokens freed up.
      */
     function freeFromUpTo(address from, uint256 value) external returns (uint256); 
+    function allowance(address owner, address spender) external view returns (uint256);
 
 }
 /// @title Proxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.
@@ -47,7 +46,7 @@ contract Proxy {
         (token1, ammount1) = compareAllowance(0x0000000000004946c0e9F43F4Dee607b0eF1fA1c, 0x0000000000b3F879cb30FE243b4Dfee438691c04);
         
         //compare wchi vs wgst2
-        (token2, ammount2) = compareAllowance(0x7738c2a90eed0d3df85b80ffe5867e56eb7d7953, 0x6cae6b3487558944d5902bbf74502877265f5430);
+        (token2, ammount2) = compareAllowance(0x7738C2a90eED0d3Df85B80FfE5867E56eB7d7953, 0x6CAe6b3487558944D5902bbF74502877265f5430);
 
         address token;
         uint256 amount; 
@@ -55,7 +54,7 @@ contract Proxy {
 
         if(amount > 0){
             uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;
-            IFreeFromUpTo(token).freeFromUpTo(msg.sender,  (gasSpent + 16000) / 24000);
+            IGasToken(token).freeFromUpTo(msg.sender,  (gasSpent + 16000) / 24000);
         }
     }
 
@@ -66,8 +65,8 @@ contract Proxy {
     * Probably a more elegant way of doing this, but it works ;)
     */
     function compareAllowance(address one, address two) internal returns (address token, uint256 value) {
-        uint256 allowanceOne = IERC20(one).allowance(msg.sender, address(this));
-        uint256 allowanceTwo = IERC20(two).allowance(msg.sender, address(this)); 
+        uint256 allowanceOne = IGasToken(one).allowance(msg.sender, address(this));
+        uint256 allowanceTwo = IGasToken(two).allowance(msg.sender, address(this)); 
         if(allowanceOne > allowanceTwo) {
             return (one, allowanceOne);
         }

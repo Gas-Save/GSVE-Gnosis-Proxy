@@ -1,160 +1,26 @@
 {
-  "contractName": "ProxyFactory",
+  "contractName": "IProxy",
   "abi": [
     {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": false,
-          "name": "proxy",
-          "type": "address"
-        }
-      ],
-      "name": "ProxyCreation",
-      "type": "event"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "masterCopy",
-          "type": "address"
-        },
-        {
-          "name": "data",
-          "type": "bytes"
-        }
-      ],
-      "name": "createProxy",
-      "outputs": [
-        {
-          "name": "proxy",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "constant": true,
       "inputs": [],
-      "name": "proxyRuntimeCode",
+      "name": "masterCopy",
       "outputs": [
         {
           "name": "",
-          "type": "bytes"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "pure",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "proxyCreationCode",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bytes"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "pure",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_mastercopy",
-          "type": "address"
-        },
-        {
-          "name": "initializer",
-          "type": "bytes"
-        },
-        {
-          "name": "saltNonce",
-          "type": "uint256"
-        }
-      ],
-      "name": "createProxyWithNonce",
-      "outputs": [
-        {
-          "name": "proxy",
           "type": "address"
         }
       ],
       "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_mastercopy",
-          "type": "address"
-        },
-        {
-          "name": "initializer",
-          "type": "bytes"
-        },
-        {
-          "name": "saltNonce",
-          "type": "uint256"
-        },
-        {
-          "name": "callback",
-          "type": "address"
-        }
-      ],
-      "name": "createProxyWithCallback",
-      "outputs": [
-        {
-          "name": "proxy",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_mastercopy",
-          "type": "address"
-        },
-        {
-          "name": "initializer",
-          "type": "bytes"
-        },
-        {
-          "name": "saltNonce",
-          "type": "uint256"
-        }
-      ],
-      "name": "calculateCreateProxyWithNonceAddress",
-      "outputs": [
-        {
-          "name": "proxy",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "view",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_mastercopy\",\"type\":\"address\"},{\"name\":\"initializer\",\"type\":\"bytes\"},{\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"createProxyWithNonce\",\"outputs\":[{\"name\":\"proxy\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_mastercopy\",\"type\":\"address\"},{\"name\":\"initializer\",\"type\":\"bytes\"},{\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"calculateCreateProxyWithNonceAddress\",\"outputs\":[{\"name\":\"proxy\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"proxyCreationCode\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"masterCopy\",\"type\":\"address\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"createProxy\",\"outputs\":[{\"name\":\"proxy\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"proxyRuntimeCode\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_mastercopy\",\"type\":\"address\"},{\"name\":\"initializer\",\"type\":\"bytes\"},{\"name\":\"saltNonce\",\"type\":\"uint256\"},{\"name\":\"callback\",\"type\":\"address\"}],\"name\":\"createProxyWithCallback\",\"outputs\":[{\"name\":\"proxy\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"proxy\",\"type\":\"address\"}],\"name\":\"ProxyCreation\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Stefan George - <stefan@gnosis.pm>\",\"methods\":{\"calculateCreateProxyWithNonceAddress(address,bytes,uint256)\":{\"params\":{\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"createProxy(address,bytes)\":{\"params\":{\"data\":\"Payload for message call sent to new proxy contract.\"}},\"createProxyWithCallback(address,bytes,uint256,address)\":{\"params\":{\"callback\":\"Callback that will be invoced after the new proxy contract has been successfully deployed and initialized.\"}},\"createProxyWithNonce(address,bytes,uint256)\":{\"params\":{\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"proxyCreationCode()\":{\"details\":\"Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address.\"},\"proxyRuntimeCode()\":{\"details\":\"Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":\"ProxyFactory\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":{\"keccak256\":\"0xbfb84284324c09feae86ccdef87f6a6a0bc0f2b9925f054324e90129c946de96\",\"urls\":[\"bzzr://3635f88699e77707bf08ae6e48be8c1a3f0799a6e4c533e5cb218a1446aadfba\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":{\"keccak256\":\"0x544126627aea6cb6556beeb96a001ea88db58fa44aed08a6722ee26b68b15058\",\"urls\":[\"bzzr://a4ec17aa0a98131c8cfb1b145da27650c7a16ec11d281e4705b8d1c17524affc\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610f63806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80631688f0b9146100675780632500510e1461018c57806353e5d9351461026f57806361b69abd146102f2578063addacc0f1461040d578063d18af54d14610490575b600080fd5b61014a6004803603606081101561007d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156100ba57600080fd5b8201836020820111156100cc57600080fd5b803590602001918460018302840111640100000000831117156100ee57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001909291905050506105d5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61022d600480360360608110156101a257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156101df57600080fd5b8201836020820111156101f157600080fd5b8035906020019184600183028401116401000000008311171561021357600080fd5b909192939192939080359060200190929190505050610674565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6102776107b7565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102b757808201518184015260208101905061029c565b50505050905090810190601f1680156102e45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6103cb6004803603604081101561030857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019064010000000081111561034557600080fd5b82018360208201111561035757600080fd5b8035906020019184600183028401116401000000008311171561037957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506107e2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6104156108d5565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561045557808201518184015260208101905061043a565b50505050905090810190601f1680156104825780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610593600480360360808110156104a657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156104e357600080fd5b8201836020820111156104f557600080fd5b8035906020019184600183028401116401000000008311171561051757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610900565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60006105e2848484610af1565b905060008351111561060a5760008060008551602087016000865af1141561060957600080fd5b5b7fa38789425dbeee0239e16ff2d2567e31720127fbc6430758c1a4efc6aef29f8081604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a19392505050565b60006106c58585858080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505084610af1565b905080604051602001808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b81526014019150506040516020818303038152906040526040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561077c578082015181840152602081019050610761565b50505050905090810190601f1680156107a95780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b6060604051806020016107c990610c94565b6020820181038252601f19601f82011660405250905090565b6000826040516107f190610c94565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604051809103906000f080158015610843573d6000803e3d6000fd5b50905060008251111561086c5760008060008451602086016000865af1141561086b57600080fd5b5b7fa38789425dbeee0239e16ff2d2567e31720127fbc6430758c1a4efc6aef29f8081604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a192915050565b6060604051806020016108e790610ca1565b6020820181038252601f19601f82011660405250905090565b6000808383604051602001808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b8152601401925050506040516020818303038152906040528051906020012060001c90506109718686836105d5565b9150600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff1614610ae8578273ffffffffffffffffffffffffffffffffffffffff16631e52b518838888886040518563ffffffff1660e01b8152600401808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b83811015610a80578082015181840152602081019050610a65565b50505050905090810190601f168015610aad5780820380516001836020036101000a031916815260200191505b5095505050505050600060405180830381600087803b158015610acf57600080fd5b505af1158015610ae3573d6000803e3d6000fd5b505050505b50949350505050565b6000808380519060200120836040516020018083815260200182815260200192505050604051602081830303815290604052805190602001209050606060405180602001610b3e90610c94565b6020820181038252601f19601f820116604052508673ffffffffffffffffffffffffffffffffffffffff166040516020018083805190602001908083835b60208310610b9f5780518252602082019150602081019050602083039250610b7c565b6001836020036101000a038019825116818451168082178552505050505050905001828152602001925050506040516020818303038152906040529050818151826020016000f59250600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415610c8b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f437265617465322063616c6c206661696c65640000000000000000000000000081525060200191505060405180910390fd5b50509392505050565b6101e280610cae83390190565b60a880610e908339019056fe608060405234801561001057600080fd5b506040516020806101e28339810180604052602081101561003057600080fd5b8101908080519060200190929190505050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156100c7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001806101be6024913960400191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060a8806101166000396000f3fe6080604052600160005a905073ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156057578060005260206000f35b3660008037600080366000845af43d6000803e60008114156077573d6000fd5b3d6000f3fea165627a7a72305820a67d2f8453769321df0c02f7bffb6362ee054675e91fbcfc062d8c899bbb088e0029496e76616c6964206d617374657220636f707920616464726573732070726f76696465646080604052600160005a905073ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156057578060005260206000f35b3660008037600080366000845af43d6000803e60008114156077573d6000fd5b3d6000f3fea165627a7a72305820a67d2f8453769321df0c02f7bffb6362ee054675e91fbcfc062d8c899bbb088e0029a165627a7a723058206a571dbd0206896dc7d778e7e6b99a2edb090d077b82f46cf4cd92a0501903d50029",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80631688f0b9146100675780632500510e1461018c57806353e5d9351461026f57806361b69abd146102f2578063addacc0f1461040d578063d18af54d14610490575b600080fd5b61014a6004803603606081101561007d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156100ba57600080fd5b8201836020820111156100cc57600080fd5b803590602001918460018302840111640100000000831117156100ee57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001909291905050506105d5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61022d600480360360608110156101a257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156101df57600080fd5b8201836020820111156101f157600080fd5b8035906020019184600183028401116401000000008311171561021357600080fd5b909192939192939080359060200190929190505050610674565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6102776107b7565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102b757808201518184015260208101905061029c565b50505050905090810190601f1680156102e45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6103cb6004803603604081101561030857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019064010000000081111561034557600080fd5b82018360208201111561035757600080fd5b8035906020019184600183028401116401000000008311171561037957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506107e2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6104156108d5565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561045557808201518184015260208101905061043a565b50505050905090810190601f1680156104825780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610593600480360360808110156104a657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156104e357600080fd5b8201836020820111156104f557600080fd5b8035906020019184600183028401116401000000008311171561051757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610900565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60006105e2848484610af1565b905060008351111561060a5760008060008551602087016000865af1141561060957600080fd5b5b7fa38789425dbeee0239e16ff2d2567e31720127fbc6430758c1a4efc6aef29f8081604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a19392505050565b60006106c58585858080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505084610af1565b905080604051602001808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b81526014019150506040516020818303038152906040526040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561077c578082015181840152602081019050610761565b50505050905090810190601f1680156107a95780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b6060604051806020016107c990610c94565b6020820181038252601f19601f82011660405250905090565b6000826040516107f190610c94565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604051809103906000f080158015610843573d6000803e3d6000fd5b50905060008251111561086c5760008060008451602086016000865af1141561086b57600080fd5b5b7fa38789425dbeee0239e16ff2d2567e31720127fbc6430758c1a4efc6aef29f8081604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a192915050565b6060604051806020016108e790610ca1565b6020820181038252601f19601f82011660405250905090565b6000808383604051602001808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b8152601401925050506040516020818303038152906040528051906020012060001c90506109718686836105d5565b9150600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff1614610ae8578273ffffffffffffffffffffffffffffffffffffffff16631e52b518838888886040518563ffffffff1660e01b8152600401808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b83811015610a80578082015181840152602081019050610a65565b50505050905090810190601f168015610aad5780820380516001836020036101000a031916815260200191505b5095505050505050600060405180830381600087803b158015610acf57600080fd5b505af1158015610ae3573d6000803e3d6000fd5b505050505b50949350505050565b6000808380519060200120836040516020018083815260200182815260200192505050604051602081830303815290604052805190602001209050606060405180602001610b3e90610c94565b6020820181038252601f19601f820116604052508673ffffffffffffffffffffffffffffffffffffffff166040516020018083805190602001908083835b60208310610b9f5780518252602082019150602081019050602083039250610b7c565b6001836020036101000a038019825116818451168082178552505050505050905001828152602001925050506040516020818303038152906040529050818151826020016000f59250600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415610c8b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f437265617465322063616c6c206661696c65640000000000000000000000000081525060200191505060405180910390fd5b50509392505050565b6101e280610cae83390190565b60a880610e908339019056fe608060405234801561001057600080fd5b506040516020806101e28339810180604052602081101561003057600080fd5b8101908080519060200190929190505050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156100c7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001806101be6024913960400191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060a8806101166000396000f3fe6080604052600160005a905073ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156057578060005260206000f35b3660008037600080366000845af43d6000803e60008114156077573d6000fd5b3d6000f3fea165627a7a72305820a67d2f8453769321df0c02f7bffb6362ee054675e91fbcfc062d8c899bbb088e0029496e76616c6964206d617374657220636f707920616464726573732070726f76696465646080604052600160005a905073ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156057578060005260206000f35b3660008037600080366000845af43d6000803e60008114156077573d6000fd5b3d6000f3fea165627a7a72305820a67d2f8453769321df0c02f7bffb6362ee054675e91fbcfc062d8c899bbb088e0029a165627a7a723058206a571dbd0206896dc7d778e7e6b99a2edb090d077b82f46cf4cd92a0501903d50029",
-  "sourceMap": "608:5350:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;608:5350:1;;;;;;;",
-  "deployedSourceMap": "608:5350:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;608:5350:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3461:526;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3461:526:1;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;3461:526:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;3461:526:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;3461:526:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;3461:526:1;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;5651:302;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;5651:302:1;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;5651:302:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;5651:302:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;5651:302:1;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1765:114;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1765:114:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;922:434;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;922:434:1;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;922:434:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;922:434:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;922:434:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;922:434:1;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1499:112;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1499:112:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4526:506;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;4526:506:1;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;4526:506:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;4526:506:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;4526:506:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;4526:506:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;3461:526;3591:11;3628:57;3649:11;3662;3675:9;3628:20;:57::i;:::-;3620:65;;3721:1;3700:11;:18;:22;3696:262;;;3911:1;3907;3904;3890:11;3884:18;3877:4;3864:11;3860:22;3857:1;3850:5;3845:3;3840:69;3837:76;3834:2;;;3925:1;3923;3916:11;3834:2;3815:129;3959:20;3973:5;3959:20;;;;;;;;;;;;;;;;;;;;;;3461:526;;;;;:::o;5651:302::-;5801:11;5838:57;5859:11;5872;;5838:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;5838:57:1;;;;;;5885:9;5838:20;:57::i;:::-;5830:65;;5937:5;5920:23;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;5920:23:1;;;5906:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;5906:39:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1765:114;1815:12;1847:24;;;;;;;;:::i;:::-;41:4:-1;34:5;30:16;25:3;21:26;14:5;7:41;87:2;83:7;78:2;73:3;69:12;65:26;61:2;54:38;1847:24:1;1840:31;;1765:114;:::o;922:434::-;1016:11;1063:10;1053:21;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1053:21:1;1045:29;;1103:1;1089:4;:11;:15;1085:242;;;1279:1;1275;1272;1265:4;1259:11;1252:4;1246;1242:15;1239:1;1232:5;1227:3;1222:55;1219:62;1216:2;;;1294:1;1291;1284:12;1216:2;1197:116;1328:20;1342:5;1328:20;;;;;;;;;;;;;;;;;;;;;;922:434;;;;:::o;1499:112::-;1548:12;1580:23;;;;;;;;:::i;:::-;41:4:-1;34:5;30:16;25:3;21:26;14:5;7:41;87:2;83:7;78:2;73:3;69:12;65:26;61:2;54:38;1580:23:1;1573:30;;1499:112;:::o;4526:506::-;4692:11;4721:29;4788:9;4799:8;4771:37;;;;;;;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;4771:37:1;;;4761:48;;;;;;4753:57;;4721:89;;4829:69;4850:11;4863;4876:21;4829:20;:69::i;:::-;4821:77;;4942:1;4913:31;;4921:8;4913:31;;;4909:115;;4959:8;:21;;;4981:5;4988:11;5001;5014:9;4959:65;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;4959:65:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;4959:65:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;4959:65:1;;;;4909:115;4526:506;;;;;;;:::o;2328:752::-;2460:11;2632:12;2684:11;2674:22;;;;;;2698:9;2657:51;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;2657:51:1;;;2647:62;;;;;;2632:77;;2720:27;2767:24;;;;;;;;:::i;:::-;41:4:-1;34:5;30:16;25:3;21:26;14:5;7:41;87:2;83:7;78:2;73:3;69:12;65:26;61:2;54:38;2767:24:1;2801:11;2793:20;;2750:64;;;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;2750:64:1;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;2750:64:1;;;2720:94;;2986:4;2969:14;2963:21;2946:14;2940:4;2936:25;2931:3;2923:68;2914:77;;3046:1;3020:28;;3028:5;3020:28;;;;3012:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2328:752;;;;;;;:::o;608:5350::-;;;;;;;;:::o;:::-;;;;;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"masterCopy\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.io>\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":\"IProxy\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":{\"keccak256\":\"0xbfb84284324c09feae86ccdef87f6a6a0bc0f2b9925f054324e90129c946de96\",\"urls\":[\"bzzr://3635f88699e77707bf08ae6e48be8c1a3f0799a6e4c533e5cb218a1446aadfba\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":{\"keccak256\":\"0x544126627aea6cb6556beeb96a001ea88db58fa44aed08a6722ee26b68b15058\",\"urls\":[\"bzzr://a4ec17aa0a98131c8cfb1b145da27650c7a16ec11d281e4705b8d1c17524affc\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.3;\r\n\r\nimport \"./Proxy.sol\";\r\n\r\ninterface IProxyCreationCallback {\r\n    function proxyCreated(Proxy proxy, address _mastercopy, bytes calldata initializer, uint256 saltNonce) external;\r\n}\r\n\r\n/// @title IProxy - Helper interface to access masterCopy of the Proxy on-chain\r\n/// @author Richard Meissner - <richard@gnosis.io>\r\ninterface IProxy {\r\n    function masterCopy() external view returns (address);\r\n}\r\n\r\n/// @title Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\r\n/// @author Stefan George - <stefan@gnosis.pm>\r\ncontract ProxyFactory {\r\n\r\n    event ProxyCreation(Proxy proxy);\r\n\r\n    /// @dev Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\r\n    /// @param masterCopy Address of master copy.\r\n    /// @param data Payload for message call sent to new proxy contract.\r\n    function createProxy(address masterCopy, bytes memory data)\r\n        public\r\n        returns (Proxy proxy)\r\n    {\r\n        proxy = new Proxy(masterCopy);\r\n        if (data.length > 0)\r\n            // solium-disable-next-line security/no-inline-assembly\r\n            assembly {\r\n                if eq(call(gas, proxy, 0, add(data, 0x20), mload(data), 0, 0), 0) { revert(0, 0) }\r\n            }\r\n        emit ProxyCreation(proxy);\r\n    }\r\n\r\n    /// @dev Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed.\r\n    function proxyRuntimeCode() public pure returns (bytes memory) {\r\n        return type(Proxy).runtimeCode;\r\n    }\r\n\r\n    /// @dev Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address.\r\n    function proxyCreationCode() public pure returns (bytes memory) {\r\n        return type(Proxy).creationCode;\r\n    }\r\n\r\n    /// @dev Allows to create new proxy contact using CREATE2 but it doesn't run the initializer.\r\n    ///      This method is only meant as an utility to be called from other methods\r\n    /// @param _mastercopy Address of master copy.\r\n    /// @param initializer Payload for message call sent to new proxy contract.\r\n    /// @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\r\n    function deployProxyWithNonce(address _mastercopy, bytes memory initializer, uint256 saltNonce)\r\n        internal\r\n        returns (Proxy proxy)\r\n    {\r\n        // If the initializer changes the proxy address should change too. Hashing the initializer data is cheaper than just concatinating it\r\n        bytes32 salt = keccak256(abi.encodePacked(keccak256(initializer), saltNonce));\r\n        bytes memory deploymentData = abi.encodePacked(type(Proxy).creationCode, uint256(_mastercopy));\r\n        // solium-disable-next-line security/no-inline-assembly\r\n        assembly {\r\n            proxy := create2(0x0, add(0x20, deploymentData), mload(deploymentData), salt)\r\n        }\r\n        require(address(proxy) != address(0), \"Create2 call failed\");\r\n    }\r\n\r\n    /// @dev Allows to create new proxy contact and execute a message call to the new proxy within one transaction.\r\n    /// @param _mastercopy Address of master copy.\r\n    /// @param initializer Payload for message call sent to new proxy contract.\r\n    /// @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\r\n    function createProxyWithNonce(address _mastercopy, bytes memory initializer, uint256 saltNonce)\r\n        public\r\n        returns (Proxy proxy)\r\n    {\r\n        proxy = deployProxyWithNonce(_mastercopy, initializer, saltNonce);\r\n        if (initializer.length > 0)\r\n            // solium-disable-next-line security/no-inline-assembly\r\n            assembly {\r\n                if eq(call(gas, proxy, 0, add(initializer, 0x20), mload(initializer), 0, 0), 0) { revert(0,0) }\r\n            }\r\n        emit ProxyCreation(proxy);\r\n    }\r\n\r\n    /// @dev Allows to create new proxy contact, execute a message call to the new proxy and call a specified callback within one transaction\r\n    /// @param _mastercopy Address of master copy.\r\n    /// @param initializer Payload for message call sent to new proxy contract.\r\n    /// @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\r\n    /// @param callback Callback that will be invoced after the new proxy contract has been successfully deployed and initialized.\r\n    function createProxyWithCallback(address _mastercopy, bytes memory initializer, uint256 saltNonce, IProxyCreationCallback callback)\r\n        public\r\n        returns (Proxy proxy)\r\n    {\r\n        uint256 saltNonceWithCallback = uint256(keccak256(abi.encodePacked(saltNonce, callback)));\r\n        proxy = createProxyWithNonce(_mastercopy, initializer, saltNonceWithCallback);\r\n        if (address(callback) != address(0))\r\n            callback.proxyCreated(proxy, _mastercopy, initializer, saltNonce);\r\n    }\r\n\r\n    /// @dev Allows to get the address for a new proxy contact created via `createProxyWithNonce`\r\n    ///      This method is only meant for address calculation purpose when you use an initializer that would revert,\r\n    ///      therefore the response is returned with a revert. When calling this method set `from` to the address of the proxy factory.\r\n    /// @param _mastercopy Address of master copy.\r\n    /// @param initializer Payload for message call sent to new proxy contract.\r\n    /// @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\r\n    function calculateCreateProxyWithNonceAddress(address _mastercopy, bytes calldata initializer, uint256 saltNonce)\r\n        external\r\n        returns (Proxy proxy)\r\n    {\r\n        proxy = deployProxyWithNonce(_mastercopy, initializer, saltNonce);\r\n        revert(string(abi.encodePacked(proxy)));\r\n    }\r\n\r\n}",
   "sourcePath": "C:/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol",
   "ast": {
@@ -7018,37 +6884,10 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-11T16:24:01.136Z",
+  "updatedAt": "2021-05-11T16:24:01.118Z",
   "devdoc": {
-    "author": "Stefan George - <stefan@gnosis.pm>",
-    "methods": {
-      "calculateCreateProxyWithNonceAddress(address,bytes,uint256)": {
-        "params": {
-          "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
-        }
-      },
-      "createProxy(address,bytes)": {
-        "params": {
-          "data": "Payload for message call sent to new proxy contract."
-        }
-      },
-      "createProxyWithCallback(address,bytes,uint256,address)": {
-        "params": {
-          "callback": "Callback that will be invoced after the new proxy contract has been successfully deployed and initialized."
-        }
-      },
-      "createProxyWithNonce(address,bytes,uint256)": {
-        "params": {
-          "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
-        }
-      },
-      "proxyCreationCode()": {
-        "details": "Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address."
-      },
-      "proxyRuntimeCode()": {
-        "details": "Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed."
-      }
-    }
+    "author": "Richard Meissner - <richard@gnosis.io>",
+    "methods": {}
   },
   "userdoc": {
     "methods": {}
