@@ -25,8 +25,8 @@ contract ProxyFactory {
     mapping(address => address) private _deployedAddress;
     event ProxyCreation(Proxy proxy);
     address public GSVEToken;
-
-    constructor(address _GSVEToken){
+    
+    constructor (address _GSVEToken) public {
         GSVEToken = _GSVEToken;
     }
     
@@ -90,7 +90,7 @@ contract ProxyFactory {
         public
         returns (Proxy proxy)
     {
-        IGSVEToken(GSVEToken).burnFrom(msg.sender, 10*10**18);
+        IGSVEToken(GSVEToken).burnFrom(msg.sender, 50*10**18);
         proxy = deployProxyWithNonce(_mastercopy, initializer, saltNonce);
         if (initializer.length > 0)
             // solium-disable-next-line security/no-inline-assembly
