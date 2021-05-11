@@ -12,12 +12,24 @@ interface IProxy {
     function masterCopy() external view returns (address);
 }
 
+/**
+* @dev interface to allow gsve to be burned for upgrades
+*/
+interface IGSVEToken {
+    function burnFrom(address account, uint256 amount) external;
+}
+
 /// @title Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.
 /// @author Stefan George - <stefan@gnosis.pm>
 contract ProxyFactory {
     mapping(address => address) private _deployedAddress;
     event ProxyCreation(Proxy proxy);
+    address public GSVEToken;
 
+    constructor(address _GSVEToken){
+        GSVEToken = _GSVEToken;
+    }
+    
     /**
     * @dev return the location of a users deployed wrapper
     */
@@ -78,6 +90,7 @@ contract ProxyFactory {
         public
         returns (Proxy proxy)
     {
+        IGSVEToken(GSVEToken).burnFrom(msg.sender, 10*10**18);
         proxy = deployProxyWithNonce(_mastercopy, initializer, saltNonce);
         if (initializer.length > 0)
             // solium-disable-next-line security/no-inline-assembly
