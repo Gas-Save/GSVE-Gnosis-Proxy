@@ -64,7 +64,7 @@ contract Proxy {
     * No comparing of W/GST1 as this adds way too much complexity and overhead!
     * Probably a more elegant way of doing this, but it works ;)
     */
-    function compareAllowance(address one, address two) internal returns (address token, uint256 value) {
+    function compareAllowance(address one, address two) public view returns (address token, uint256 value) {
         uint256 allowanceOne = IGasToken(one).allowance(msg.sender, address(this));
         uint256 allowanceTwo = IGasToken(two).allowance(msg.sender, address(this)); 
         if(allowanceOne > allowanceTwo) {

@@ -16,7 +16,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"masterCopy\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.io>\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":\"IProxy\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":{\"keccak256\":\"0xbfb84284324c09feae86ccdef87f6a6a0bc0f2b9925f054324e90129c946de96\",\"urls\":[\"bzzr://3635f88699e77707bf08ae6e48be8c1a3f0799a6e4c533e5cb218a1446aadfba\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":{\"keccak256\":\"0x544126627aea6cb6556beeb96a001ea88db58fa44aed08a6722ee26b68b15058\",\"urls\":[\"bzzr://a4ec17aa0a98131c8cfb1b145da27650c7a16ec11d281e4705b8d1c17524affc\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"masterCopy\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - <richard@gnosis.io>\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":\"IProxy\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":{\"keccak256\":\"0xdecac3974b482ade238204103131cf97ff1f718471db1d6e8de85942ec9706e4\",\"urls\":[\"bzzr://0fb02c4568cfc6ce02f4aa4bfede1efa41c31dbd9e7677945caf29eebbdf21b4\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/ProxyFactory.sol\":{\"keccak256\":\"0x544126627aea6cb6556beeb96a001ea88db58fa44aed08a6722ee26b68b15058\",\"urls\":[\"bzzr://a4ec17aa0a98131c8cfb1b145da27650c7a16ec11d281e4705b8d1c17524affc\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -6884,7 +6884,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-11T16:24:01.118Z",
+  "updatedAt": "2021-05-11T16:56:52.906Z",
   "devdoc": {
     "author": "Richard Meissner - <richard@gnosis.io>",
     "methods": {}
