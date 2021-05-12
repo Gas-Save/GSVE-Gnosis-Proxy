@@ -1,35 +1,11 @@
 {
-  "contractName": "IGasToken",
-  "abi": [
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "from",
-          "type": "address"
-        },
-        {
-          "name": "value",
-          "type": "uint256"
-        }
-      ],
-      "name": "freeFromUpTo",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    }
-  ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"freeFromUpTo\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"freeFromUpTo(address,uint256)\":{\"details\":\"return number of tokens freed up.\\r\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":\"IGasToken\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":{\"keccak256\":\"0x0286748b46ad2dc3072c0b7964ab2b38eca26cf9e48a4b4b51569ff55f17b4b7\",\"urls\":[\"bzzr://997c86a95d8b16c1f1306c722d0b377ea561c2afa8ae426d9266fac82c58e237\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol\":{\"keccak256\":\"0x7c32928c8cdf3f259ea5057005d5587b0bff2b6ca378f5796135b05bf35de536\",\"urls\":[\"bzzr://592d101e8e461ac1c59c0162d82e78e296a4854e7f30f64c2df08c0b75dfd444\"]}},\"version\":1}",
-  "bytecode": "0x",
-  "deployedBytecode": "0x",
-  "sourceMap": "",
-  "deployedSourceMap": "",
+  "contractName": "GSVESaver",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":\"GSVESaver\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":{\"keccak256\":\"0x0286748b46ad2dc3072c0b7964ab2b38eca26cf9e48a4b4b51569ff55f17b4b7\",\"urls\":[\"bzzr://997c86a95d8b16c1f1306c722d0b377ea561c2afa8ae426d9266fac82c58e237\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol\":{\"keccak256\":\"0x7c32928c8cdf3f259ea5057005d5587b0bff2b6ca378f5796135b05bf35de536\",\"urls\":[\"bzzr://592d101e8e461ac1c59c0162d82e78e296a4854e7f30f64c2df08c0b75dfd444\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058208ef4d074fb7818b768c4318538aaf944fe81259524f69c239fab00a387d107090029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058208ef4d074fb7818b768c4318538aaf944fe81259524f69c239fab00a387d107090029",
+  "sourceMap": "269:631:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;269:631:0;;;;;;;",
+  "deployedSourceMap": "269:631:0:-;;;;;",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.3;\r\n\r\nimport \"./IGSVEBeacon.sol\";\r\n\r\ninterface IGasToken {\r\n    /**\r\n     * @dev return number of tokens freed up.\r\n     */\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256); \r\n}\r\n\r\ncontract GSVESaver {\r\n    /**\r\n    * @dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon\r\n    */\r\n    modifier discountGas(bool discount) {\r\n        uint256 gasStart = gasleft();\r\n        _;\r\n        address token;\r\n        uint256 amount; \r\n        (token, amount) = IGSVEBeacon(0x98DEA83628a522AF9F70c5201DdD60Df78B2fD93).getGasTokenAndSaving(address(this));\r\n\r\n        if(token != address(0)){\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IGasToken(token).freeFromUpTo(msg.sender,  (gasSpent + 16000) / amount);\r\n        }\r\n    }\r\n}",
   "sourcePath": "C:/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol",
   "ast": {
@@ -2417,13 +2393,9 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-12T21:14:05.630Z",
+  "updatedAt": "2021-05-12T21:14:05.626Z",
   "devdoc": {
-    "methods": {
-      "freeFromUpTo(address,uint256)": {
-        "details": "return number of tokens freed up.\r"
-      }
-    }
+    "methods": {}
   },
   "userdoc": {
     "methods": {}

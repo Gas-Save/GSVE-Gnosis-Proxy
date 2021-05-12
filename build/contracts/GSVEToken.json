@@ -8005,12 +8005,12 @@
         }
       },
       "links": {},
-      "address": "0x57349a1eCb54C5ea11Ea3FB411442896EEa0E5f2",
-      "transactionHash": "0xe82df9fb5a9f708a1e987c0aa0dbaf6eb30ba976749e68242e864bfb0890df54"
+      "address": "0x3c0dd54a9D452FEf6f9a3f95602f1699E95DFCF2",
+      "transactionHash": "0x97341052e779e3f618bb92f480df1fae0b9783a5433d1d3be3c4ce9ea72251d3"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-10T13:36:57.126Z",
+  "updatedAt": "2021-05-12T20:15:57.026Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "the GSVE token is a ERC20 token with burning capabilities",

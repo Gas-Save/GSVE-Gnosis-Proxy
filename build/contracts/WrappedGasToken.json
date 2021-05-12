@@ -18000,12 +18000,12 @@
         }
       },
       "links": {},
-      "address": "0x5a92DD8C25349a56A880b3aB829Cdc3d26F3d9B0",
-      "transactionHash": "0xe0f349602c6d072dfd6818a9fdad2a5149823e50cddef068d279bfc31b043f94"
+      "address": "0xA31463bE6c2499D194D6f9b226DC4E111eBCa869",
+      "transactionHash": "0xd63ce5099b9c9430c22f87da1466a7e4bb0f3ed89f2d25969a2e62b4547a7f02"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-10T13:36:57.139Z",
+  "updatedAt": "2021-05-12T20:15:57.038Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Wrapped Gas Token is a wrapper for all gas tokens. It provides them with uniform functions and interface It also makes non-erc20 compliant tokens like GST1 and GST2, compliant.",

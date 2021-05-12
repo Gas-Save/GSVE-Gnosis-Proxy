@@ -1,5 +1,7 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.5.3;
 
+import "./IGSVEBeacon.sol";
 import "./Proxy.sol";
 
 interface IProxyCreationCallback {
@@ -22,54 +24,15 @@ interface IGSVEToken {
 /// @title Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.
 /// @author Stefan George - <stefan@gnosis.pm>
 contract ProxyFactory {
-    mapping(address => address) private _deployedAddress;
-    mapping(address => address) private _addressGasToken;
-    mapping(address => uint256) private _supportedGasTokens;
-    event ProxyCreation(Proxy proxy);
     address public GSVEToken;
+    address public GSVEBeacon;
+    event ProxyCreation(Proxy proxy);
     
-    constructor (address _GSVEToken) public {
+    constructor (address _GSVEToken, address _GSVEBeacon) public {
         GSVEToken = _GSVEToken;
-        //chi, gst2 and gst1
-        _supportedGasTokens[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 24000;
-        _supportedGasTokens[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 24000;
-        _supportedGasTokens[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 15000;
-
-        //wchi, wgst2 and wgst1
-        _supportedGasTokens[0x04Bb5e8d692E665ca02c99C754BE2E41b6D35259] = 24000;
-        _supportedGasTokens[0x45418f0B857BAF1c394B050d34d79E1aB89784dA] = 24000;
-        _supportedGasTokens[0x4f6c4eB915b96442f030C819be29b0e143db65D9] = 15000;
+        GSVEBeacon = _GSVEBeacon;
     }
     
-    /**
-    * @dev return the location of a users deployed wrapper
-    */
-    function getDeployedAddress(address creator) public view returns(address){
-        return _deployedAddress[creator];
-    }
-
-    /**
-    * @dev return the gas token used by a safe
-    */
-    function getAddressGastoken(address safe) public view returns(address){
-        return _addressGasToken[safe];
-    }
-
-    /**
-    * @dev return the savings a gas token gives
-    */
-    function getAddressGasTokenSaving(address safe) public view returns(uint256){
-        return _supportedGasTokens[getAddressGastoken(safe)];
-    }
-
-    /**
-    * @dev return the location of a users deployed wrapper
-    */
-    function setAddressGasToken(address safe, address gasToken) public {
-        require(_deployedAddress[msg.sender] == safe, "GSVE: Tried to set another safes gas token");
-        require(_supportedGasTokens[gasToken] > 0, "GSVE: Invalid Gas Token");
-        _addressGasToken[safe] = gasToken;
-    }
 
     /// @dev Allows to create new proxy contact and execute a message call to the new proxy within one transaction.
     /// @param masterCopy Address of master copy.
@@ -132,8 +95,7 @@ contract ProxyFactory {
                 if eq(call(gas, proxy, 0, add(initializer, 0x20), mload(initializer), 0, 0), 0) { revert(0,0) }
             }
 
-        _deployedAddress[msg.sender] = address(proxy);
-        _addressGasToken[address(proxy)] = 0x0000000000004946c0e9F43F4Dee607b0eF1fA1c;
+        IGSVEBeacon(GSVEBeacon).initSafe(msg.sender, address(proxy));
         emit ProxyCreation(proxy);
     }
 }
