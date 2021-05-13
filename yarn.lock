@@ -1705,7 +1705,22 @@
     emittery "^0.4.1"
     ora "^3.4.0"
 
-"@truffle/hdwallet-provider@^1.0.0", "@truffle/hdwallet-provider@^1.2.6":
+"@truffle/hdwallet-provider@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@truffle/hdwallet-provider/-/hdwallet-provider-1.2.2.tgz#7b42f7cb7fc1f80751c573c72ba488e59690f8ea"
+  integrity sha512-gpE5M9c+G7uMR9Nn2xslY0BRdl8hvlrHxBJ451g/V3WnOI5rDQMXezz6VZMn3zvWDiQTPRknx1uUDfWvMuQwqg==
+  dependencies:
+    "@trufflesuite/web3-provider-engine" "15.0.13-1"
+    any-promise "^1.3.0"
+    bindings "^1.5.0"
+    ethereum-cryptography "^0.1.3"
+    ethereum-protocol "^1.0.1"
+    ethereumjs-tx "^1.0.0"
+    ethereumjs-util "^6.1.0"
+    ethereumjs-wallet "^1.0.1"
+    source-map-support "^0.5.19"
+
+"@truffle/hdwallet-provider@^1.0.0":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@truffle/hdwallet-provider/-/hdwallet-provider-1.3.1.tgz#6baf533bd86802ff3875b551eccd3cf598a7ee59"
   integrity sha512-DGdsCTnRYxsivd01+QqAYky5Zzh+yEuPQXtBVpmTYdLiImOXE3/u/EsZI4T+Pbs5fMbPknncnextrmx7u3rJEw==
@@ -4929,7 +4944,7 @@ ethereumjs-common@^1.1.0, ethereumjs-common@^1.3.2, ethereumjs-common@^1.5.0:
   resolved "https://registry.yarnpkg.com/ethereumjs-common/-/ethereumjs-common-1.5.2.tgz#2065dbe9214e850f2e955a80e650cb6999066979"
   integrity sha512-hTfZjwGX52GS2jcVO6E2sx4YuFnf0Fhp5ylo4pEPhEffNln7vS59Hr5sLnp3/QCazFLluuBZ+FZ6J5HTp0EqCA==
 
-ethereumjs-tx@^1.2.0, ethereumjs-tx@^1.2.2, ethereumjs-tx@^1.3.7:
+ethereumjs-tx@^1.0.0, ethereumjs-tx@^1.2.0, ethereumjs-tx@^1.2.2, ethereumjs-tx@^1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/ethereumjs-tx/-/ethereumjs-tx-1.3.7.tgz#88323a2d875b10549b8347e09f4862b546f3d89a"
   integrity sha512-wvLMxzt1RPhAQ9Yi3/HKZTn0FZYpnsmQdbKYfUUpi4j1SEIcbkd9tndVjcPrufY3V7j2IebOpC00Zp2P/Ay2kA==
@@ -10375,7 +10390,7 @@ source-map-support@0.5.12:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
-source-map-support@^0.5.3:
+source-map-support@^0.5.19, source-map-support@^0.5.3:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==

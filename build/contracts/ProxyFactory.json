@@ -6207,15 +6207,21 @@
     "version": "0.5.7+commit.6da8b019.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x8AeafC733c9DDAEB643907C51E78fF1F262F3030",
+      "transactionHash": "0xc45924881f93c54b18cd469ee5f3af89d8124ce3949e436a1010b8dfdff1132d"
+    },
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xC37B1936957fE111a80592c328A829957Ae1c293",
-      "transactionHash": "0xdf80921343f4d672994f1256c9dbf7274b3e41e814be72f7a027782b5491302e"
+      "address": "0x34e136084B8e61DAf9cC8737D6B0999bD1F5BfFe",
+      "transactionHash": "0xf8186f807ff50125e04996f7fa6a11ef2848c76bd6b2873da18b996b53a8e4b9"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-12T21:24:32.885Z",
+  "updatedAt": "2021-05-13T09:18:19.159Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Stefan George - <stefan@gnosis.pm>",
