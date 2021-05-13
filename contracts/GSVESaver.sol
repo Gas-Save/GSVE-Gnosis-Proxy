@@ -19,7 +19,7 @@ contract GSVESaver {
         _;
         address token;
         uint256 amount; 
-        (token, amount) = IGSVEBeacon(0x8EBBB79228A5b5C2E6EC718201405825b4D48454).getGasTokenAndSaving(address(this));
+        (token, amount) = IGSVEBeacon(0xc6Da3fC282CbB43a70EE0eE32490b065b9b11eFB).getGasTokenAndSaving(address(this));
 
         if(token != address(0)){
             uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;

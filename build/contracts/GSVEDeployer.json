@@ -9755,6 +9755,51 @@
       "address": "0x6BD5aD6d3a46177A3302776EA192C8b7160327C0",
       "transactionHash": "0x26ede67b75ad2ea9d294457451c0890aeeb27bd1cfccfc2bbd11eb39d59fc1d6"
     },
+    "4": {
+      "events": {
+        "0x33c981baba081f8fd2c52ac6ad1ea95b6814b4376640f55689051f6584729688": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "creator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "deploymentAddress",
+              "type": "address"
+            }
+          ],
+          "name": "ContractDeployed",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9E8642D119C7713c6B20264E9c9D921C7EAC4005",
+      "transactionHash": "0x3bffb6be17bd91ab97430518675adb8cf110ecdeee430b4800a8891407beffa2"
+    },
     "5777": {
       "events": {
         "0x33c981baba081f8fd2c52ac6ad1ea95b6814b4376640f55689051f6584729688": {
@@ -9797,12 +9842,12 @@
         }
       },
       "links": {},
-      "address": "0xf5CfeefB5Be7e419faDc93CA4Efaa7Dd8D255a08",
-      "transactionHash": "0xb783dca090092f57dc414d932f1625644234692d23e45358771f2868ab4b7771"
+      "address": "0x5D0C61D5686363b9942d45d79909574484533Cc8",
+      "transactionHash": "0xb42573f14b5abc4bcf4835c7d54a358528c81e8d8589520fbd9176aebf3995a7"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-12T20:15:57.054Z",
+  "updatedAt": "2021-05-13T12:01:20.474Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "the gsve deployer has two purposes it deploys gsve smart wrappers, keeping track of the owners it allows users to deploy smart contracts using create and create2",

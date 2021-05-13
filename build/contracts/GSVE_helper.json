@@ -14,6 +14,7 @@
       "constant": false,
       "inputs": [
         {
+          "internalType": "uint256",
           "name": "burn",
           "type": "uint256"
         }
@@ -25,25 +26,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"dummy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"burn\",\"type\":\"uint256\"}],\"name\":\"burnGas\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol\":\"GSVE_helper\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":{\"keccak256\":\"0x0286748b46ad2dc3072c0b7964ab2b38eca26cf9e48a4b4b51569ff55f17b4b7\",\"urls\":[\"bzzr://997c86a95d8b16c1f1306c722d0b377ea561c2afa8ae426d9266fac82c58e237\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol\":{\"keccak256\":\"0x7c32928c8cdf3f259ea5057005d5587b0bff2b6ca378f5796135b05bf35de536\",\"urls\":[\"bzzr://592d101e8e461ac1c59c0162d82e78e296a4854e7f30f64c2df08c0b75dfd444\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol\":{\"keccak256\":\"0x6355a1586a33ea3208ab67bfb6bbacf82bb2a75d0e766c0b66babd64c03ef908\",\"urls\":[\"bzzr://952744e1c76bd8e57ce845c042e3b21c7ccb6bf23b1d544871406c6a43395c60\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506102d8806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806332e43a111461003b5780634ad5d16f14610045575b600080fd5b610043610073565b005b6100716004803603602081101561005b57600080fd5b8101908080359060200190929190505050610075565b005bfe5b600160005a90507f32e43a110000000000000000000000000000000000000000000000000000000060005260008060046000803088f1506000807398dea83628a522af9f70c5201ddd60df78b2fd9373ffffffffffffffffffffffffffffffffffffffff1663ff145c87306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604080518083038186803b15801561013f57600080fd5b505afa158015610153573d6000803e3d6000fd5b505050506040513d604081101561016957600080fd5b8101908080519060200190929190805190602001909291905050508092508193505050600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16146102a5576000803690506010025a8561520801030190508273ffffffffffffffffffffffffffffffffffffffff1663079d229f3384613e808501816101fd57fe5b046040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561026757600080fd5b505af115801561027b573d6000803e3d6000fd5b505050506040513d602081101561029157600080fd5b810190808051906020019092919050505050505b505050505056fea165627a7a7230582085a81f13a5f89c684dc6eeec2df0cb5281b64219c67a1a37347fbf6d342c989f0029",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806332e43a111461003b5780634ad5d16f14610045575b600080fd5b610043610073565b005b6100716004803603602081101561005b57600080fd5b8101908080359060200190929190505050610075565b005bfe5b600160005a90507f32e43a110000000000000000000000000000000000000000000000000000000060005260008060046000803088f1506000807398dea83628a522af9f70c5201ddd60df78b2fd9373ffffffffffffffffffffffffffffffffffffffff1663ff145c87306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604080518083038186803b15801561013f57600080fd5b505afa158015610153573d6000803e3d6000fd5b505050506040513d604081101561016957600080fd5b8101908080519060200190929190805190602001909291905050508092508193505050600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16146102a5576000803690506010025a8561520801030190508273ffffffffffffffffffffffffffffffffffffffff1663079d229f3384613e808501816101fd57fe5b046040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561026757600080fd5b505af115801561027b573d6000803e3d6000fd5b505050506040513d602081101561029157600080fd5b810190808051906020019092919050505050505b505050505056fea165627a7a7230582085a81f13a5f89c684dc6eeec2df0cb5281b64219c67a1a37347fbf6d342c989f0029",
-  "sourceMap": "90:511:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;90:511:3;;;;;;;",
-  "deployedSourceMap": "90:511:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;90:511:3;;;;;;;;;;;;;;;;;;;;;;;;133:85;;;:::i;:::-;;289:309;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;289:309:3;;;;;;;;;;;;;;;;;:::i;:::-;;133:85;191:9;289:309;339:4;461:16:0;480:9;461:28;;445:66:3;440:3;433:79;578:1;573:3;567:4;562:3;559:1;548:9;542:4;537:43;418:173;512:13:0;536:14;592:42;580:76;;;665:4;580:91;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;580:91:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;580:91:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;580:91:0;;;;;;;;;;;;;;;;;;;;;;;;;562:109;;;;;;;;704:1;687:19;;:5;:19;;;684:206;;722:16;777:8;;:15;;772:2;:20;760:9;749:8;741:5;:16;:28;:51;722:70;;817:5;807:29;;;837:10;871:6;862:5;851:8;:16;850:27;;;;;;807:71;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;807:71:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;807:71:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;807:71:0;;;;;;;;;;;;;;;;;684:206;;289:309:3;;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"burn\",\"type\":\"uint256\"}],\"name\":\"burnGas\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"dummy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol\":\"GSVE_helper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":{\"keccak256\":\"0x6cf2ca591d08effaaf4a11962d7704990eef81e475b928388fc040317c018e27\",\"urls\":[\"bzz-raw://45911ddafd1aec742d093a27e51ced254074f9750f775805055733d384addbb5\",\"dweb:/ipfs/QmVYW1W1RAzftJyYkxTzXUnhDoHrtF7ZEoZYxaxs26areU\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol\":{\"keccak256\":\"0xa94fd9e44d9e39dabff3864cb532c9366b36bac82eac9692f5672742646825ed\",\"urls\":[\"bzz-raw://ef2d1cdbfc348632743c118130388b5a473daab4a8632351d01ddf35d07ef4f8\",\"dweb:/ipfs/QmdsHtTdxzgwnfXY8cuREGTjwfLshax2fthrjhj6rrEvQb\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol\":{\"keccak256\":\"0x6355a1586a33ea3208ab67bfb6bbacf82bb2a75d0e766c0b66babd64c03ef908\",\"urls\":[\"bzz-raw://f280cab4b054993b23a3c3eb53bf54f2fb68c90ff3f309d177ce9ca7902d104c\",\"dweb:/ipfs/QmYietY4h324JmmnayREt7BsR1iFK9MckCV6PwVKL7xAxc\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102e1806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806332e43a111461003b5780634ad5d16f14610045575b600080fd5b610043610073565b005b6100716004803603602081101561005b57600080fd5b8101908080359060200190929190505050610075565b005bfe5b600160005a90507f32e43a110000000000000000000000000000000000000000000000000000000060005260008060046000803088f150600080738ebbb79228a5b5c2e6ec718201405825b4d4845473ffffffffffffffffffffffffffffffffffffffff1663ff145c87306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604080518083038186803b15801561013f57600080fd5b505afa158015610153573d6000803e3d6000fd5b505050506040513d604081101561016957600080fd5b8101908080519060200190929190805190602001909291905050508092508193505050600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16146102a5576000803690506010025a8561520801030190508273ffffffffffffffffffffffffffffffffffffffff1663079d229f3384613e808501816101fd57fe5b046040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561026757600080fd5b505af115801561027b573d6000803e3d6000fd5b505050506040513d602081101561029157600080fd5b810190808051906020019092919050505050505b505050505056fea265627a7a7231582082f421546e2f628bb84dc8591a3783e27d4dc7dbbd9d1d72ec0c6b508f3daa7a64736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806332e43a111461003b5780634ad5d16f14610045575b600080fd5b610043610073565b005b6100716004803603602081101561005b57600080fd5b8101908080359060200190929190505050610075565b005bfe5b600160005a90507f32e43a110000000000000000000000000000000000000000000000000000000060005260008060046000803088f150600080738ebbb79228a5b5c2e6ec718201405825b4d4845473ffffffffffffffffffffffffffffffffffffffff1663ff145c87306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604080518083038186803b15801561013f57600080fd5b505afa158015610153573d6000803e3d6000fd5b505050506040513d604081101561016957600080fd5b8101908080519060200190929190805190602001909291905050508092508193505050600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16146102a5576000803690506010025a8561520801030190508273ffffffffffffffffffffffffffffffffffffffff1663079d229f3384613e808501816101fd57fe5b046040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561026757600080fd5b505af115801561027b573d6000803e3d6000fd5b505050506040513d602081101561029157600080fd5b810190808051906020019092919050505050505b505050505056fea265627a7a7231582082f421546e2f628bb84dc8591a3783e27d4dc7dbbd9d1d72ec0c6b508f3daa7a64736f6c63430005110032",
+  "sourceMap": "90:511:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;90:511:5;;;;;;;",
+  "deployedSourceMap": "90:511:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;90:511:5;;;;;;;;;;;;;;;;;;;;;;;;133:85;;;:::i;:::-;;289:309;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;289:309:5;;;;;;;;;;;;;;;;;:::i;:::-;;133:85;191:9;289:309;339:4;461:16:0;480:9;461:28;;445:66:5;440:3;433:79;578:1;573:3;567:4;562:3;559:1;548:9;542:4;537:43;418:173;512:13:0;536:14;592:42;580:76;;;665:4;580:91;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;580:91:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;580:91:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;580:91:0;;;;;;;;;;;;;;;;;;;;;;;;;562:109;;;;;;;;704:1;687:19;;:5;:19;;;684:206;;722:16;777:8;;:15;;772:2;:20;760:9;749:8;741:5;:16;:28;:51;722:70;;817:5;807:29;;;837:10;871:6;862:5;851:8;:16;850:27;;;;;;807:71;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;807:71:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;807:71:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;807:71:0;;;;;;;;;;;;;;;;;684:206;;289:309:5;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.3;\r\n\r\nimport \"../GSVESaver.sol\";\r\n\r\ncontract GSVE_helper is GSVESaver {\r\n\r\n    function dummy() public {\r\n        assembly{\r\n            invalid()\r\n        }\r\n    }\r\n\r\n    // Burns at least burn gas by calling itself and throwing\r\n    function burnGas(uint256 burn) public discountGas(true) {\r\n        // call self.dummy() to burn a bunch of gas\r\n        assembly {\r\n            mstore(0x0, 0x32e43a1100000000000000000000000000000000000000000000000000000000)\r\n            let ret := call(burn, address(), 0, 0x0, 0x04, 0x0, 0)\r\n        }\r\n    }\r\n}\r\n",
   "sourcePath": "C:/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol",
   "ast": {
     "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol",
     "exportedSymbols": {
       "GSVE_helper": [
-        154
+        487
       ]
     },
-    "id": 155,
+    "id": 488,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 135,
+        "id": 468,
         "literals": [
           "solidity",
           "^",
@@ -51,16 +52,16 @@
           ".3"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:3"
+        "src": "33:23:5"
       },
       {
         "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol",
         "file": "../GSVESaver.sol",
-        "id": 136,
+        "id": 469,
         "nodeType": "ImportDirective",
-        "scope": 155,
+        "scope": 488,
         "sourceUnit": 80,
-        "src": "60:26:3",
+        "src": "60:26:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -70,19 +71,19 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 137,
+              "id": 470,
               "name": "GSVESaver",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 79,
-              "src": "114:9:3",
+              "src": "114:9:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_GSVESaver_$79",
                 "typeString": "contract GSVESaver"
               }
             },
-            "id": 138,
+            "id": 471,
             "nodeType": "InheritanceSpecifier",
-            "src": "114:9:3"
+            "src": "114:9:5"
           }
         ],
         "contractDependencies": [
@@ -91,9 +92,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 154,
+        "id": 487,
         "linearizedBaseContracts": [
-          154,
+          487,
           79
         ],
         "name": "GSVE_helper",
@@ -101,71 +102,71 @@
         "nodes": [
           {
             "body": {
-              "id": 142,
+              "id": 475,
               "nodeType": "Block",
-              "src": "157:61:3",
+              "src": "157:61:5",
               "statements": [
                 {
                   "externalReferences": [],
-                  "id": 141,
+                  "id": 474,
                   "nodeType": "InlineAssembly",
-                  "operations": "{\n    invalid()\n}",
-                  "src": "168:50:3"
+                  "operations": "{ invalid() }",
+                  "src": "168:43:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 143,
+            "id": 476,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "dummy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 139,
+              "id": 472,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "147:2:3"
+              "src": "147:2:5"
             },
             "returnParameters": {
-              "id": 140,
+              "id": 473,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:3"
+              "src": "157:0:5"
             },
-            "scope": 154,
-            "src": "133:85:3",
+            "scope": 487,
+            "src": "133:85:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 152,
+              "id": 485,
               "nodeType": "Block",
-              "src": "345:253:3",
+              "src": "345:253:5",
               "statements": [
                 {
                   "externalReferences": [
                     {
                       "burn": {
-                        "declaration": 145,
+                        "declaration": 478,
                         "isOffset": false,
                         "isSlot": false,
-                        "src": "542:4:3",
+                        "src": "542:4:5",
                         "valueSize": 1
                       }
                     }
                   ],
-                  "id": 151,
+                  "id": 484,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    mstore(0x0, 0x32e43a1100000000000000000000000000000000000000000000000000000000)\n    let ret := call(burn, address(), 0, 0x0, 0x04, 0x0, 0)\n}",
-                  "src": "409:189:3"
+                  "src": "409:182:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 153,
+            "id": 486,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -174,14 +175,14 @@
                   {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 148,
+                    "id": 481,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "339:4:3",
+                    "src": "339:4:5",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -190,37 +191,37 @@
                     "value": "true"
                   }
                 ],
-                "id": 149,
+                "id": 482,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 147,
+                  "id": 480,
                   "name": "discountGas",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 78,
-                  "src": "327:11:3",
+                  "src": "327:11:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_bool_$",
                     "typeString": "modifier (bool)"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "327:17:3"
+                "src": "327:17:5"
               }
             ],
             "name": "burnGas",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 146,
+              "id": 479,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 145,
+                  "id": 478,
                   "name": "burn",
                   "nodeType": "VariableDeclaration",
-                  "scope": 153,
-                  "src": "306:12:3",
+                  "scope": 486,
+                  "src": "306:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -228,10 +229,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 144,
+                    "id": 477,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "306:7:3",
+                    "src": "306:7:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -241,33 +242,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "305:14:3"
+              "src": "305:14:5"
             },
             "returnParameters": {
-              "id": 150,
+              "id": 483,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "345:0:3"
+              "src": "345:0:5"
             },
-            "scope": 154,
-            "src": "289:309:3",
+            "scope": 487,
+            "src": "289:309:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 155,
-        "src": "90:511:3"
+        "scope": 488,
+        "src": "90:511:5"
       }
     ],
-    "src": "33:570:3"
+    "src": "33:570:5"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/test_helpers/GSVE_helper.sol",
       "exportedSymbols": {
         "GSVE_helper": [
-          154
+          487
         ]
       }
     },
@@ -281,24 +282,24 @@
             ".3"
           ]
         },
-        "id": 135,
+        "id": 468,
         "name": "PragmaDirective",
-        "src": "33:23:3"
+        "src": "33:23:5"
       },
       {
         "attributes": {
           "SourceUnit": 80,
           "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol",
           "file": "../GSVESaver.sol",
-          "scope": 155,
+          "scope": 488,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 136,
+        "id": 469,
         "name": "ImportDirective",
-        "src": "60:26:3"
+        "src": "60:26:5"
       },
       {
         "attributes": {
@@ -309,11 +310,11 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            154,
+            487,
             79
           ],
           "name": "GSVE_helper",
-          "scope": 155
+          "scope": 488
         },
         "children": [
           {
@@ -328,14 +329,14 @@
                   "referencedDeclaration": 79,
                   "type": "contract GSVESaver"
                 },
-                "id": 137,
+                "id": 470,
                 "name": "UserDefinedTypeName",
-                "src": "114:9:3"
+                "src": "114:9:5"
               }
             ],
-            "id": 138,
+            "id": 471,
             "name": "InheritanceSpecifier",
-            "src": "114:9:3"
+            "src": "114:9:5"
           },
           {
             "attributes": {
@@ -347,7 +348,7 @@
                 null
               ],
               "name": "dummy",
-              "scope": 154,
+              "scope": 487,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -360,9 +361,9 @@
                   ]
                 },
                 "children": [],
-                "id": 139,
+                "id": 472,
                 "name": "ParameterList",
-                "src": "147:2:3"
+                "src": "147:2:5"
               },
               {
                 "attributes": {
@@ -371,9 +372,9 @@
                   ]
                 },
                 "children": [],
-                "id": 140,
+                "id": 473,
                 "name": "ParameterList",
-                "src": "157:0:3"
+                "src": "157:0:5"
               },
               {
                 "children": [
@@ -382,22 +383,22 @@
                       "externalReferences": [
                         null
                       ],
-                      "operations": "{\n    invalid()\n}"
+                      "operations": "{ invalid() }"
                     },
                     "children": [],
-                    "id": 141,
+                    "id": 474,
                     "name": "InlineAssembly",
-                    "src": "168:50:3"
+                    "src": "168:43:5"
                   }
                 ],
-                "id": 142,
+                "id": 475,
                 "name": "Block",
-                "src": "157:61:3"
+                "src": "157:61:5"
               }
             ],
-            "id": 143,
+            "id": 476,
             "name": "FunctionDefinition",
-            "src": "133:85:3"
+            "src": "133:85:5"
           },
           {
             "attributes": {
@@ -406,7 +407,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "burnGas",
-              "scope": 154,
+              "scope": 487,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -418,7 +419,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "burn",
-                      "scope": 153,
+                      "scope": 486,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -431,19 +432,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 144,
+                        "id": 477,
                         "name": "ElementaryTypeName",
-                        "src": "306:7:3"
+                        "src": "306:7:5"
                       }
                     ],
-                    "id": 145,
+                    "id": 478,
                     "name": "VariableDeclaration",
-                    "src": "306:12:3"
+                    "src": "306:12:5"
                   }
                 ],
-                "id": 146,
+                "id": 479,
                 "name": "ParameterList",
-                "src": "305:14:3"
+                "src": "305:14:5"
               },
               {
                 "attributes": {
@@ -452,9 +453,9 @@
                   ]
                 },
                 "children": [],
-                "id": 150,
+                "id": 483,
                 "name": "ParameterList",
-                "src": "345:0:3"
+                "src": "345:0:5"
               },
               {
                 "children": [
@@ -468,9 +469,9 @@
                       "type": "modifier (bool)",
                       "value": "discountGas"
                     },
-                    "id": 147,
+                    "id": 480,
                     "name": "Identifier",
-                    "src": "327:11:3"
+                    "src": "327:11:5"
                   },
                   {
                     "attributes": {
@@ -485,14 +486,14 @@
                       "type": "bool",
                       "value": "true"
                     },
-                    "id": 148,
+                    "id": 481,
                     "name": "Literal",
-                    "src": "339:4:3"
+                    "src": "339:4:5"
                   }
                 ],
-                "id": 149,
+                "id": 482,
                 "name": "ModifierInvocation",
-                "src": "327:17:3"
+                "src": "327:17:5"
               },
               {
                 "children": [
@@ -501,10 +502,10 @@
                       "externalReferences": [
                         {
                           "burn": {
-                            "declaration": 145,
+                            "declaration": 478,
                             "isOffset": false,
                             "isSlot": false,
-                            "src": "542:4:3",
+                            "src": "542:4:5",
                             "valueSize": 1
                           }
                         }
@@ -512,37 +513,37 @@
                       "operations": "{\n    mstore(0x0, 0x32e43a1100000000000000000000000000000000000000000000000000000000)\n    let ret := call(burn, address(), 0, 0x0, 0x04, 0x0, 0)\n}"
                     },
                     "children": [],
-                    "id": 151,
+                    "id": 484,
                     "name": "InlineAssembly",
-                    "src": "409:189:3"
+                    "src": "409:182:5"
                   }
                 ],
-                "id": 152,
+                "id": 485,
                 "name": "Block",
-                "src": "345:253:3"
+                "src": "345:253:5"
               }
             ],
-            "id": 153,
+            "id": 486,
             "name": "FunctionDefinition",
-            "src": "289:309:3"
+            "src": "289:309:5"
           }
         ],
-        "id": 154,
+        "id": 487,
         "name": "ContractDefinition",
-        "src": "90:511:3"
+        "src": "90:511:5"
       }
     ],
-    "id": 155,
+    "id": 488,
     "name": "SourceUnit",
-    "src": "33:570:3"
+    "src": "33:570:5"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-12T21:13:15.410Z",
+  "updatedAt": "2021-05-13T12:10:07.767Z",
   "devdoc": {
     "methods": {}
   },

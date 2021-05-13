@@ -17927,6 +17927,82 @@
       "address": "0xeD7e43EF0c82CA990252E42069df7dA9F8D06Ce4",
       "transactionHash": "0x8fa9a705c3c6da34f96aeecebcc570d1d592bfcbc273409df4d37189184701ae"
     },
+    "4": {
+      "events": {
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xB7ccebeC5e6cB417850350680C0cf5fD244B8487",
+      "transactionHash": "0x4b7ee19f61a5a6b76d7bd941a938c491cb5d6e323fbe012e66e0e2b9af949bcb"
+    },
     "5777": {
       "events": {
         "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
@@ -18000,12 +18076,12 @@
         }
       },
       "links": {},
-      "address": "0xA31463bE6c2499D194D6f9b226DC4E111eBCa869",
-      "transactionHash": "0xd63ce5099b9c9430c22f87da1466a7e4bb0f3ed89f2d25969a2e62b4547a7f02"
+      "address": "0xdC0b3db652805184962a08f282E5FA111296A361",
+      "transactionHash": "0x5d18103d6a76496358be4679507f1683bb8ba35cc2dd8105f53d4685afed0052"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-12T20:15:57.038Z",
+  "updatedAt": "2021-05-13T12:01:20.455Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Wrapped Gas Token is a wrapper for all gas tokens. It provides them with uniform functions and interface It also makes non-erc20 compliant tokens like GST1 and GST2, compliant.",

@@ -1,11 +1,27 @@
 pragma solidity ^0.5.3;
 
-import "./GSVESaver.sol";
 /// @title Proxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.
 /// @author Stefan George - <stefan@gnosis.io>
 /// @author Richard Meissner - <richard@gnosis.io>
 /// @author Gas Save Protocol - GasSave.org
-contract Proxy is GSVESaver {
+
+interface IGasToken {
+    /**
+     * @dev return number of tokens freed up.
+     */
+    function freeFromUpTo(address from, uint256 value) external returns (uint256); 
+}
+
+/**
+* @dev interface to allow gsve to be burned for upgrades
+*/
+interface IBeacon {
+    function getAddressGastoken(address safe) external view returns(address);
+    function getAddressGasTokenSaving(address safe) external view returns(uint256);
+}
+
+
+contract Proxy {
 
     // masterCopy always needs to be first declared variable, to ensure that it is at the same location in the contracts to which calls are delegated.
     // To reduce deployment costs this variable is internal and needs to be retrieved via `getStorageAt`
@@ -24,8 +40,15 @@ contract Proxy is GSVESaver {
     function () 
         external
         payable
-        discountGas(true)
     {
+        bytes memory returndata;
+        bool success;
+        uint256 returnDataLength;
+        IBeacon gsveBeacon = IBeacon(0xC88FcE00368AC497129349FbE6bF68AD4262fF8c);
+        address gsveBeaconGastoken = gsveBeacon.getAddressGastoken(address(this));
+        uint256 gsveBeaconAmount = gsveBeacon.getAddressGasTokenSaving(address(this));
+        uint256 gasStart = gasleft();
+
         // solium-disable-next-line security/no-inline-assembly
         assembly {
             let masterCopy := and(sload(0), 0xffffffffffffffffffffffffffffffffffffffff)
@@ -35,10 +58,25 @@ contract Proxy is GSVESaver {
                 return(0, 0x20)
             }
             calldatacopy(0, 0, calldatasize())
-            let success := delegatecall(gas, masterCopy, 0, calldatasize(), 0, 0)
-            returndatacopy(0, 0, returndatasize())
-            if eq(success, 0) { revert(0, returndatasize()) }
-            return(0, returndatasize())
+            success := delegatecall(gas, masterCopy, 0, calldatasize(), 0, 0)
+            returndatacopy(returndata, 0, returndatasize())
+            returnDataLength:= returndatasize()
+            mstore(0x40, add(0x40, add(returndatasize(), 0x44)))
+        }
+
+        if(gsveBeaconGastoken == address(0)){
+            assembly{
+                if eq(success, 0) { revert(returndata, returnDataLength) }
+                return(returndata, returnDataLength)
+            }
+        }
+        else{
+            uint256 gasSpent = (21000 + gasStart) - (gasleft() + (16 * msg.data.length));
+            IGasToken(gsveBeaconGastoken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / gsveBeaconAmount);
+            assembly{
+                if eq(success, 0) { revert(returndata, returnDataLength) }
+                return(returndata, returnDataLength)
+            }
         }
     }
 }

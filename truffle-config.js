@@ -41,7 +41,7 @@ module.exports = {
   },
   	rinkeby: {
 		provider: function() {
-		  return new HDWalletProvider([json['mnemonic1'], json['mnemonic2'], json['mnemonic3']], "wss://rinkeby.infura.io/ws/v3/9af22c382b3142389625451f5193fc76");
+		  return new HDWalletProvider([json['mnemonic1'], json['mnemonic2'], json['mnemonic3']], "wss://eth-rinkeby.ws.alchemyapi.io/v2/dkUwNqnpIVoIl-gVvAx9ICAa3yANIZKm");
 		},
     network_id: '4',
   },
@@ -70,7 +70,7 @@ module.exports = {
   // Configure your compilers
  compilers: {
     solc:{
-		version: "^0.8.0",
+		version: "^0.5.7",
 		settings: {
 		optimizer: {
 			  enabled: false,

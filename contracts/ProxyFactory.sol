@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.5.3;
 
-import "./IGSVEBeacon.sol";
 import "./Proxy.sol";
 
 interface IProxyCreationCallback {
@@ -19,6 +18,13 @@ interface IProxy {
 */
 interface IGSVEToken {
     function burnFrom(address account, uint256 amount) external;
+}
+
+/**
+* @dev interface to allow gsve to be burned for upgrades
+*/
+interface IGSVEBeacon {
+    function initSafe(address owner, address safe) external;
 }
 
 /// @title Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.

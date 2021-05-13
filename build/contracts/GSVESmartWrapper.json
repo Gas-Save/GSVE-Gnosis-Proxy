@@ -21231,6 +21231,32 @@
       "address": "0xf3c8ce078cee84c45fd7671F6fD1649BE995913B",
       "transactionHash": "0x5707c4b020a3887c8f309123e559cff6225306c0b64f0a1b5ee89e104a700490"
     },
+    "4": {
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf7d66cd01b694894dBD989DeA8696e0B69c4F482",
+      "transactionHash": "0x237d1c6f6bcd0d59093ccc17c3dbf36ca829a65f968ed23d32ddd60b48a6ba0c"
+    },
     "5777": {
       "events": {
         "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
@@ -21254,12 +21280,12 @@
         }
       },
       "links": {},
-      "address": "0x22052E0CF89D6CF850B82Bfa80fa524960A61631",
-      "transactionHash": "0x811cd6fb95f4a0beeb7d421fd1192d015ca45656ca1feda11edc877c2efeecdb"
+      "address": "0x2dC2F97216Ae6aaFCc17d1078CD27F0BEe7eeDFa",
+      "transactionHash": "0xc95b05413fd6529cfa7d806a164fd2e2fac94bb90be89e731174a67a16988c08"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-12T20:15:57.079Z",
+  "updatedAt": "2021-05-13T12:01:20.498Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "The v1 smart wrapper is the core gas saving feature it can interact with other smart contracts it burns gas to save on the transaction fee only the owner/deployer of the smart contract can interact with it only the owner can send tokens from the address (smart contract) only the owner can withdraw tokens of any type, and this goes directly to the owner.",

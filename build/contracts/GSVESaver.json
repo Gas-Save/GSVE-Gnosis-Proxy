@@ -1,12 +1,12 @@
 {
   "contractName": "GSVESaver",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":\"GSVESaver\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":{\"keccak256\":\"0x6cf2ca591d08effaaf4a11962d7704990eef81e475b928388fc040317c018e27\",\"urls\":[\"bzzr://00c6a74fa87646f370b15aa7fdd0e4f1046ff9e312d1cdaabbd341ff98310a64\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol\":{\"keccak256\":\"0x7c32928c8cdf3f259ea5057005d5587b0bff2b6ca378f5796135b05bf35de536\",\"urls\":[\"bzzr://592d101e8e461ac1c59c0162d82e78e296a4854e7f30f64c2df08c0b75dfd444\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820d077e437b616aef321ce201ba2e6e0fd5e1c2e4b647e8b59557d32073e9e8db80029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820d077e437b616aef321ce201ba2e6e0fd5e1c2e4b647e8b59557d32073e9e8db80029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":\"GSVESaver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol\":{\"keccak256\":\"0xe91201c79a7335c564e5670516dc30f586933ce2fdd0749b819c069b5372236b\",\"urls\":[\"bzz-raw://41ca015f1246225ea3c9433ea45d287664b92ec78a69639cd62f1fdae416e367\",\"dweb:/ipfs/QmYeHGH568JnUj7pXeFLFu2hNDPfjtLjmijSZkHrjmrhTS\"]},\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol\":{\"keccak256\":\"0xa94fd9e44d9e39dabff3864cb532c9366b36bac82eac9692f5672742646825ed\",\"urls\":[\"bzz-raw://ef2d1cdbfc348632743c118130388b5a473daab4a8632351d01ddf35d07ef4f8\",\"dweb:/ipfs/QmdsHtTdxzgwnfXY8cuREGTjwfLshax2fthrjhj6rrEvQb\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820011f23ec0ef624a74654aa8637c5cd9a2a6c109153b03d1a6548c99b7a1599f264736f6c63430005110032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820011f23ec0ef624a74654aa8637c5cd9a2a6c109153b03d1a6548c99b7a1599f264736f6c63430005110032",
   "sourceMap": "269:631:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;269:631:0;;;;;;;",
   "deployedSourceMap": "269:631:0:-;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.3;\r\n\r\nimport \"./IGSVEBeacon.sol\";\r\n\r\ninterface IGasToken {\r\n    /**\r\n     * @dev return number of tokens freed up.\r\n     */\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256); \r\n}\r\n\r\ncontract GSVESaver {\r\n    /**\r\n    * @dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon\r\n    */\r\n    modifier discountGas(bool discount) {\r\n        uint256 gasStart = gasleft();\r\n        _;\r\n        address token;\r\n        uint256 amount; \r\n        (token, amount) = IGSVEBeacon(0x8EBBB79228A5b5C2E6EC718201405825b4D48454).getGasTokenAndSaving(address(this));\r\n\r\n        if(token != address(0)){\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IGasToken(token).freeFromUpTo(msg.sender,  (gasSpent + 16000) / amount);\r\n        }\r\n    }\r\n}",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.3;\r\n\r\nimport \"./IGSVEBeacon.sol\";\r\n\r\ninterface IGasToken {\r\n    /**\r\n     * @dev return number of tokens freed up.\r\n     */\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256); \r\n}\r\n\r\ncontract GSVESaver {\r\n    /**\r\n    * @dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon\r\n    */\r\n    modifier discountGas(bool discount) {\r\n        uint256 gasStart = gasleft();\r\n        _;\r\n        address token;\r\n        uint256 amount; \r\n        (token, amount) = IGSVEBeacon(0xc6Da3fC282CbB43a70EE0eE32490b065b9b11eFB).getGasTokenAndSaving(address(this));\r\n\r\n        if(token != address(0)){\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IGasToken(token).freeFromUpTo(msg.sender,  (gasSpent + 16000) / amount);\r\n        }\r\n    }\r\n}",
   "sourcePath": "C:/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol",
   "ast": {
     "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/GSVESaver.sol",
@@ -38,7 +38,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 80,
-        "sourceUnit": 99,
+        "sourceUnit": 113,
         "src": "60:27:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -58,7 +58,7 @@
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev return number of tokens freed up.\r",
+            "documentation": "@dev return number of tokens freed up.",
             "id": 11,
             "implemented": false,
             "kind": "function",
@@ -229,7 +229,7 @@
                       "name": "gasleft",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 106,
+                      "referencedDeclaration": 443,
                       "src": "480:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
@@ -398,7 +398,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 131,
+                              "referencedDeclaration": 468,
                               "src": "665:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_GSVESaver_$79",
@@ -453,7 +453,7 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "hexValue": "307838454242423739323238413562354332453645433731383230313430353832356234443438343534",
+                              "hexValue": "307863364461336643323832436242343361373045453065453332343930623036356239623131654642",
                               "id": 32,
                               "isConstant": false,
                               "isLValue": false,
@@ -467,7 +467,7 @@
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
                               },
-                              "value": "0x8EBBB79228A5b5C2E6EC718201405825b4D48454"
+                              "value": "0xc6Da3fC282CbB43a70EE0eE32490b065b9b11eFB"
                             }
                           ],
                           "expression": {
@@ -481,10 +481,10 @@
                             "name": "IGSVEBeacon",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 98,
+                            "referencedDeclaration": 112,
                             "src": "580:11:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_IGSVEBeacon_$98_$",
+                              "typeIdentifier": "t_type$_t_contract$_IGSVEBeacon_$112_$",
                               "typeString": "type(contract IGSVEBeacon)"
                             }
                           },
@@ -498,7 +498,7 @@
                           "nodeType": "FunctionCall",
                           "src": "580:55:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IGSVEBeacon_$98",
+                            "typeIdentifier": "t_contract$_IGSVEBeacon_$112",
                             "typeString": "contract IGSVEBeacon"
                           }
                         },
@@ -754,7 +754,7 @@
                                 "name": "gasleft",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 106,
+                                "referencedDeclaration": 443,
                                 "src": "760:7:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
@@ -824,7 +824,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 113,
+                                  "referencedDeclaration": 450,
                                   "src": "777:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -886,7 +886,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 113,
+                                "referencedDeclaration": 450,
                                 "src": "837:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -1104,7 +1104,7 @@
                 }
               ]
             },
-            "documentation": "@dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon\r",
+            "documentation": "@dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon",
             "id": 78,
             "name": "discountGas",
             "nodeType": "ModifierDefinition",
@@ -1179,7 +1179,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 99,
+          "SourceUnit": 113,
           "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/IGSVEBeacon.sol",
           "file": "./IGSVEBeacon.sol",
           "scope": 80,
@@ -1213,7 +1213,7 @@
           {
             "attributes": {
               "body": null,
-              "documentation": "@dev return number of tokens freed up.\r",
+              "documentation": "@dev return number of tokens freed up.",
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
@@ -1350,7 +1350,7 @@
         "children": [
           {
             "attributes": {
-              "documentation": "@dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon\r",
+              "documentation": "@dev GSVE modifier that burns a specific gas token, based on the address specified in a beacon",
               "name": "discountGas",
               "visibility": "internal"
             },
@@ -1449,7 +1449,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 106,
+                              "referencedDeclaration": 443,
                               "type": "function () view returns (uint256)",
                               "value": "gasleft"
                             },
@@ -1666,7 +1666,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 98,
+                                          "referencedDeclaration": 112,
                                           "type": "type(contract IGSVEBeacon)",
                                           "value": "IGSVEBeacon"
                                         },
@@ -1677,7 +1677,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "hexvalue": "307838454242423739323238413562354332453645433731383230313430353832356234443438343534",
+                                          "hexvalue": "307863364461336643323832436242343361373045453065453332343930623036356239623131654642",
                                           "isConstant": false,
                                           "isLValue": false,
                                           "isPure": true,
@@ -1685,7 +1685,7 @@
                                           "subdenomination": null,
                                           "token": "number",
                                           "type": "address payable",
-                                          "value": "0x8EBBB79228A5b5C2E6EC718201405825b4D48454"
+                                          "value": "0xc6Da3fC282CbB43a70EE0eE32490b065b9b11eFB"
                                         },
                                         "id": 32,
                                         "name": "Literal",
@@ -1741,7 +1741,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 131,
+                                      "referencedDeclaration": 468,
                                       "type": "contract GSVESaver",
                                       "value": "this"
                                     },
@@ -2006,7 +2006,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 106,
+                                              "referencedDeclaration": 443,
                                               "type": "function () view returns (uint256)",
                                               "value": "gasleft"
                                             },
@@ -2086,7 +2086,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 113,
+                                                  "referencedDeclaration": 450,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -2233,7 +2233,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 113,
+                                          "referencedDeclaration": 450,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -2389,11 +2389,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-13T09:11:53.598Z",
+  "updatedAt": "2021-05-13T13:10:59.926Z",
   "devdoc": {
     "methods": {}
   },
