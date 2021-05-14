@@ -41,13 +41,10 @@ contract Proxy {
         external
         payable
     {
-        bytes memory returndata;
-        bool success;
-        uint256 returnDataLength;
-        IBeacon gsveBeacon = IBeacon(0xcA6F690B56f07bfb1ea08FE3F126f1df6d0ae176);
-        address gsveBeaconGastoken = gsveBeacon.getAddressGastoken(address(this));
-        uint256 gsveBeaconAmount = gsveBeacon.getAddressGasTokenSaving(address(this));
         uint256 gasStart = gasleft();
+        uint256 returnDataLength;
+        bool success;
+        bytes memory returndata;
 
         // solium-disable-next-line security/no-inline-assembly
         assembly {
@@ -57,25 +54,42 @@ contract Proxy {
                 mstore(0, masterCopy)
                 return(0, 0x20)
             }
+
+            returndata := mload(0x40)
             calldatacopy(0, 0, calldatasize())
             success := delegatecall(gas, masterCopy, 0, calldatasize(), 0, 0)
+
+            //copy the return data and then MOVE the free data pointer!!
             returndatacopy(returndata, 0, returndatasize())
             returnDataLength:= returndatasize()
-            mstore(0x40, add(0x40, add(returndatasize(), 0x44)))
+            mstore(0x40, add(0x40, add(0x200, mul(returndatasize(), 0x20))))
         }
 
-        if(gsveBeaconGastoken == address(0)){
+        uint256 gasSpent = (21000 + gasStart + (16 * msg.data.length)) - gasleft();
+        
+        if(gasSpent < 48000){
             assembly{
                 if eq(success, 0) { revert(returndata, returnDataLength) }
                 return(returndata, returnDataLength)
             }
         }
         else{
-            uint256 gasSpent = (21000 + gasStart) - (gasleft() + (16 * msg.data.length));
-            IGasToken(gsveBeaconGastoken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / gsveBeaconAmount);
-            assembly{
-                if eq(success, 0) { revert(returndata, returnDataLength) }
-                return(returndata, returnDataLength)
+            IBeacon beacon = IBeacon(0x70Aee69e2CbbC02Fb387a5915318CD6c88Df4c96);
+            address gsveBeaconGastoken = beacon.getAddressGastoken(address(this));
+            if(gsveBeaconGastoken == address(0)){
+                assembly{
+                    if eq(success, 0) { revert(returndata, returnDataLength) }
+                    return(returndata, returnDataLength)
+                }
+            }
+            else{
+                uint256 gsveBeaconAmount = beacon.getAddressGasTokenSaving(address(this));
+                gasSpent = (21000 + gasStart + (16 * msg.data.length)) - gasleft();
+                IGasToken(gsveBeaconGastoken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / gsveBeaconAmount);
+                assembly{
+                    if eq(success, 0) { revert(returndata, returnDataLength) }
+                    return(returndata, returnDataLength)
+                }
             }
         }
     }

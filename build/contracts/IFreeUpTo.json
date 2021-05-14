@@ -21,7 +21,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"freeUpTo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"freed\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"interface to allow gas tokens to be burned from the wrapper\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol\":\"IFreeUpTo\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol\":{\"keccak256\":\"0x40c5d4829669bd38bc1023080b93de0e6c5a2f5d1561d09ea4d14947797f8c9c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c02aa68e203e69b1fdbac7c1208587bbf0c6c74f3130ccafaeb2cc0a94b87117\",\"dweb:/ipfs/QmPQVsu6yiNNiMBCq8dCNgPazJEZzFxLUV1FfWmQ4XHGMF\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xf8e8d118a7a8b2e134181f7da655f6266aa3a0f9134b2605747139fcb0c5d835\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9ec48567e7ad06acb670980d5cdf3fd7f3949bf12894f02d68c3bb43e75aa84f\",\"dweb:/ipfs/QmaG3R2J9cz92YT77vFjYrjMNU2wHp4ypwYD62HqDUqS5U\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x069b2631bb5b5193a58ccf7a06266c7361bd2c20095667af4402817605627f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a4c96fafff76deda5697c3c5c98cade6e6e1b178254544c106bf360c079ce4e\",\"dweb:/ipfs/QmXmxubE3jnatFgZuN8ay1VV6hZ8WRmhvUjNpeVjki15HX\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"freeUpTo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"freed\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"interface to allow gas tokens to be burned from the wrapper\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol\":\"IFreeUpTo\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol\":{\"keccak256\":\"0x60abd776ed28d1f93afaacd7a6cc047fc7adedf63d4ecb8acce48ee1a051101d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2ab3abcf3bdff623d39880db84f2ca49905154514f925867a9a4246a05779dbb\",\"dweb:/ipfs/QmUYFUCtboNvWPaYiRFMoP3SeNDRGrNksMVXgWz8zG7uKa\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xf8e8d118a7a8b2e134181f7da655f6266aa3a0f9134b2605747139fcb0c5d835\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9ec48567e7ad06acb670980d5cdf3fd7f3949bf12894f02d68c3bb43e75aa84f\",\"dweb:/ipfs/QmaG3R2J9cz92YT77vFjYrjMNU2wHp4ypwYD62HqDUqS5U\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x069b2631bb5b5193a58ccf7a06266c7361bd2c20095667af4402817605627f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a4c96fafff76deda5697c3c5c98cade6e6e1b178254544c106bf360c079ce4e\",\"dweb:/ipfs/QmXmxubE3jnatFgZuN8ay1VV6hZ8WRmhvUjNpeVjki15HX\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -29,19 +29,19 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/utils/Address.sol\";\r\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\n\r\n/**\r\n* @dev interface to allow gas tokens to be burned from the wrapper\r\n*/\r\ninterface IFreeUpTo {\r\n    function freeUpTo(uint256 value) external returns (uint256 freed);\r\n}\r\n\r\n/**\r\n* @dev interface to allow gsve to be burned for upgrades\r\n*/\r\ninterface IGSVEToken {\r\n    function burnFrom(address account, uint256 amount) external;\r\n}\r\n\r\n\r\n/**\r\n* @dev The v1 smart wrapper is the core gas saving feature\r\n* it can interact with other smart contracts\r\n* it burns gas to save on the transaction fee\r\n* only the owner/deployer of the smart contract can interact with it\r\n* only the owner can send tokens from the address (smart contract)\r\n* only the owner can withdraw tokens of any type, and this goes directly to the owner.\r\n*/\r\ncontract GSVESmartWrapper {\r\n    using Address for address;\r\n    mapping(address => uint256) public _compatibleGasTokens;\r\n    mapping(address => uint256) public _freeUpValue;\r\n    address public GSVEToken;\r\n    bool public _upgraded;\r\n    bool public _inited;\r\n    address private _owner;\r\n\r\n    constructor (address _GSVEToken) public {\r\n        init(msg.sender, _GSVEToken);\r\n    }\r\n\r\n\r\n\r\n    /**\r\n     * @dev Initializes the contract setting the deployer as the initial owner.\r\n     * also sets the GSVE token reference\r\n     */\r\n    function init (address initialOwner, address _GSVEToken) public {\r\n        require(_owner == address(0), \"This contract is already owned\");\r\n        _owner = initialOwner;\r\n        GSVEToken = _GSVEToken;\r\n        emit OwnershipTransferred(address(0), initialOwner);\r\n    }\r\n\r\n    /**\r\n    * @dev allow the contract to recieve funds. \r\n    * This will be needed for dApps that check balances before enabling transaction creation.\r\n    */\r\n    receive() external payable{}\r\n\r\n    /**\r\n    * @dev sets the contract as inited\r\n    */\r\n    function setInited() public {\r\n        _inited = true;\r\n    }\r\n\r\n    /**\r\n    * @dev function to enable gas tokens.\r\n    * by default the wrapped tokens are added when the wrapper is deployed\r\n    * using efficiency values based on a known token gas rebate that we store on contract.\r\n    * DANGER: adding unvetted gas tokens that aren't supported by the protocol could be bad!\r\n    * costs 5 gsve to add custom gas tokens if done after the wallet is inited\r\n    */\r\n    function addGasToken(address gasToken, uint256 freeUpValue) public onlyOwner{\r\n        if(_inited){\r\n            IGSVEToken(GSVEToken).burnFrom(msg.sender, 5*10**18);\r\n        }\r\n        _compatibleGasTokens[gasToken] = 1;\r\n        _freeUpValue[gasToken] = freeUpValue;\r\n    }\r\n\r\n    /**\r\n    * @dev function to 'upgrade the proxy' by enabling unwrapped gas token support\r\n    * the user must burn 10 GSVE to upgrade the proxy.\r\n    */\r\n    function upgradeProxy() public onlyOwner{\r\n        require(_upgraded == false, \"GSVE: Wrapper Already Upgraded.\");\r\n        IGSVEToken(GSVEToken).burnFrom(msg.sender, 10*10**18);\r\n\r\n        // add CHI gas token\r\n        _compatibleGasTokens[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 1;\r\n        _freeUpValue[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 41130;\r\n\r\n        // add GST2 gas token\r\n        _compatibleGasTokens[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 1;\r\n        _freeUpValue[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 41130;\r\n\r\n        // add GST1 gas token\r\n        _compatibleGasTokens[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 1;\r\n        _freeUpValue[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 20130;\r\n\r\n        _upgraded = true;\r\n    }\r\n\r\n    /**\r\n    * @dev checks if the gas token is supported\r\n    */\r\n    function compatibleGasToken(address gasToken) public view returns(uint256){\r\n        return _compatibleGasTokens[gasToken];\r\n    }\r\n\r\n    /**\r\n    * @dev GSVE moddifier that burns supported gas tokens around a function that uses gas\r\n    * the function calculates the optimal number of tokens to burn, based on the token specified\r\n    */\r\n    modifier discountGas(address gasToken) {\r\n        if(gasToken != address(0)){\r\n            require(_compatibleGasTokens[gasToken] == 1, \"GSVE: incompatible token\");\r\n            uint256 gasStart = gasleft();\r\n            _;\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IFreeUpTo(gasToken).freeUpTo((gasSpent + 14000) / _freeUpValue[gasToken]);\r\n        }\r\n        else {\r\n            _;\r\n        }\r\n    }\r\n    \r\n    /**\r\n    * @dev the wrapTransaction function interacts with other smart contracts on the users behalf\r\n    * this wrapper works for any smart contract\r\n    * as long as the dApp/smart contract the wrapper is interacting with has the correct approvals for balances within this wrapper\r\n    * if the function requires a payment, this is handled too and sent from the wrapper balance.\r\n    */\r\n    function wrapTransaction(bytes calldata data, address contractAddress, uint256 value, address gasToken) external discountGas(gasToken) payable onlyOwner{\r\n        if(!contractAddress.isContract()){\r\n            return;\r\n        }\r\n\r\n        if(value > 0){\r\n            contractAddress.functionCallWithValue(data, value, \"GS: Error forwarding transaction\");\r\n        }\r\n        else{\r\n            contractAddress.functionCall(data, \"GS: Error forwarding transaction\");\r\n        }\r\n    }\r\n\r\n    /**\r\n    * @dev function that the user can trigger to withdraw the entire balance of their wrapper back to themselves.\r\n    */\r\n    function withdrawBalance() public onlyOwner{\r\n        owner().call{value: address(this).balance, gas:gasleft()}(\"\");\r\n    }\r\n\r\n    /**\r\n    * @dev function that the user can trigger to withdraw an entire token balance from the wrapper to themselves\r\n    */\r\n    function withdrawTokenBalance(address token) public onlyOwner{\r\n        IERC20 tokenContract = IERC20(token);\r\n        uint256 balance = tokenContract.balanceOf(address(this));\r\n        tokenContract.transfer(owner(), balance);\r\n    }\r\n\r\n    /**\r\n     * @dev Returns the address of the current owner.\r\n     */\r\n    function owner() public view virtual returns (address) {\r\n        return _owner;\r\n    }\r\n\r\n    /**\r\n     * @dev Throws if called by any account other than the owner.\r\n     */\r\n    modifier onlyOwner() {\r\n        require(owner() == _msgSender(), \"Ownable: caller is not the owner\");\r\n        _;\r\n    }\r\n\r\n    /**\r\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\r\n     * Can only be called by the current owner.\r\n     */\r\n    function transferOwnership(address newOwner) public virtual onlyOwner {\r\n        require(newOwner != address(0), \"Ownable: new owner is the zero address\");\r\n        emit OwnershipTransferred(_owner, newOwner);\r\n        _owner = newOwner;\r\n    }\r\n\r\n    function _msgSender() internal view virtual returns (address) {\r\n        return msg.sender;\r\n    }\r\n\r\n    \r\n    /**\r\n     * @dev Returns the upgrade status of the wrapper\r\n     */\r\n    function getUpgraded() public view virtual returns (bool) {\r\n        return _upgraded;\r\n    }\r\n\r\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\r\n}\r\n",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/utils/Address.sol\";\r\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\n\r\n/**\r\n* @dev interface to allow gas tokens to be burned from the wrapper\r\n*/\r\ninterface IFreeUpTo {\r\n    function freeUpTo(uint256 value) external returns (uint256 freed);\r\n}\r\n\r\n/**\r\n* @dev interface to allow gsve to be burned for upgrades\r\n*/\r\ninterface IGSVEToken {\r\n    function burnFrom(address account, uint256 amount) external;\r\n}\r\n\r\n\r\n/**\r\n* @dev The v1 smart wrapper is the core gas saving feature\r\n* it can interact with other smart contracts\r\n* it burns gas to save on the transaction fee\r\n* only the owner/deployer of the smart contract can interact with it\r\n* only the owner can send tokens from the address (smart contract)\r\n* only the owner can withdraw tokens of any type, and this goes directly to the owner.\r\n*/\r\ncontract GSVESmartWrapper {\r\n    using Address for address;\r\n    mapping(address => uint256) public _compatibleGasTokens;\r\n    mapping(address => uint256) public _freeUpValue;\r\n    address public GSVEToken;\r\n    bool public _upgraded;\r\n    bool public _inited;\r\n    address private _owner;\r\n\r\n    constructor (address _GSVEToken) public {\r\n        init(msg.sender, _GSVEToken);\r\n    }\r\n\r\n\r\n\r\n    /**\r\n     * @dev Initializes the contract setting the deployer as the initial owner.\r\n     * also sets the GSVE token reference\r\n     */\r\n    function init (address initialOwner, address _GSVEToken) public {\r\n        require(_owner == address(0), \"This contract is already owned\");\r\n        _owner = initialOwner;\r\n        GSVEToken = _GSVEToken;\r\n        emit OwnershipTransferred(address(0), initialOwner);\r\n    }\r\n\r\n    /**\r\n    * @dev allow the contract to recieve funds. \r\n    * This will be needed for dApps that check balances before enabling transaction creation.\r\n    */\r\n    receive() external payable{}\r\n\r\n    /**\r\n    * @dev sets the contract as inited\r\n    */\r\n    function setInited() public {\r\n        _inited = true;\r\n    }\r\n\r\n    /**\r\n    * @dev function to enable gas tokens.\r\n    * by default the wrapped tokens are added when the wrapper is deployed\r\n    * using efficiency values based on a known token gas rebate that we store on contract.\r\n    * DANGER: adding unvetted gas tokens that aren't supported by the protocol could be bad!\r\n    * costs 5 gsve to add custom gas tokens if done after the wallet is inited\r\n    */\r\n    function addGasToken(address gasToken, uint256 freeUpValue) public onlyOwner{\r\n        if(_inited){\r\n            IGSVEToken(GSVEToken).burnFrom(msg.sender, 5*10**18);\r\n        }\r\n        _compatibleGasTokens[gasToken] = 1;\r\n        _freeUpValue[gasToken] = freeUpValue;\r\n    }\r\n\r\n    /**\r\n    * @dev function to 'upgrade the proxy' by enabling unwrapped gas token support\r\n    * the user must burn 10 GSVE to upgrade the proxy.\r\n    */\r\n    function upgradeProxy() public onlyOwner{\r\n        require(_upgraded == false, \"GSVE: Wrapper Already Upgraded.\");\r\n        IGSVEToken(GSVEToken).burnFrom(msg.sender, 10*10**18);\r\n\r\n        // add CHI gas token\r\n        _compatibleGasTokens[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 1;\r\n        _freeUpValue[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 24000;\r\n\r\n        // add GST2 gas token\r\n        _compatibleGasTokens[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 1;\r\n        _freeUpValue[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 24000;\r\n\r\n        // add GST1 gas token\r\n        _compatibleGasTokens[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 1;\r\n        _freeUpValue[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 15000;\r\n\r\n        _upgraded = true;\r\n    }\r\n\r\n    /**\r\n    * @dev checks if the gas token is supported\r\n    */\r\n    function compatibleGasToken(address gasToken) public view returns(uint256){\r\n        return _compatibleGasTokens[gasToken];\r\n    }\r\n\r\n    /**\r\n    * @dev GSVE moddifier that burns supported gas tokens around a function that uses gas\r\n    * the function calculates the optimal number of tokens to burn, based on the token specified\r\n    */\r\n    modifier discountGas(address gasToken) {\r\n        if(gasToken != address(0)){\r\n            require(_compatibleGasTokens[gasToken] == 1, \"GSVE: incompatible token\");\r\n            uint256 gasStart = gasleft();\r\n            _;\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IFreeUpTo(gasToken).freeUpTo((gasSpent + 14000) / _freeUpValue[gasToken]);\r\n        }\r\n        else {\r\n            _;\r\n        }\r\n    }\r\n    \r\n    /**\r\n    * @dev the wrapTransaction function interacts with other smart contracts on the users behalf\r\n    * this wrapper works for any smart contract\r\n    * as long as the dApp/smart contract the wrapper is interacting with has the correct approvals for balances within this wrapper\r\n    * if the function requires a payment, this is handled too and sent from the wrapper balance.\r\n    */\r\n    function wrapTransaction(bytes calldata data, address contractAddress, uint256 value, address gasToken) external discountGas(gasToken) payable onlyOwner{\r\n        if(!contractAddress.isContract()){\r\n            return;\r\n        }\r\n\r\n        if(value > 0){\r\n            contractAddress.functionCallWithValue(data, value, \"GS: Error forwarding transaction\");\r\n        }\r\n        else{\r\n            contractAddress.functionCall(data, \"GS: Error forwarding transaction\");\r\n        }\r\n    }\r\n\r\n    /**\r\n    * @dev function that the user can trigger to withdraw the entire balance of their wrapper back to themselves.\r\n    */\r\n    function withdrawBalance() public onlyOwner{\r\n        owner().call{value: address(this).balance, gas:gasleft()}(\"\");\r\n    }\r\n\r\n    /**\r\n    * @dev function that the user can trigger to withdraw an entire token balance from the wrapper to themselves\r\n    */\r\n    function withdrawTokenBalance(address token) public onlyOwner{\r\n        IERC20 tokenContract = IERC20(token);\r\n        uint256 balance = tokenContract.balanceOf(address(this));\r\n        tokenContract.transfer(owner(), balance);\r\n    }\r\n\r\n    /**\r\n     * @dev Returns the address of the current owner.\r\n     */\r\n    function owner() public view virtual returns (address) {\r\n        return _owner;\r\n    }\r\n\r\n    /**\r\n     * @dev Throws if called by any account other than the owner.\r\n     */\r\n    modifier onlyOwner() {\r\n        require(owner() == _msgSender(), \"Ownable: caller is not the owner\");\r\n        _;\r\n    }\r\n\r\n    /**\r\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\r\n     * Can only be called by the current owner.\r\n     */\r\n    function transferOwnership(address newOwner) public virtual onlyOwner {\r\n        require(newOwner != address(0), \"Ownable: new owner is the zero address\");\r\n        emit OwnershipTransferred(_owner, newOwner);\r\n        _owner = newOwner;\r\n    }\r\n\r\n    function _msgSender() internal view virtual returns (address) {\r\n        return msg.sender;\r\n    }\r\n\r\n    \r\n    /**\r\n     * @dev Returns the upgrade status of the wrapper\r\n     */\r\n    function getUpgraded() public view virtual returns (bool) {\r\n        return _upgraded;\r\n    }\r\n\r\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\r\n}\r\n",
   "sourcePath": "C:/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol",
   "ast": {
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol",
     "exportedSymbols": {
       "Address": [
-        4055
+        6109
       ],
       "GSVESmartWrapper": [
         2553
       ],
       "IERC20": [
-        3759
+        5813
       ],
       "IFreeUpTo": [
         2107
@@ -72,7 +72,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2554,
-        "sourceUnit": 4056,
+        "sourceUnit": 6110,
         "src": "60:51:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -84,7 +84,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2554,
-        "sourceUnit": 3760,
+        "sourceUnit": 5814,
         "src": "113:56:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -331,7 +331,7 @@
               "id": 2118,
               "name": "Address",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4055,
+              "referencedDeclaration": 6109,
               "src": "941:7:4"
             },
             "nodeType": "UsingForDirective",
@@ -2208,7 +2208,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2271,
                       "isConstant": false,
                       "isLValue": false,
@@ -2218,10 +2218,10 @@
                       "nodeType": "Literal",
                       "src": "3246:5:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "3187:64:4",
                     "typeDescriptions": {
@@ -2360,7 +2360,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2283,
                       "isConstant": false,
                       "isLValue": false,
@@ -2370,10 +2370,10 @@
                       "nodeType": "Literal",
                       "src": "3433:5:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "3374:64:4",
                     "typeDescriptions": {
@@ -2512,7 +2512,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3230313330",
+                      "hexValue": "3135303030",
                       "id": 2295,
                       "isConstant": false,
                       "isLValue": false,
@@ -2522,10 +2522,10 @@
                       "nodeType": "Literal",
                       "src": "3620:5:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_20130_by_1",
-                        "typeString": "int_const 20130"
+                        "typeIdentifier": "t_rational_15000_by_1",
+                        "typeString": "int_const 15000"
                       },
-                      "value": "20130"
+                      "value": "15000"
                     },
                     "src": "3561:64:4",
                     "typeDescriptions": {
@@ -3622,7 +3622,7 @@
                         "lValueRequested": false,
                         "memberName": "isContract",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 3779,
+                        "referencedDeclaration": 5833,
                         "src": "5111:26:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$bound_to$_t_address_$",
@@ -3780,7 +3780,7 @@
                             "lValueRequested": false,
                             "memberName": "functionCall",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3850,
+                            "referencedDeclaration": 5904,
                             "src": "5340:28:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_string_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_address_$",
@@ -3894,7 +3894,7 @@
                             "lValueRequested": false,
                             "memberName": "functionCallWithValue",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3920,
+                            "referencedDeclaration": 5974,
                             "src": "5213:37:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_uint256_$_t_string_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_address_$",
@@ -4400,7 +4400,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$3759",
+                        "typeIdentifier": "t_contract$_IERC20_$5813",
                         "typeString": "contract IERC20"
                       },
                       "typeName": {
@@ -4410,13 +4410,13 @@
                           "id": 2451,
                           "name": "IERC20",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 3759,
+                          "referencedDeclaration": 5813,
                           "src": "5903:6:4"
                         },
-                        "referencedDeclaration": 3759,
+                        "referencedDeclaration": 5813,
                         "src": "5903:6:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$3759",
+                          "typeIdentifier": "t_contract$_IERC20_$5813",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -4450,10 +4450,10 @@
                       "name": "IERC20",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3759,
+                      "referencedDeclaration": 5813,
                       "src": "5926:6:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IERC20_$3759_$",
+                        "typeIdentifier": "t_type$_t_contract$_IERC20_$5813_$",
                         "typeString": "type(contract IERC20)"
                       }
                     },
@@ -4468,7 +4468,7 @@
                     "src": "5926:13:4",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$3759",
+                      "typeIdentifier": "t_contract$_IERC20_$5813",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -4583,7 +4583,7 @@
                         "referencedDeclaration": 2453,
                         "src": "5968:13:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$3759",
+                          "typeIdentifier": "t_contract$_IERC20_$5813",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -4594,7 +4594,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3698,
+                      "referencedDeclaration": 5752,
                       "src": "5968:23:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -4684,7 +4684,7 @@
                         "referencedDeclaration": 2453,
                         "src": "6017:13:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$3759",
+                          "typeIdentifier": "t_contract$_IERC20_$5813",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -4695,7 +4695,7 @@
                       "lValueRequested": false,
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3708,
+                      "referencedDeclaration": 5762,
                       "src": "6017:22:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -5674,13 +5674,13 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapper.sol",
     "exportedSymbols": {
       "Address": [
-        4055
+        6109
       ],
       "GSVESmartWrapper": [
         2553
       ],
       "IERC20": [
-        3759
+        5813
       ],
       "IFreeUpTo": [
         2107
@@ -5711,7 +5711,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2554,
-        "sourceUnit": 4056,
+        "sourceUnit": 6110,
         "src": "60:51:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5723,7 +5723,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2554,
-        "sourceUnit": 3760,
+        "sourceUnit": 5814,
         "src": "113:56:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5970,7 +5970,7 @@
               "id": 2118,
               "name": "Address",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4055,
+              "referencedDeclaration": 6109,
               "src": "941:7:4"
             },
             "nodeType": "UsingForDirective",
@@ -7847,7 +7847,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2271,
                       "isConstant": false,
                       "isLValue": false,
@@ -7857,10 +7857,10 @@
                       "nodeType": "Literal",
                       "src": "3246:5:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "3187:64:4",
                     "typeDescriptions": {
@@ -7999,7 +7999,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2283,
                       "isConstant": false,
                       "isLValue": false,
@@ -8009,10 +8009,10 @@
                       "nodeType": "Literal",
                       "src": "3433:5:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "3374:64:4",
                     "typeDescriptions": {
@@ -8151,7 +8151,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3230313330",
+                      "hexValue": "3135303030",
                       "id": 2295,
                       "isConstant": false,
                       "isLValue": false,
@@ -8161,10 +8161,10 @@
                       "nodeType": "Literal",
                       "src": "3620:5:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_20130_by_1",
-                        "typeString": "int_const 20130"
+                        "typeIdentifier": "t_rational_15000_by_1",
+                        "typeString": "int_const 15000"
                       },
-                      "value": "20130"
+                      "value": "15000"
                     },
                     "src": "3561:64:4",
                     "typeDescriptions": {
@@ -9261,7 +9261,7 @@
                         "lValueRequested": false,
                         "memberName": "isContract",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 3779,
+                        "referencedDeclaration": 5833,
                         "src": "5111:26:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$bound_to$_t_address_$",
@@ -9419,7 +9419,7 @@
                             "lValueRequested": false,
                             "memberName": "functionCall",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3850,
+                            "referencedDeclaration": 5904,
                             "src": "5340:28:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_string_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_address_$",
@@ -9533,7 +9533,7 @@
                             "lValueRequested": false,
                             "memberName": "functionCallWithValue",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3920,
+                            "referencedDeclaration": 5974,
                             "src": "5213:37:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_uint256_$_t_string_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_address_$",
@@ -10039,7 +10039,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$3759",
+                        "typeIdentifier": "t_contract$_IERC20_$5813",
                         "typeString": "contract IERC20"
                       },
                       "typeName": {
@@ -10049,13 +10049,13 @@
                           "id": 2451,
                           "name": "IERC20",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 3759,
+                          "referencedDeclaration": 5813,
                           "src": "5903:6:4"
                         },
-                        "referencedDeclaration": 3759,
+                        "referencedDeclaration": 5813,
                         "src": "5903:6:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$3759",
+                          "typeIdentifier": "t_contract$_IERC20_$5813",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -10089,10 +10089,10 @@
                       "name": "IERC20",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3759,
+                      "referencedDeclaration": 5813,
                       "src": "5926:6:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IERC20_$3759_$",
+                        "typeIdentifier": "t_type$_t_contract$_IERC20_$5813_$",
                         "typeString": "type(contract IERC20)"
                       }
                     },
@@ -10107,7 +10107,7 @@
                     "src": "5926:13:4",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$3759",
+                      "typeIdentifier": "t_contract$_IERC20_$5813",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -10222,7 +10222,7 @@
                         "referencedDeclaration": 2453,
                         "src": "5968:13:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$3759",
+                          "typeIdentifier": "t_contract$_IERC20_$5813",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -10233,7 +10233,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3698,
+                      "referencedDeclaration": 5752,
                       "src": "5968:23:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -10323,7 +10323,7 @@
                         "referencedDeclaration": 2453,
                         "src": "6017:13:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$3759",
+                          "typeIdentifier": "t_contract$_IERC20_$5813",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -10334,7 +10334,7 @@
                       "lValueRequested": false,
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3708,
+                      "referencedDeclaration": 5762,
                       "src": "6017:22:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -11315,7 +11315,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-14T07:56:44.020Z",
+  "updatedAt": "2021-05-14T16:51:06.541Z",
   "devdoc": {
     "details": "interface to allow gas tokens to be burned from the wrapper",
     "kind": "dev",

@@ -26,7 +26,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"freeFromUpTo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"freed\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"interface to allow the burning of gas tokens from an address to save on deployment cost\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol\":\"IFreeFromUpTo\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol\":{\"keccak256\":\"0x90e41f62c4890cf022b5d24cd22656290d467a289a8e34ed295f6801fc548160\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8f7b944ecf16f397dab6d80f385ad74f9cd03f2b28363e89385e62a8683f921\",\"dweb:/ipfs/QmZ7KrxUBJYAceTZwCnZT8qAS1qHqnVrEh44PjWe8jx3Q5\"]},\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/IGSVESmartWrapper.sol\":{\"keccak256\":\"0xba08765d1d96ad0d0ab1437291d9938afa53fdc3a85af2d72294bdd7d1b3bea6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://397535d832b9780aa918988e1f8fc309cb73608db30445ef16f0e0ee60944b11\",\"dweb:/ipfs/Qma8hWruMcLGNeX1YK2qSwKhjcVZU1kEi5pXXs5QQkEG3h\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"@openzeppelin/contracts/proxy/Clones.sol\":{\"keccak256\":\"0x90dec20805396efc780a82c62578626103e03278bc1f48b61bb3aba52a61617c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f7e3316ef22eaaac081ea90b12c0ae9f831fea5a70c78ca541ce3332e8b77f47\",\"dweb:/ipfs/QmTxLzG9UKK1fsAYoS3QgGgsCAHyW67D8mjPPHafczs2Co\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"freeFromUpTo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"freed\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"interface to allow the burning of gas tokens from an address to save on deployment cost\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol\":\"IFreeFromUpTo\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol\":{\"keccak256\":\"0x82fbb6c74ec32219415da01a0301313252377e0b1fc3d75f84bc84eb27fb7d9b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5d4706f5432c94decc497823df2e8d1969d18931f2b06e0c923306dd1eed7b85\",\"dweb:/ipfs/QmZfog2GaMK8MAumhEdeXgktjp1yE9n2AegcTvGCceJBVs\"]},\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/IGSVESmartWrapper.sol\":{\"keccak256\":\"0xba08765d1d96ad0d0ab1437291d9938afa53fdc3a85af2d72294bdd7d1b3bea6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://397535d832b9780aa918988e1f8fc309cb73608db30445ef16f0e0ee60944b11\",\"dweb:/ipfs/Qma8hWruMcLGNeX1YK2qSwKhjcVZU1kEi5pXXs5QQkEG3h\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"@openzeppelin/contracts/proxy/Clones.sol\":{\"keccak256\":\"0x90dec20805396efc780a82c62578626103e03278bc1f48b61bb3aba52a61617c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f7e3316ef22eaaac081ea90b12c0ae9f831fea5a70c78ca541ce3332e8b77f47\",\"dweb:/ipfs/QmTxLzG9UKK1fsAYoS3QgGgsCAHyW67D8mjPPHafczs2Co\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -34,16 +34,16 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/proxy/Clones.sol\";\r\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\r\nimport \"./IGSVESmartWrapper.sol\";\r\n\r\n/**\r\n* @dev interface to allow the burning of gas tokens from an address to save on deployment cost\r\n*/\r\ninterface IFreeFromUpTo {\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256 freed);\r\n}\r\n\r\ncontract GSVESmartWrapperFactory is Ownable{\r\n    address payable public smartWrapperLocation;\r\n    mapping(address => uint256) private _compatibleGasTokens;\r\n    mapping(uint256 => address) private _reverseTokenMap;\r\n    mapping(address => address) private _deployedWalletAddressLocation;\r\n    mapping(address => uint256) private _freeUpValue;\r\n    address private GSVEToken;\r\n    uint256 private _totalSupportedTokens = 0;\r\n\r\n  constructor (address payable _smartWrapperLocation, address _GSVEToken, address wchi, address wgst2, address wgst1) public {\r\n    smartWrapperLocation = _smartWrapperLocation;\r\n    GSVEToken = _GSVEToken;\r\n    _compatibleGasTokens[wchi] = 1;\r\n    _reverseTokenMap[0] = wchi;\r\n    _freeUpValue[wchi] = 41130;\r\n\r\n    _compatibleGasTokens[wgst2] = 1;\r\n    _reverseTokenMap[1] = wgst2;\r\n    _freeUpValue[wgst2] = 41130;\r\n\r\n    _compatibleGasTokens[wgst1] = 1;\r\n    _reverseTokenMap[2] = wgst1;\r\n    _freeUpValue[wgst1] = 20130;\r\n\r\n    _totalSupportedTokens = 3;\r\n  }\r\n\r\n    /**\r\n    * @dev add support for trusted gas tokens - those we wrapped\r\n    */\r\n    function addGasToken(address gasToken, uint256 freeUpValue) public onlyOwner{\r\n        _compatibleGasTokens[gasToken] = 1;\r\n        _reverseTokenMap[_totalSupportedTokens] = gasToken;\r\n        _totalSupportedTokens = _totalSupportedTokens + 1;\r\n        _freeUpValue[gasToken] = freeUpValue;\r\n    }\r\n\r\n        /**\r\n    * @dev GSVE moddifier that burns supported gas tokens around a function that uses gas\r\n    * the function calculates the optimal number of tokens to burn, based on the token specified\r\n    */\r\n    modifier discountGas(address gasToken) {\r\n        if(gasToken != address(0)){\r\n            require(_compatibleGasTokens[gasToken] == 1, \"GSVE: incompatible token\");\r\n            uint256 gasStart = gasleft();\r\n            _;\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IFreeFromUpTo(gasToken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / _freeUpValue[gasToken]);\r\n        }\r\n        else{\r\n            _;\r\n        }\r\n    }\r\n\r\n    /**\r\n    * @dev return the location of a users deployed wrapper\r\n    */\r\n    function deployedWalletAddressLocation(address creator) public view returns(address){\r\n        return _deployedWalletAddressLocation[creator];\r\n    }\r\n\r\n    /**\r\n    * @dev function to check if a gas token is supported by the deployer\r\n    */\r\n    function compatibleGasToken(address gasToken) public view returns(uint256){\r\n        return _compatibleGasTokens[gasToken];\r\n    }\r\n\r\n    /**\r\n    * @dev deploys a gsve smart wrapper for the caller\r\n    * the ownership of the wrapper is transfered to the caller\r\n    * a note is made of where the users wrapper is deployed\r\n    * gas tokens can be burned to save on this deployment operation\r\n    * the gas tokens that the deployer supports are enabled in the wrapper before transfering ownership.\r\n    */\r\n  function deployGSVESmartWrapper(address gasToken)  public discountGas(gasToken){\r\n        address contractAddress = Clones.clone(smartWrapperLocation);\r\n        IGSVESmartWrapper(payable(contractAddress)).init(address(this), GSVEToken);\r\n\r\n        for(uint256 i = 0; i<_totalSupportedTokens; i++){\r\n            address tokenAddress = _reverseTokenMap[i];\r\n            IGSVESmartWrapper(payable(contractAddress)).addGasToken(tokenAddress, _freeUpValue[tokenAddress]);\r\n        }\r\n        IGSVESmartWrapper(payable(contractAddress)).setInited();\r\n        Ownable(contractAddress).transferOwnership(msg.sender);\r\n        _deployedWalletAddressLocation[msg.sender] = contractAddress;\r\n    }\r\n\r\n}",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/proxy/Clones.sol\";\r\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\r\nimport \"./IGSVESmartWrapper.sol\";\r\n\r\n/**\r\n* @dev interface to allow the burning of gas tokens from an address to save on deployment cost\r\n*/\r\ninterface IFreeFromUpTo {\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256 freed);\r\n}\r\n\r\ncontract GSVESmartWrapperFactory is Ownable{\r\n    address payable public smartWrapperLocation;\r\n    mapping(address => uint256) private _compatibleGasTokens;\r\n    mapping(uint256 => address) private _reverseTokenMap;\r\n    mapping(address => address) private _deployedWalletAddressLocation;\r\n    mapping(address => uint256) private _freeUpValue;\r\n    address private GSVEToken;\r\n    uint256 private _totalSupportedTokens = 0;\r\n\r\n  constructor (address payable _smartWrapperLocation, address _GSVEToken, address wchi, address wgst2, address wgst1) public {\r\n    smartWrapperLocation = _smartWrapperLocation;\r\n    GSVEToken = _GSVEToken;\r\n    _compatibleGasTokens[wchi] = 1;\r\n    _reverseTokenMap[0] = wchi;\r\n    _freeUpValue[wchi] = 24000;\r\n\r\n    _compatibleGasTokens[wgst2] = 1;\r\n    _reverseTokenMap[1] = wgst2;\r\n    _freeUpValue[wgst2] = 24000;\r\n\r\n    _compatibleGasTokens[wgst1] = 1;\r\n    _reverseTokenMap[2] = wgst1;\r\n    _freeUpValue[wgst1] = 15000;\r\n\r\n    _totalSupportedTokens = 3;\r\n  }\r\n\r\n    /**\r\n    * @dev add support for trusted gas tokens - those we wrapped\r\n    */\r\n    function addGasToken(address gasToken, uint256 freeUpValue) public onlyOwner{\r\n        _compatibleGasTokens[gasToken] = 1;\r\n        _reverseTokenMap[_totalSupportedTokens] = gasToken;\r\n        _totalSupportedTokens = _totalSupportedTokens + 1;\r\n        _freeUpValue[gasToken] = freeUpValue;\r\n    }\r\n\r\n        /**\r\n    * @dev GSVE moddifier that burns supported gas tokens around a function that uses gas\r\n    * the function calculates the optimal number of tokens to burn, based on the token specified\r\n    */\r\n    modifier discountGas(address gasToken) {\r\n        if(gasToken != address(0)){\r\n            require(_compatibleGasTokens[gasToken] == 1, \"GSVE: incompatible token\");\r\n            uint256 gasStart = gasleft();\r\n            _;\r\n            uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;\r\n            IFreeFromUpTo(gasToken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / _freeUpValue[gasToken]);\r\n        }\r\n        else{\r\n            _;\r\n        }\r\n    }\r\n\r\n    /**\r\n    * @dev return the location of a users deployed wrapper\r\n    */\r\n    function deployedWalletAddressLocation(address creator) public view returns(address){\r\n        return _deployedWalletAddressLocation[creator];\r\n    }\r\n\r\n    /**\r\n    * @dev function to check if a gas token is supported by the deployer\r\n    */\r\n    function compatibleGasToken(address gasToken) public view returns(uint256){\r\n        return _compatibleGasTokens[gasToken];\r\n    }\r\n\r\n    /**\r\n    * @dev deploys a gsve smart wrapper for the caller\r\n    * the ownership of the wrapper is transfered to the caller\r\n    * a note is made of where the users wrapper is deployed\r\n    * gas tokens can be burned to save on this deployment operation\r\n    * the gas tokens that the deployer supports are enabled in the wrapper before transfering ownership.\r\n    */\r\n  function deployGSVESmartWrapper(address gasToken)  public discountGas(gasToken){\r\n        address contractAddress = Clones.clone(smartWrapperLocation);\r\n        IGSVESmartWrapper(payable(contractAddress)).init(address(this), GSVEToken);\r\n\r\n        for(uint256 i = 0; i<_totalSupportedTokens; i++){\r\n            address tokenAddress = _reverseTokenMap[i];\r\n            IGSVESmartWrapper(payable(contractAddress)).addGasToken(tokenAddress, _freeUpValue[tokenAddress]);\r\n        }\r\n        IGSVESmartWrapper(payable(contractAddress)).setInited();\r\n        Ownable(contractAddress).transferOwnership(msg.sender);\r\n        _deployedWalletAddressLocation[msg.sender] = contractAddress;\r\n    }\r\n\r\n}",
   "sourcePath": "C:/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol",
   "ast": {
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol",
     "exportedSymbols": {
       "Clones": [
-        3641
+        5194
       ],
       "Context": [
-        4078
+        6132
       ],
       "GSVESmartWrapperFactory": [
         2884
@@ -52,10 +52,10 @@
         2569
       ],
       "IGSVESmartWrapper": [
-        2964
+        3077
       ],
       "Ownable": [
-        3561
+        5114
       ]
     },
     "id": 2885,
@@ -80,7 +80,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2885,
-        "sourceUnit": 3642,
+        "sourceUnit": 5195,
         "src": "60:50:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -92,7 +92,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2885,
-        "sourceUnit": 3562,
+        "sourceUnit": 5115,
         "src": "112:52:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -104,7 +104,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2885,
-        "sourceUnit": 2965,
+        "sourceUnit": 3078,
         "src": "166:33:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -253,7 +253,7 @@
               "id": 2570,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3561,
+              "referencedDeclaration": 5114,
               "src": "466:7:5"
             },
             "id": 2571,
@@ -267,8 +267,8 @@
         "id": 2884,
         "linearizedBaseContracts": [
           2884,
-          3561,
-          4078
+          5114,
+          6132
         ],
         "name": "GSVESmartWrapperFactory",
         "nameLocation": "439:23:5",
@@ -843,7 +843,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2630,
                       "isConstant": false,
                       "isLValue": false,
@@ -853,10 +853,10 @@
                       "nodeType": "Literal",
                       "src": "1161:5:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "1140:26:5",
                     "typeDescriptions": {
@@ -1059,7 +1059,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2648,
                       "isConstant": false,
                       "isLValue": false,
@@ -1069,10 +1069,10 @@
                       "nodeType": "Literal",
                       "src": "1269:5:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "1247:27:5",
                     "typeDescriptions": {
@@ -1275,7 +1275,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3230313330",
+                      "hexValue": "3135303030",
                       "id": 2666,
                       "isConstant": false,
                       "isLValue": false,
@@ -1285,10 +1285,10 @@
                       "nodeType": "Literal",
                       "src": "1377:5:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_20130_by_1",
-                        "typeString": "int_const 20130"
+                        "typeIdentifier": "t_rational_15000_by_1",
+                        "typeString": "int_const 15000"
                       },
-                      "value": "20130"
+                      "value": "15000"
                     },
                     "src": "1355:27:5",
                     "typeDescriptions": {
@@ -1826,7 +1826,7 @@
                   "id": 2681,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3510,
+                  "referencedDeclaration": 5063,
                   "src": "1580:9:5"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3099,10 +3099,10 @@
                         "name": "Clones",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3641,
+                        "referencedDeclaration": 5194,
                         "src": "3463:6:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Clones_$3641_$",
+                          "typeIdentifier": "t_type$_t_contract$_Clones_$5194_$",
                           "typeString": "type(library Clones)"
                         }
                       },
@@ -3113,7 +3113,7 @@
                       "lValueRequested": false,
                       "memberName": "clone",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3584,
+                      "referencedDeclaration": 5137,
                       "src": "3463:12:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$_t_address_$",
@@ -3292,10 +3292,10 @@
                           "name": "IGSVESmartWrapper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2964,
+                          "referencedDeclaration": 3077,
                           "src": "3508:17:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$2964_$",
+                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$3077_$",
                             "typeString": "type(contract IGSVESmartWrapper)"
                           }
                         },
@@ -3310,7 +3310,7 @@
                         "src": "3508:43:5",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$2964",
+                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$3077",
                           "typeString": "contract IGSVESmartWrapper"
                         }
                       },
@@ -3321,7 +3321,7 @@
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2895,
+                      "referencedDeclaration": 3008,
                       "src": "3508:48:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$returns$__$",
@@ -3563,10 +3563,10 @@
                                 "name": "IGSVESmartWrapper",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2964,
+                                "referencedDeclaration": 3077,
                                 "src": "3715:17:5",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$2964_$",
+                                  "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$3077_$",
                                   "typeString": "type(contract IGSVESmartWrapper)"
                                 }
                               },
@@ -3581,7 +3581,7 @@
                               "src": "3715:43:5",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IGSVESmartWrapper_$2964",
+                                "typeIdentifier": "t_contract$_IGSVESmartWrapper_$3077",
                                 "typeString": "contract IGSVESmartWrapper"
                               }
                             },
@@ -3592,7 +3592,7 @@
                             "lValueRequested": false,
                             "memberName": "addGasToken",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2911,
+                            "referencedDeclaration": 3024,
                             "src": "3715:55:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -3827,10 +3827,10 @@
                           "name": "IGSVESmartWrapper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2964,
+                          "referencedDeclaration": 3077,
                           "src": "3834:17:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$2964_$",
+                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$3077_$",
                             "typeString": "type(contract IGSVESmartWrapper)"
                           }
                         },
@@ -3845,7 +3845,7 @@
                         "src": "3834:43:5",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$2964",
+                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$3077",
                           "typeString": "contract IGSVESmartWrapper"
                         }
                       },
@@ -3856,7 +3856,7 @@
                       "lValueRequested": false,
                       "memberName": "setInited",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2903,
+                      "referencedDeclaration": 3016,
                       "src": "3834:53:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -3945,10 +3945,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3561,
+                          "referencedDeclaration": 5114,
                           "src": "3900:7:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$3561_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5114_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -3963,7 +3963,7 @@
                         "src": "3900:24:5",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$3561",
+                          "typeIdentifier": "t_contract$_Ownable_$5114",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -3974,7 +3974,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3560,
+                      "referencedDeclaration": 5113,
                       "src": "3900:42:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -4185,10 +4185,10 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVESmartWrapperFactory.sol",
     "exportedSymbols": {
       "Clones": [
-        3641
+        5194
       ],
       "Context": [
-        4078
+        6132
       ],
       "GSVESmartWrapperFactory": [
         2884
@@ -4197,10 +4197,10 @@
         2569
       ],
       "IGSVESmartWrapper": [
-        2964
+        3077
       ],
       "Ownable": [
-        3561
+        5114
       ]
     },
     "id": 2885,
@@ -4225,7 +4225,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2885,
-        "sourceUnit": 3642,
+        "sourceUnit": 5195,
         "src": "60:50:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4237,7 +4237,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2885,
-        "sourceUnit": 3562,
+        "sourceUnit": 5115,
         "src": "112:52:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4249,7 +4249,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2885,
-        "sourceUnit": 2965,
+        "sourceUnit": 3078,
         "src": "166:33:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4398,7 +4398,7 @@
               "id": 2570,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3561,
+              "referencedDeclaration": 5114,
               "src": "466:7:5"
             },
             "id": 2571,
@@ -4412,8 +4412,8 @@
         "id": 2884,
         "linearizedBaseContracts": [
           2884,
-          3561,
-          4078
+          5114,
+          6132
         ],
         "name": "GSVESmartWrapperFactory",
         "nameLocation": "439:23:5",
@@ -4988,7 +4988,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2630,
                       "isConstant": false,
                       "isLValue": false,
@@ -4998,10 +4998,10 @@
                       "nodeType": "Literal",
                       "src": "1161:5:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "1140:26:5",
                     "typeDescriptions": {
@@ -5204,7 +5204,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3431313330",
+                      "hexValue": "3234303030",
                       "id": 2648,
                       "isConstant": false,
                       "isLValue": false,
@@ -5214,10 +5214,10 @@
                       "nodeType": "Literal",
                       "src": "1269:5:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_41130_by_1",
-                        "typeString": "int_const 41130"
+                        "typeIdentifier": "t_rational_24000_by_1",
+                        "typeString": "int_const 24000"
                       },
-                      "value": "41130"
+                      "value": "24000"
                     },
                     "src": "1247:27:5",
                     "typeDescriptions": {
@@ -5420,7 +5420,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "3230313330",
+                      "hexValue": "3135303030",
                       "id": 2666,
                       "isConstant": false,
                       "isLValue": false,
@@ -5430,10 +5430,10 @@
                       "nodeType": "Literal",
                       "src": "1377:5:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_20130_by_1",
-                        "typeString": "int_const 20130"
+                        "typeIdentifier": "t_rational_15000_by_1",
+                        "typeString": "int_const 15000"
                       },
-                      "value": "20130"
+                      "value": "15000"
                     },
                     "src": "1355:27:5",
                     "typeDescriptions": {
@@ -5971,7 +5971,7 @@
                   "id": 2681,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3510,
+                  "referencedDeclaration": 5063,
                   "src": "1580:9:5"
                 },
                 "nodeType": "ModifierInvocation",
@@ -7244,10 +7244,10 @@
                         "name": "Clones",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3641,
+                        "referencedDeclaration": 5194,
                         "src": "3463:6:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Clones_$3641_$",
+                          "typeIdentifier": "t_type$_t_contract$_Clones_$5194_$",
                           "typeString": "type(library Clones)"
                         }
                       },
@@ -7258,7 +7258,7 @@
                       "lValueRequested": false,
                       "memberName": "clone",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3584,
+                      "referencedDeclaration": 5137,
                       "src": "3463:12:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$_t_address_$",
@@ -7437,10 +7437,10 @@
                           "name": "IGSVESmartWrapper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2964,
+                          "referencedDeclaration": 3077,
                           "src": "3508:17:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$2964_$",
+                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$3077_$",
                             "typeString": "type(contract IGSVESmartWrapper)"
                           }
                         },
@@ -7455,7 +7455,7 @@
                         "src": "3508:43:5",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$2964",
+                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$3077",
                           "typeString": "contract IGSVESmartWrapper"
                         }
                       },
@@ -7466,7 +7466,7 @@
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2895,
+                      "referencedDeclaration": 3008,
                       "src": "3508:48:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$returns$__$",
@@ -7708,10 +7708,10 @@
                                 "name": "IGSVESmartWrapper",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2964,
+                                "referencedDeclaration": 3077,
                                 "src": "3715:17:5",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$2964_$",
+                                  "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$3077_$",
                                   "typeString": "type(contract IGSVESmartWrapper)"
                                 }
                               },
@@ -7726,7 +7726,7 @@
                               "src": "3715:43:5",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IGSVESmartWrapper_$2964",
+                                "typeIdentifier": "t_contract$_IGSVESmartWrapper_$3077",
                                 "typeString": "contract IGSVESmartWrapper"
                               }
                             },
@@ -7737,7 +7737,7 @@
                             "lValueRequested": false,
                             "memberName": "addGasToken",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2911,
+                            "referencedDeclaration": 3024,
                             "src": "3715:55:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -7972,10 +7972,10 @@
                           "name": "IGSVESmartWrapper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2964,
+                          "referencedDeclaration": 3077,
                           "src": "3834:17:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$2964_$",
+                            "typeIdentifier": "t_type$_t_contract$_IGSVESmartWrapper_$3077_$",
                             "typeString": "type(contract IGSVESmartWrapper)"
                           }
                         },
@@ -7990,7 +7990,7 @@
                         "src": "3834:43:5",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$2964",
+                          "typeIdentifier": "t_contract$_IGSVESmartWrapper_$3077",
                           "typeString": "contract IGSVESmartWrapper"
                         }
                       },
@@ -8001,7 +8001,7 @@
                       "lValueRequested": false,
                       "memberName": "setInited",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2903,
+                      "referencedDeclaration": 3016,
                       "src": "3834:53:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -8090,10 +8090,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3561,
+                          "referencedDeclaration": 5114,
                           "src": "3900:7:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$3561_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5114_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -8108,7 +8108,7 @@
                         "src": "3900:24:5",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$3561",
+                          "typeIdentifier": "t_contract$_Ownable_$5114",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -8119,7 +8119,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3560,
+                      "referencedDeclaration": 5113,
                       "src": "3900:42:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -8332,7 +8332,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-14T07:56:43.977Z",
+  "updatedAt": "2021-05-14T16:51:06.518Z",
   "devdoc": {
     "details": "interface to allow the burning of gas tokens from an address to save on deployment cost",
     "kind": "dev",

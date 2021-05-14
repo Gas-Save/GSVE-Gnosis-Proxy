@@ -16,8 +16,8 @@ contract('GSVE Gnosis Safe Factory', function(accounts) {
     var helper
     var gasToken
 
-    var beaconAddress = "0x5cb89C0cba029eb4337d47546bd2a5e329Fc6575"
-    var gsveAddress = "0x62Cd8986021C8875f0dfeb510D67689f4F78f1d8"
+    var beaconAddress = "0x5E57A6fb1B207326896110e7fD2278fCd0a9F245"
+    var gsveAddress = "0x4f2ae2D6Ca27B7d86859502178f82e75c6b08E55"
 
     it('deploy', async () => {
         factory = await factoryDetails.new(gsveAddress, beaconAddress)
@@ -36,7 +36,7 @@ contract('GSVE Gnosis Safe Factory', function(accounts) {
 
         var receipt = await factory.createProxyWithNonce("0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F", creationdata, accounts[0])
         console.log(`GasUsed: ${receipt.receipt.gasUsed}`);
-        assert.equal(false, true)
+        //assert.equal(false, true)
         //var deployedAddress = await beacon.methods.getDeployedAddress(accounts[0])
         //var deployed = false;
         //if (deployedAddress !== "0x0000000000000000000000000000000000000000"){
