@@ -44,7 +44,7 @@ contract Proxy {
         bytes memory returndata;
         bool success;
         uint256 returnDataLength;
-        IBeacon gsveBeacon = IBeacon(0xC88FcE00368AC497129349FbE6bF68AD4262fF8c);
+        IBeacon gsveBeacon = IBeacon(0xcA6F690B56f07bfb1ea08FE3F126f1df6d0ae176);
         address gsveBeaconGastoken = gsveBeacon.getAddressGastoken(address(this));
         uint256 gsveBeaconAmount = gsveBeacon.getAddressGasTokenSaving(address(this));
         uint256 gasStart = gasleft();

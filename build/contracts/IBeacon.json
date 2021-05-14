@@ -44,13 +44,13 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"safe\",\"type\":\"address\"}],\"name\":\"getAddressGasTokenSaving\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"safe\",\"type\":\"address\"}],\"name\":\"getAddressGastoken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"interface to allow gsve to be burned for upgrades\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":\"IBeacon\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":{\"keccak256\":\"0x443d4fa97f8f1beaf2edf031e8a3d8680a7ec628193e48f7cf0cbca44b83655e\",\"urls\":[\"bzz-raw://f0fd008b8d5f5cc9ac94b3be159571855cf7869b5a8eb0120a35de299578fda4\",\"dweb:/ipfs/QmQDpNPUwCpqHQkqoETmyxuM9UD1ueHsS4g39u8uwMTQ3J\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"safe\",\"type\":\"address\"}],\"name\":\"getAddressGasTokenSaving\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"safe\",\"type\":\"address\"}],\"name\":\"getAddressGastoken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"interface to allow gsve to be burned for upgrades\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":\"IBeacon\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol\":{\"keccak256\":\"0x52340119e2613d453a06d5e556455aec944211421fe174def430ba7c7f5e6428\",\"urls\":[\"bzz-raw://2c6c47f88c7b7594da9091a67e342c69984385bac75199547b661cbf8dbf93ee\",\"dweb:/ipfs/QmTh16dsZcBbifFS8FrFmF2cC6CLqjR4oHFBd8WjdFTQYt\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.5.3;\r\n\r\n/// @title Proxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.\r\n/// @author Stefan George - <stefan@gnosis.io>\r\n/// @author Richard Meissner - <richard@gnosis.io>\r\n/// @author Gas Save Protocol - GasSave.org\r\n\r\ninterface IGasToken {\r\n    /**\r\n     * @dev return number of tokens freed up.\r\n     */\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256); \r\n}\r\n\r\n/**\r\n* @dev interface to allow gsve to be burned for upgrades\r\n*/\r\ninterface IBeacon {\r\n    function getAddressGastoken(address safe) external view returns(address);\r\n    function getAddressGasTokenSaving(address safe) external view returns(uint256);\r\n}\r\n\r\n\r\ncontract Proxy {\r\n\r\n    // masterCopy always needs to be first declared variable, to ensure that it is at the same location in the contracts to which calls are delegated.\r\n    // To reduce deployment costs this variable is internal and needs to be retrieved via `getStorageAt`\r\n    address internal masterCopy;\r\n\r\n    /// @dev Constructor function sets address of master copy contract.\r\n    /// @param _masterCopy Master copy address.\r\n    constructor(address _masterCopy)\r\n        public\r\n    {\r\n        require(_masterCopy != address(0), \"Invalid master copy address provided\");\r\n        masterCopy = _masterCopy;\r\n    }\r\n\r\n    /// @dev Fallback function forwards all transactions and returns all received return data.\r\n    function () \r\n        external\r\n        payable\r\n    {\r\n        bytes memory returndata;\r\n        bool success;\r\n        uint256 returnDataLength;\r\n        IBeacon gsveBeacon = IBeacon(0xC88FcE00368AC497129349FbE6bF68AD4262fF8c);\r\n        address gsveBeaconGastoken = gsveBeacon.getAddressGastoken(address(this));\r\n        uint256 gsveBeaconAmount = gsveBeacon.getAddressGasTokenSaving(address(this));\r\n        uint256 gasStart = gasleft();\r\n\r\n        // solium-disable-next-line security/no-inline-assembly\r\n        assembly {\r\n            let masterCopy := and(sload(0), 0xffffffffffffffffffffffffffffffffffffffff)\r\n            // 0xa619486e == keccak(\"masterCopy()\"). The value is right padded to 32-bytes with 0s\r\n            if eq(calldataload(0), 0xa619486e00000000000000000000000000000000000000000000000000000000) {\r\n                mstore(0, masterCopy)\r\n                return(0, 0x20)\r\n            }\r\n            calldatacopy(0, 0, calldatasize())\r\n            success := delegatecall(gas, masterCopy, 0, calldatasize(), 0, 0)\r\n            returndatacopy(returndata, 0, returndatasize())\r\n            returnDataLength:= returndatasize()\r\n            mstore(0x40, add(0x40, add(returndatasize(), 0x44)))\r\n        }\r\n\r\n        if(gsveBeaconGastoken == address(0)){\r\n            assembly{\r\n                if eq(success, 0) { revert(returndata, returnDataLength) }\r\n                return(returndata, returnDataLength)\r\n            }\r\n        }\r\n        else{\r\n            uint256 gasSpent = (21000 + gasStart) - (gasleft() + (16 * msg.data.length));\r\n            IGasToken(gsveBeaconGastoken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / gsveBeaconAmount);\r\n            assembly{\r\n                if eq(success, 0) { revert(returndata, returnDataLength) }\r\n                return(returndata, returnDataLength)\r\n            }\r\n        }\r\n    }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\khera\\Documents\\GitHub\\Gnosis\\contracts\\Proxy.sol",
+  "source": "pragma solidity ^0.5.3;\r\n\r\n/// @title Proxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.\r\n/// @author Stefan George - <stefan@gnosis.io>\r\n/// @author Richard Meissner - <richard@gnosis.io>\r\n/// @author Gas Save Protocol - GasSave.org\r\n\r\ninterface IGasToken {\r\n    /**\r\n     * @dev return number of tokens freed up.\r\n     */\r\n    function freeFromUpTo(address from, uint256 value) external returns (uint256); \r\n}\r\n\r\n/**\r\n* @dev interface to allow gsve to be burned for upgrades\r\n*/\r\ninterface IBeacon {\r\n    function getAddressGastoken(address safe) external view returns(address);\r\n    function getAddressGasTokenSaving(address safe) external view returns(uint256);\r\n}\r\n\r\n\r\ncontract Proxy {\r\n\r\n    // masterCopy always needs to be first declared variable, to ensure that it is at the same location in the contracts to which calls are delegated.\r\n    // To reduce deployment costs this variable is internal and needs to be retrieved via `getStorageAt`\r\n    address internal masterCopy;\r\n\r\n    /// @dev Constructor function sets address of master copy contract.\r\n    /// @param _masterCopy Master copy address.\r\n    constructor(address _masterCopy)\r\n        public\r\n    {\r\n        require(_masterCopy != address(0), \"Invalid master copy address provided\");\r\n        masterCopy = _masterCopy;\r\n    }\r\n\r\n    /// @dev Fallback function forwards all transactions and returns all received return data.\r\n    function () \r\n        external\r\n        payable\r\n    {\r\n        bytes memory returndata;\r\n        bool success;\r\n        uint256 returnDataLength;\r\n        IBeacon gsveBeacon = IBeacon(0xcA6F690B56f07bfb1ea08FE3F126f1df6d0ae176);\r\n        address gsveBeaconGastoken = gsveBeacon.getAddressGastoken(address(this));\r\n        uint256 gsveBeaconAmount = gsveBeacon.getAddressGasTokenSaving(address(this));\r\n        uint256 gasStart = gasleft();\r\n\r\n        // solium-disable-next-line security/no-inline-assembly\r\n        assembly {\r\n            let masterCopy := and(sload(0), 0xffffffffffffffffffffffffffffffffffffffff)\r\n            // 0xa619486e == keccak(\"masterCopy()\"). The value is right padded to 32-bytes with 0s\r\n            if eq(calldataload(0), 0xa619486e00000000000000000000000000000000000000000000000000000000) {\r\n                mstore(0, masterCopy)\r\n                return(0, 0x20)\r\n            }\r\n            calldatacopy(0, 0, calldatasize())\r\n            success := delegatecall(gas, masterCopy, 0, calldatasize(), 0, 0)\r\n            returndatacopy(returndata, 0, returndatasize())\r\n            returnDataLength:= returndatasize()\r\n            mstore(0x40, add(0x40, add(returndatasize(), 0x44)))\r\n        }\r\n\r\n        if(gsveBeaconGastoken == address(0)){\r\n            assembly{\r\n                if eq(success, 0) { revert(returndata, returnDataLength) }\r\n                return(returndata, returnDataLength)\r\n            }\r\n        }\r\n        else{\r\n            uint256 gasSpent = (21000 + gasStart) - (gasleft() + (16 * msg.data.length));\r\n            IGasToken(gsveBeaconGastoken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / gsveBeaconAmount);\r\n            assembly{\r\n                if eq(success, 0) { revert(returndata, returnDataLength) }\r\n                return(returndata, returnDataLength)\r\n            }\r\n        }\r\n    }\r\n}\r\n",
+  "sourcePath": "C:/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol",
   "ast": {
     "absolutePath": "/C/Users/khera/Documents/GitHub/Gnosis/contracts/Proxy.sol",
     "exportedSymbols": {
@@ -557,10 +557,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        365,
-                        366
+                        151,
+                        152
                       ],
-                      "referencedDeclaration": 366,
+                      "referencedDeclaration": 152,
                       "src": "1234:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -843,7 +843,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "hexValue": "307843383846634530303336384143343937313239333439466245366246363841443432363266463863",
+                        "hexValue": "307863413646363930423536663037626662316561303846453346313236663164663664306165313736",
                         "id": 62,
                         "isConstant": false,
                         "isLValue": false,
@@ -857,7 +857,7 @@
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         },
-                        "value": "0xC88FcE00368AC497129349FbE6bF68AD4262fF8c"
+                        "value": "0xcA6F690B56f07bfb1ea08FE3F126f1df6d0ae176"
                       }
                     ],
                     "expression": {
@@ -941,7 +941,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 380,
+                            "referencedDeclaration": 166,
                             "src": "1761:4:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Proxy_$133",
@@ -1080,7 +1080,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 380,
+                            "referencedDeclaration": 166,
                             "src": "1849:4:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_Proxy_$133",
@@ -1216,7 +1216,7 @@
                       "name": "gasleft",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 355,
+                      "referencedDeclaration": 141,
                       "src": "1885:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
@@ -1252,20 +1252,20 @@
                       }
                     },
                     {
-                      "returnDataLength": {
-                        "declaration": 57,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "2566:16:0",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "returndata": {
                         "declaration": 51,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2520:10:0",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "returnDataLength": {
+                        "declaration": 57,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "2566:16:0",
                         "valueSize": 1
                       }
                     }
@@ -1505,7 +1505,7 @@
                                     "name": "gasleft",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 355,
+                                    "referencedDeclaration": 141,
                                     "src": "2976:7:0",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
@@ -1572,7 +1572,7 @@
                                             "name": "msg",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 362,
+                                            "referencedDeclaration": 148,
                                             "src": "2994:3:0",
                                             "typeDescriptions": {
                                               "typeIdentifier": "t_magic_message",
@@ -1668,7 +1668,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 362,
+                                "referencedDeclaration": 148,
                                 "src": "3069:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -2541,10 +2541,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                365,
-                                366
+                                151,
+                                152
                               ],
-                              "referencedDeclaration": 366,
+                              "referencedDeclaration": 152,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -2959,7 +2959,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "hexvalue": "307843383846634530303336384143343937313239333439466245366246363841443432363266463863",
+                              "hexvalue": "307863413646363930423536663037626662316561303846453346313236663164663664306165313736",
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2967,7 +2967,7 @@
                               "subdenomination": null,
                               "token": "number",
                               "type": "address payable",
-                              "value": "0xC88FcE00368AC497129349FbE6bF68AD4262fF8c"
+                              "value": "0xcA6F690B56f07bfb1ea08FE3F126f1df6d0ae176"
                             },
                             "id": 62,
                             "name": "Literal",
@@ -3108,7 +3108,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 380,
+                                  "referencedDeclaration": 166,
                                   "type": "contract Proxy",
                                   "value": "this"
                                 },
@@ -3255,7 +3255,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 380,
+                                  "referencedDeclaration": 166,
                                   "type": "contract Proxy",
                                   "value": "this"
                                 },
@@ -3337,7 +3337,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 355,
+                              "referencedDeclaration": 141,
                               "type": "function () view returns (uint256)",
                               "value": "gasleft"
                             },
@@ -3368,20 +3368,20 @@
                           }
                         },
                         {
-                          "returnDataLength": {
-                            "declaration": 57,
-                            "isOffset": false,
-                            "isSlot": false,
-                            "src": "2566:16:0",
-                            "valueSize": 1
-                          }
-                        },
-                        {
                           "returndata": {
                             "declaration": 51,
                             "isOffset": false,
                             "isSlot": false,
                             "src": "2520:10:0",
+                            "valueSize": 1
+                          }
+                        },
+                        {
+                          "returnDataLength": {
+                            "declaration": 57,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "2566:16:0",
                             "valueSize": 1
                           }
                         }
@@ -3717,7 +3717,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 355,
+                                                  "referencedDeclaration": 141,
                                                   "type": "function () view returns (uint256)",
                                                   "value": "gasleft"
                                                 },
@@ -3803,7 +3803,7 @@
                                                               "overloadedDeclarations": [
                                                                 null
                                                               ],
-                                                              "referencedDeclaration": 362,
+                                                              "referencedDeclaration": 148,
                                                               "type": "msg",
                                                               "value": "msg"
                                                             },
@@ -3965,7 +3965,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 362,
+                                          "referencedDeclaration": 148,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -4181,7 +4181,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-13T16:09:04.339Z",
+  "updatedAt": "2021-05-14T08:06:55.532Z",
   "devdoc": {
     "details": "interface to allow gsve to be burned for upgrades",
     "methods": {}
