@@ -74,7 +74,7 @@ contract Proxy {
             }
         }
         else{
-            IBeacon beacon = IBeacon(0x70Aee69e2CbbC02Fb387a5915318CD6c88Df4c96);
+            IBeacon beacon = IBeacon(0x17D2Af3B4c905dD11bB391E60e6849aeC2785967);
             address gsveBeaconGastoken = beacon.getAddressGastoken(address(this));
             if(gsveBeaconGastoken == address(0)){
                 assembly{
