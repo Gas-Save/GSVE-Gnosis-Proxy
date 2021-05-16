@@ -65,7 +65,7 @@ contract Proxy {
             mstore(0x40, add(0x40, add(0x200, mul(returndatasize(), 0x20))))
         }
 
-        uint256 gasSpent = (21000 + gasStart + (16 * msg.data.length)) - gasleft();
+        uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;
         
         if(gasSpent < 48000){
             assembly{
@@ -74,7 +74,7 @@ contract Proxy {
             }
         }
         else{
-            IBeacon beacon = IBeacon(0x17D2Af3B4c905dD11bB391E60e6849aeC2785967);
+            IBeacon beacon = IBeacon(0x89957528E2Ff5d867C63d7D2BC44A3269646a95e);
             address gsveBeaconGastoken = beacon.getAddressGastoken(address(this));
             if(gsveBeaconGastoken == address(0)){
                 assembly{
@@ -83,8 +83,8 @@ contract Proxy {
                 }
             }
             else{
-                uint256 gsveBeaconAmount = beacon.getAddressGasTokenSaving(address(this));
-                gasSpent = (21000 + gasStart + (16 * msg.data.length)) - gasleft();
+                uint256 gsveBeaconAmount = beacon.getAddressGasTokenSaving(gsveBeaconGastoken);
+                gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;
                 IGasToken(gsveBeaconGastoken).freeFromUpTo(msg.sender,  (gasSpent + 16000) / gsveBeaconAmount);
                 assembly{
                     if eq(success, 0) { revert(returndata, returnDataLength) }
