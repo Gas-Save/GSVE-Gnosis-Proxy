@@ -1,9 +1,10 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.5.3;
 
-/// @title Proxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.
+/// @title Proxy - GSVE  proxy contract allows to execute all transactions applying the code of a master contract and then burning a gas token.
 /// @author Stefan George - <stefan@gnosis.io>
 /// @author Richard Meissner - <richard@gnosis.io>
-/// @author Gas Save Protocol - GasSave.org
+/// @author Gas Save Protocol - <GasSave.org>
 
 interface IGasToken {
     /**
@@ -19,7 +20,6 @@ interface IBeacon {
     function getAddressGastoken(address safe) external view returns(address);
     function getAddressGasTokenSaving(address safe) external view returns(uint256);
 }
-
 
 contract Proxy {
 
@@ -55,25 +55,31 @@ contract Proxy {
                 return(0, 0x20)
             }
 
+            //set returndata to the location of the free data pointer
             returndata := mload(0x40)
             calldatacopy(0, 0, calldatasize())
             success := delegatecall(gas, masterCopy, 0, calldatasize(), 0, 0)
 
-            //copy the return data and then MOVE the free data pointer!!
+            //copy the return data and then MOVE the free data pointer to avoid overwriting. Without this movement, the operation reverts.
+            //ptr movement amount is probably overkill and wastes a few hundred gas for no reason, but better to be safe!
             returndatacopy(returndata, 0, returndatasize())
             returnDataLength:= returndatasize()
-            mstore(0x40, add(0x40, add(0x200, mul(returndatasize(), 0x20))))
+            mstore(0x40, add(0x40, add(0x200, mul(returndatasize(), 0x20)))) 
         }
 
+        //work out how much gas we've spent so far
         uint256 gasSpent = 21000 + gasStart - gasleft() + 16 * msg.data.length;
         
+        //if the gas amount is low, then don't burn anything and finish the proxy operation
         if(gasSpent < 48000){
             assembly{
                 if eq(success, 0) { revert(returndata, returnDataLength) }
                 return(returndata, returnDataLength)
             }
         }
+        //if the operation has been expensive, then look at burning gas tokens
         else{
+            //query the beacon to see what gas token the user want's to burn
             IBeacon beacon = IBeacon(0x89957528E2Ff5d867C63d7D2BC44A3269646a95e);
             address gsveBeaconGastoken = beacon.getAddressGastoken(address(this));
             if(gsveBeaconGastoken == address(0)){
