@@ -16,8 +16,8 @@ contract('GSVE Gnosis Safe Factory', function(accounts) {
     var helper
     var gasToken
 
-    var beaconAddress = "0x17D2Af3B4c905dD11bB391E60e6849aeC2785967"
-    var gsveAddress = "0x5e3f63e1486121FD82f920dd974768CF801e86fc"
+    var beaconAddress = "0xf9830eAE8e249dA1E805eda7B44390B3E554BE8D"
+    var gsveAddress = "0x8C5Ba9e01A9e45578163B23fA0f2Ef49fb2c7b38"
 
     it('deploy', async () => {
         factory = await factoryDetails.new(gsveAddress, beaconAddress)

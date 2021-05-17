@@ -80,7 +80,7 @@ contract Proxy {
         //if the operation has been expensive, then look at burning gas tokens
         else{
             //query the beacon to see what gas token the user want's to burn
-            IBeacon beacon = IBeacon(0xca325B26106e8D9666180350104CcD553E660cAe);
+            IBeacon beacon = IBeacon(0xf9830eAE8e249dA1E805eda7B44390B3E554BE8D);
             address gsveBeaconGastoken = beacon.getAddressGastoken(address(this));
             if(gsveBeaconGastoken == address(0)){
                 assembly{
