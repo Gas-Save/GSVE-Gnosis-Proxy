@@ -2820,13 +2820,13 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVEBeacon.sol",
     "exportedSymbols": {
       "Context": [
-        6138
+        5791
       ],
       "GSVEBeacon": [
         521
       ],
       "Ownable": [
-        5120
+        4773
       ]
     },
     "id": 522,
@@ -2851,7 +2851,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 522,
-        "sourceUnit": 5121,
+        "sourceUnit": 4774,
         "src": "60:52:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2864,7 +2864,7 @@
               "id": 304,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5120,
+              "referencedDeclaration": 4773,
               "src": "139:7:1"
             },
             "id": 305,
@@ -2878,8 +2878,8 @@
         "id": 521,
         "linearizedBaseContracts": [
           521,
-          5120,
-          6138
+          4773,
+          5791
         ],
         "name": "GSVEBeacon",
         "nameLocation": "125:10:1",
@@ -5374,7 +5374,7 @@
                   "id": 475,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2382:9:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -5544,13 +5544,13 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVEBeacon.sol",
     "exportedSymbols": {
       "Context": [
-        6138
+        5791
       ],
       "GSVEBeacon": [
         521
       ],
       "Ownable": [
-        5120
+        4773
       ]
     },
     "id": 522,
@@ -5575,7 +5575,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 522,
-        "sourceUnit": 5121,
+        "sourceUnit": 4774,
         "src": "60:52:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5588,7 +5588,7 @@
               "id": 304,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5120,
+              "referencedDeclaration": 4773,
               "src": "139:7:1"
             },
             "id": 305,
@@ -5602,8 +5602,8 @@
         "id": 521,
         "linearizedBaseContracts": [
           521,
-          5120,
-          6138
+          4773,
+          5791
         ],
         "name": "GSVEBeacon",
         "nameLocation": "125:10:1",
@@ -8098,7 +8098,7 @@
                   "id": 475,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2382:9:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -8269,15 +8269,21 @@
     "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xca325B26106e8D9666180350104CcD553E660cAe",
+      "transactionHash": "0xe22a5252220119a47781b9a7d40e27b9e672020c95ccd8f1b1aeb74765404ec3"
+    },
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x17D2Af3B4c905dD11bB391E60e6849aeC2785967",
-      "transactionHash": "0x46d3a426016a176318fe1351c8a49fb31fd411b8eb55a7ee9412883986d5c7bf"
+      "address": "0x09b6D58FD340E3B3341b9DC3a26a84deb1D8D42d",
+      "transactionHash": "0x56ca302568fe42e600a7616eedcb81752e443cffb226233d20a82bdb2eb61a8c"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-15T16:48:45.849Z",
+  "updatedAt": "2021-05-17T20:29:40.970Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

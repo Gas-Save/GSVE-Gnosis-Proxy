@@ -25,7 +25,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface for interacting with the gas vault\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol\":\"IGSVEVault\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol\":{\"keccak256\":\"0xff9f8e862969b2dea159d66ccc3e4e87b051e7e719ee5b0a16594b13e47bff0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3f515df56a19e46ceff7c5c2a8f756d416791f9534d0847715af4f80096bf2ad\",\"dweb:/ipfs/QmPemscPAdeaXfwAQdfJ8wUvRB7VUSRztsHotjoZEZeGqu\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"@openzeppelin/contracts/security/ReentrancyGuard.sol\":{\"keccak256\":\"0x1278c76b840063ff5e14a2d7c5707812c1eabc2342ed040bf862c2d7552102fe\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b9989233808b8f475395f71ea757e277fa167cdac8a24d10f9784783defd313c\",\"dweb:/ipfs/Qmdg6rbPsShpnzvqKmPVuFk7eYU53oXTPxqUJXd9WLD4vg\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xf8e8d118a7a8b2e134181f7da655f6266aa3a0f9134b2605747139fcb0c5d835\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9ec48567e7ad06acb670980d5cdf3fd7f3949bf12894f02d68c3bb43e75aa84f\",\"dweb:/ipfs/QmaG3R2J9cz92YT77vFjYrjMNU2wHp4ypwYD62HqDUqS5U\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]},\"@openzeppelin/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xa1477864def7febd9826918e50482a1ee7068b337b03804a7e0e98c674ac57c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5bdd8ea2ace1bf716007318f8aca21d32384f0b8b295adac55147270767441fa\",\"dweb:/ipfs/QmSv235N45Ub3wFXdTLNiS3k4b7FAudtEL8s6g1PwcsCcS\"]},\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0x2526b7c6a366fc211bbc176078ab02b83833e7682abcc5b3bed9d700b34e2a3e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5f9529d3d365e8415155cee11394e0f7c0de2152b601b7e77508fce16cb4a509\",\"dweb:/ipfs/QmVhbcLVsAzvqfjsdLwy25XMjgVJm7Z3w2JCNiNbZF2GHT\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface for interacting with the gas vault\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol\":\"IGSVEVault\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol\":{\"keccak256\":\"0x2fd39ccc2acff6587c4b1d60ca24ef8f63edb641a33925e3d03be486d1715a17\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://947fd8265537199a1b2423453f2f871291ad9fc8eddd62b19a7c9161a28da596\",\"dweb:/ipfs/QmSYnasXfP74PRWxM41NXWYbVs31a99XDKK8TTcxy1axyo\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"@openzeppelin/contracts/security/ReentrancyGuard.sol\":{\"keccak256\":\"0x1278c76b840063ff5e14a2d7c5707812c1eabc2342ed040bf862c2d7552102fe\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b9989233808b8f475395f71ea757e277fa167cdac8a24d10f9784783defd313c\",\"dweb:/ipfs/Qmdg6rbPsShpnzvqKmPVuFk7eYU53oXTPxqUJXd9WLD4vg\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xf8e8d118a7a8b2e134181f7da655f6266aa3a0f9134b2605747139fcb0c5d835\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9ec48567e7ad06acb670980d5cdf3fd7f3949bf12894f02d68c3bb43e75aa84f\",\"dweb:/ipfs/QmaG3R2J9cz92YT77vFjYrjMNU2wHp4ypwYD62HqDUqS5U\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]},\"@openzeppelin/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xa1477864def7febd9826918e50482a1ee7068b337b03804a7e0e98c674ac57c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5bdd8ea2ace1bf716007318f8aca21d32384f0b8b295adac55147270767441fa\",\"dweb:/ipfs/QmSv235N45Ub3wFXdTLNiS3k4b7FAudtEL8s6g1PwcsCcS\"]},\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0x2526b7c6a366fc211bbc176078ab02b83833e7682abcc5b3bed9d700b34e2a3e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5f9529d3d365e8415155cee11394e0f7c0de2152b601b7e77508fce16cb4a509\",\"dweb:/ipfs/QmVhbcLVsAzvqfjsdLwy25XMjgVJm7Z3w2JCNiNbZF2GHT\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -33,19 +33,19 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/utils/math/Math.sol\";\r\nimport \"@openzeppelin/contracts/utils/math/SafeMath.sol\";\r\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\r\nimport \"@openzeppelin/contracts/security/ReentrancyGuard.sol\";\r\n\r\n/**\r\n * @dev Interface of the wrapped Gas Token Type\r\n */\r\ninterface IGasTokenMint {\r\n    function mint(uint256 value) external; \r\n    function discountedMint(uint256 value, uint256 discountedFee, address recipient) external; \r\n}\r\n\r\n\r\n/**\r\n* @dev Interface for interacting with protocol token\r\n*/\r\ninterface IGSVEProtocolToken {\r\n    function burn(uint256 amount) external ;\r\n    function burnFrom(address account, uint256 amount) external;\r\n}\r\n\r\n/**\r\n* @dev Interface for interacting with the gas vault\r\n*/\r\ninterface IGSVEVault {\r\n    function transferToken(address token, address recipient, uint256 amount) external;\r\n}\r\n\r\ncontract GSVECore is Ownable, ReentrancyGuard{\r\n    using SafeMath for uint256;\r\n    \r\n    //address of our protocol utility token\r\n    address private GSVEToken;\r\n    address private GSVEVault;\r\n\r\n    //system is in place to prevent reentrancy from untrusted tokens\r\n    mapping(address => uint256) private _mintingType;\r\n    mapping(address => bool) private _claimable;\r\n\r\n    uint256 private _totalStaked;\r\n\r\n    //staking  \r\n    mapping(address => uint256) private userStakes;\r\n    mapping(address => uint256) private userStakeTimes;\r\n    mapping(address => uint256) private userTotalRewards;\r\n    mapping(address => uint256) private userClaimTimes;\r\n\r\n    //protocol values\r\n    mapping(uint256=>uint256) private tierThreshholds;\r\n    uint256 rewardEnableTime;\r\n\r\n    bool rewardsEnabled = false;\r\n    uint256 burnToSaveFee = 25*10**16;\r\n    uint256 burnToClaimGasTokens = 1*10**17;\r\n    uint256 mintingReward = 5*10**17;\r\n\r\n\r\n    /**\r\n     * @dev A function that enables protocol rewards\r\n     */\r\n    function enableRewards() public onlyOwner {\r\n        require(rewardsEnabled == false, \"GSVE: Rewards already enabled\");\r\n        rewardsEnabled = true;\r\n        rewardEnableTime = block.timestamp;\r\n        emit protocolUpdated(0x656e61626c655570646174650000000000000000000000000000000000000000, 1);\r\n    }\r\n\r\n    /**\r\n    * @dev A function that disables rewards\r\n    */\r\n    function disableRewards() public onlyOwner {\r\n        require(rewardsEnabled, \"GSVE: Rewards not already enabled\");\r\n        rewardsEnabled = false;\r\n        rewardEnableTime = 0;\r\n        emit protocolUpdated(0x656e61626c655570646174650000000000000000000000000000000000000000, 0);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the tier threshold\r\n     */\r\n    function updateTier(uint256 tier, uint256 value) public onlyOwner {\r\n        require(value > 10**18, \"GSVE: Tier value seems to be low.\");\r\n        tierThreshholds[tier] = value;\r\n        emit TierUpdate(tier, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the burn gsve:save fee ratio\r\n     */\r\n    function updateBurnSaveFee(uint256 value) public onlyOwner{\r\n        require(value > 10**17, \"GSVE: Value seems to be low.\");\r\n        burnToSaveFee = value;\r\n        emit protocolUpdated(0x6275726e00000000000000000000000000000000000000000000000000000000, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the burn gsve:claim gastoken ratio\r\n     */\r\n    function updateBurnClaimFee(uint256 value) public onlyOwner{\r\n        require(value > 10**17, \"GSVE: Value seems to be low.\");\r\n        burnToClaimGasTokens= value;\r\n        emit protocolUpdated(0x636c61696d000000000000000000000000000000000000000000000000000000, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the burn gsve:claim gastoken ratio\r\n     */\r\n    function updateMintingReward(uint256 value) public onlyOwner{\r\n        require(value > 10**17, \"GSVE: Value seems to be low.\");\r\n        mintingReward = value;\r\n        emit protocolUpdated(0x6d696e74696e6700000000000000000000000000000000000000000000000000, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to reassign ownership of the contracts that this contract owns. \r\n     /* Enabling future smartcontract upgrades without the complexity of proxy/proxy upgrades.\r\n     */\r\n    function transferOwnershipOfSubcontract(address ownedContract, address newOwner) public onlyOwner{\r\n        Ownable(ownedContract).transferOwnership(newOwner);\r\n    }\r\n\r\n    /**\r\n     * @dev the constructor allows us to set the gsve token\r\n     * as the token we are using for staking and other protocol features\r\n     * also lets us set the vault address.\r\n     */\r\n    constructor(address _tokenAddress, address _vaultAddress, address wchi, address wgst2, address wgst1) {\r\n        GSVEToken = _tokenAddress;\r\n        GSVEVault = _vaultAddress;\r\n        tierThreshholds[1] = 250*(10**18);\r\n        tierThreshholds[2] = 1000*(10**18);\r\n        _claimable[_tokenAddress] = false;\r\n\r\n        _claimable[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = true;\r\n        _mintingType[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 1;\r\n\r\n        _claimable[0x0000000000b3F879cb30FE243b4Dfee438691c04] = true;\r\n        _mintingType[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 1;\r\n\r\n        _claimable[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = true;\r\n        _mintingType[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 1;\r\n        \r\n\r\n        _claimable[wchi] = true;\r\n        _mintingType[wchi] = 1;\r\n\r\n        _claimable[wgst2] = true;\r\n        _mintingType[wgst2] = 1;\r\n\r\n        _claimable[wgst1] = true;\r\n        _mintingType[wgst1] = 1;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to stake tokens. \r\n     * If they have a rewards from a stake already, they must claim this first.\r\n     */\r\n    function stake(uint256 value) public nonReentrant() {\r\n\r\n        if (value == 0){\r\n            return;\r\n        }\r\n        require(IERC20(GSVEToken).transferFrom(msg.sender, address(this), value));\r\n        userStakes[msg.sender] = userStakes[msg.sender].add(value);\r\n        userStakeTimes[msg.sender] = block.timestamp;\r\n        userClaimTimes[msg.sender] = block.timestamp;\r\n        _totalStaked = _totalStaked.add(value);\r\n        emit Staked(msg.sender, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to fully unstake.\r\n     */\r\n    function unstake() public nonReentrant() {\r\n        uint256 stakeSize = userStakes[msg.sender];\r\n        if (stakeSize == 0){\r\n            return;\r\n        }\r\n        userStakes[msg.sender] = 0;\r\n        userStakeTimes[msg.sender] = 0;\r\n        userClaimTimes[msg.sender] = 0;\r\n        _totalStaked = _totalStaked.sub(stakeSize);\r\n        require(IERC20(GSVEToken).transfer(msg.sender, stakeSize));\r\n        emit Unstaked(msg.sender, stakeSize);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to calculate the total rewards a user has not claimed yet.\r\n     */\r\n    function calculateStakeReward(address rewardedAddress) public view returns(uint256){\r\n        if(userStakeTimes[rewardedAddress] == 0){\r\n            return 0;\r\n        }\r\n\r\n        if(rewardsEnabled == false){\r\n            return 0;\r\n        }\r\n\r\n        uint256 initialTime = Math.max(userStakeTimes[rewardedAddress], rewardEnableTime);\r\n        uint256 timeDifference = block.timestamp.sub(initialTime);\r\n        uint256 rewardPeriod = timeDifference.div((60*60*6));\r\n        uint256 rewardPerPeriod = userStakes[rewardedAddress].div(4000);\r\n        uint256 reward = rewardPeriod.mul(rewardPerPeriod);\r\n\r\n        return reward;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to collect the stake reward entitled to them\r\n     * in the situation where the rewards pool does not have enough tokens\r\n     * then the user is given as much as they can be given.\r\n     */\r\n    function collectReward() public nonReentrant() {\r\n        uint256 remainingRewards = totalRewards();\r\n        require(remainingRewards > 0, \"GSVE: contract has ran out of rewards to give\");\r\n        require(rewardsEnabled, \"GSVE: Rewards are not enabled\");\r\n\r\n        uint256 reward = calculateStakeReward(msg.sender);\r\n        if(reward == 0){\r\n            return;\r\n        }\r\n\r\n        reward = Math.min(remainingRewards, reward);\r\n        userStakeTimes[msg.sender] = block.timestamp;\r\n        userTotalRewards[msg.sender] = userTotalRewards[msg.sender] + reward;\r\n        IGSVEVault(GSVEVault).transferToken(GSVEToken, msg.sender, reward);\r\n        emit Reward(msg.sender, reward);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to burn some GSVE to avoid paying the protocol mint/wrap fee.\r\n     */\r\n    function burnDiscountedMinting(address gasTokenAddress, uint256 value) public nonReentrant() {\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType != 0, \"GSVE: Unsupported Token\");\r\n        IGSVEProtocolToken(GSVEToken).burnFrom(msg.sender, burnToSaveFee);\r\n\r\n        if(mintType == 1){\r\n            convenientMinting(gasTokenAddress, value, 0);\r\n        }\r\n        else if (mintType == 2){\r\n            IGasTokenMint(gasTokenAddress).discountedMint(value, 0, msg.sender);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to benefit from a lower protocol fee, based on the stake that they have.\r\n     */\r\n    function discountedMinting(address gasTokenAddress, uint256 value) public nonReentrant(){\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType != 0, \"GSVE: Unsupported Token\");\r\n        require(userStakes[msg.sender] >= tierThreshholds[1] , \"GSVE: User has not staked enough to discount\");\r\n\r\n        if(mintType == 1){\r\n            convenientMinting(gasTokenAddress, value, 1);\r\n        }\r\n        else if (mintType == 2){\r\n            IGasTokenMint(gasTokenAddress).discountedMint(value, 1, msg.sender);\r\n        }\r\n    }\r\n    \r\n    /**\r\n     * @dev A function that allows a user to be rewarded tokens by minting or wrapping\r\n     * they pay full fees for this operation.\r\n     */\r\n    function rewardedMinting(address gasTokenAddress, uint256 value) public nonReentrant(){\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType != 0, \"GSVE: Unsupported Token\");\r\n        require(totalRewards() > 0, \"GSVE: contract has ran out of rewards to give\");\r\n        require(rewardsEnabled, \"GSVE: Rewards are not enabled\");\r\n        if(mintType == 1){\r\n            convenientMinting(gasTokenAddress, value, 2);\r\n        }\r\n        else if (mintType == 2){\r\n            IGasTokenMint(gasTokenAddress).discountedMint(value, 2, msg.sender);\r\n        }\r\n\r\n        IGSVEVault(GSVEVault).transferToken(GSVEToken, msg.sender, mintingReward);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to mint non-wrapped tokens from the convenience of this smart contract.\r\n     * taking a portion of portion of the minted tokens as payment for this convenience.\r\n     */\r\n    function convenientMinting(address gasTokenAddress, uint256 value, uint256 fee) internal {\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType == 1, \"GSVE: Unsupported Token\");\r\n\r\n        uint256 userTokens = value.sub(fee);\r\n        require(userTokens > 0, \"GSVE: User attempted to mint too little\");\r\n        IGasTokenMint(gasTokenAddress).mint(value);\r\n        IERC20(gasTokenAddress).transfer(msg.sender, userTokens);\r\n        if(fee > 0){\r\n            IERC20(gasTokenAddress).transfer(GSVEVault, fee);\r\n        }\r\n    }\r\n\r\n    \r\n    /**\r\n     * @dev public entry to the convenient minting function\r\n     */\r\n    function mintGasToken(address gasTokenAddress, uint256 value) public {\r\n        convenientMinting(gasTokenAddress, value, 2);\r\n    }\r\n\r\n\r\n    /**\r\n     * @dev A function that allows a user to claim tokens from the pool\r\n     * The user burns 1 GSVE for each token they take.\r\n     * They are limited to one claim action every 6 hours, and can claim up to 5 tokens per claim.\r\n     */\r\n    function claimToken(address gasTokenAddress, uint256 value) public nonReentrant() {\r\n\r\n        bool isClaimable = _claimable[gasTokenAddress];\r\n        require(isClaimable, \"GSVE: Token not claimable\");\r\n        require(userStakes[msg.sender] >= tierThreshholds[2] , \"GSVE: User has not staked enough to claim from the pool\");\r\n        require(block.timestamp.sub(userClaimTimes[msg.sender]) > 60 * 60 * 6, \"GSVE: User cannot claim the gas tokens twice in 6 hours\");\r\n\r\n        uint256 tokensGiven = value;\r\n\r\n        uint256 tokensAvailableToClaim = IERC20(gasTokenAddress).balanceOf(GSVEVault);\r\n        tokensGiven = Math.min(Math.min(5, tokensAvailableToClaim), tokensGiven);\r\n\r\n        if(tokensGiven == 0){\r\n            return;\r\n        }\r\n\r\n        IGSVEProtocolToken(GSVEToken).burnFrom(msg.sender, tokensGiven * burnToClaimGasTokens);\r\n        IGSVEVault(GSVEVault).transferToken(gasTokenAddress, msg.sender, tokensGiven);\r\n        userClaimTimes[msg.sender] = block.timestamp;\r\n        emit Claimed(msg.sender, gasTokenAddress, tokensGiven);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to enable gas tokens for use with this contract.\r\n     */\r\n    function addGasToken(address gasToken, uint256 mintType, bool isClaimable) public onlyOwner{\r\n        _mintingType[gasToken] = mintType;\r\n        _claimable[gasToken] = isClaimable;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to easily check claim type of the token.\r\n     */\r\n    function claimable(address gasToken) public view returns (bool){\r\n        return _claimable[gasToken];\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to check the mint type of the token.\r\n     */\r\n    function mintingType(address gasToken) public view returns (uint256){\r\n        return _mintingType[gasToken];\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see the total stake of everyone in the protocol.\r\n     */\r\n    function totalStaked() public view returns (uint256){\r\n        return _totalStaked;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see the stake size of a specific staker.\r\n     */\r\n    function userStakeSize(address user)  public view returns (uint256){\r\n        return userStakes[user]; \r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see how much rewards the vault has available right now.\r\n     */    \r\n     function totalRewards()  public view returns (uint256){\r\n        return IERC20(GSVEToken).balanceOf(GSVEVault); \r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see how much rewards a user has claimed\r\n     */\r\n    function totalRewardUser(address user)  public view returns (uint256){\r\n        return userTotalRewards[user]; \r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get a tier threshold\r\n    */\r\n    function getTierThreshold(uint256 tier)  public view returns (uint256){\r\n        return tierThreshholds[tier];\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the time rewards where enabled\r\n    */\r\n    function getRewardEnableTime()  public view returns (uint256){\r\n        return rewardEnableTime;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the time rewards where enabled\r\n    */\r\n    function getRewardEnabled()  public view returns (bool){\r\n        return rewardsEnabled;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the burnToSaveFee \r\n    */\r\n    function getBurnToSaveFee()  public view returns (uint256){\r\n        return burnToSaveFee;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the burnToClaimGasTokens \r\n    */\r\n    function getBurnToClaimGasTokens()  public view returns (uint256){\r\n        return burnToClaimGasTokens;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the burnToClaimGasTokens \r\n    */\r\n    function getMintingReward()  public view returns (uint256){\r\n        return mintingReward;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the stake times\r\n    */\r\n    function getStakeTimes(address staker)  public view returns (uint256){\r\n        return userStakeTimes[staker];\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the claim times\r\n    */\r\n    function getClaimTimes(address staker)  public view returns (uint256){\r\n        return userClaimTimes[staker];\r\n    }\r\n    \r\n    event Claimed(address indexed _from, address indexed _token, uint256 _value);\r\n\r\n    event Reward(address indexed _from, uint256 _value);\r\n\r\n    event Staked(address indexed _from, uint256 _value);\r\n\r\n    event Unstaked(address indexed _from, uint256 _value);\r\n\r\n    event TierUpdate(uint256 _tier, uint256 _value);\r\n\r\n    event protocolUpdated(bytes32 _type, uint256 _value);\r\n}\r\n",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/utils/math/Math.sol\";\r\nimport \"@openzeppelin/contracts/utils/math/SafeMath.sol\";\r\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\r\nimport \"@openzeppelin/contracts/security/ReentrancyGuard.sol\";\r\n\r\n/**\r\n * @dev Interface of the wrapped Gas Token Type\r\n */\r\ninterface IGasTokenMint {\r\n    function mint(uint256 value) external; \r\n    function discountedMint(uint256 value, uint256 discountedFee, address recipient) external; \r\n}\r\n\r\n\r\n/**\r\n* @dev Interface for interacting with protocol token\r\n*/\r\ninterface IGSVEProtocolToken {\r\n    function burn(uint256 amount) external ;\r\n    function burnFrom(address account, uint256 amount) external;\r\n}\r\n\r\n/**\r\n* @dev Interface for interacting with the gas vault\r\n*/\r\ninterface IGSVEVault {\r\n    function transferToken(address token, address recipient, uint256 amount) external;\r\n}\r\n\r\ncontract GSVECore is Ownable, ReentrancyGuard{\r\n    using SafeMath for uint256;\r\n    \r\n    //address of our protocol utility token\r\n    address private GSVEToken;\r\n    address private GSVEVault;\r\n\r\n    //system is in place to prevent reentrancy from untrusted tokens\r\n    mapping(address => uint256) private _mintingType;\r\n    mapping(address => bool) private _claimable;\r\n\r\n    uint256 private _totalStaked;\r\n\r\n    //staking  \r\n    mapping(address => uint256) private userStakes;\r\n    mapping(address => uint256) private userStakeTimes;\r\n    mapping(address => uint256) private userTotalRewards;\r\n    mapping(address => uint256) private userClaimTimes;\r\n\r\n    //protocol values\r\n    mapping(uint256=>uint256) private tierThreshholds;\r\n    uint256 rewardEnableTime;\r\n\r\n    bool rewardsEnabled = false;\r\n    uint256 burnToSaveFee = 25*10**16;\r\n    uint256 burnToClaimGasTokens = 1*10**17;\r\n    uint256 mintingReward = 5*10**17;\r\n\r\n\r\n    /**\r\n     * @dev A function that enables protocol rewards\r\n     */\r\n    function enableRewards() public onlyOwner {\r\n        require(rewardsEnabled == false, \"GSVE: Rewards already enabled\");\r\n        rewardsEnabled = true;\r\n        rewardEnableTime = block.timestamp;\r\n        emit protocolUpdated(0x656e61626c655570646174650000000000000000000000000000000000000000, 1);\r\n    }\r\n\r\n    /**\r\n    * @dev A function that disables rewards\r\n    */\r\n    function disableRewards() public onlyOwner {\r\n        require(rewardsEnabled, \"GSVE: Rewards not already enabled\");\r\n        rewardsEnabled = false;\r\n        rewardEnableTime = 0;\r\n        emit protocolUpdated(0x656e61626c655570646174650000000000000000000000000000000000000000, 0);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the tier threshold\r\n     */\r\n    function updateTier(uint256 tier, uint256 value) public onlyOwner {\r\n        require(value > 10**18, \"GSVE: Tier value seems to be low.\");\r\n        tierThreshholds[tier] = value;\r\n        emit TierUpdate(tier, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the burn gsve:save fee ratio\r\n     */\r\n    function updateBurnSaveFee(uint256 value) public onlyOwner{\r\n        require(value > 10**17, \"GSVE: Value seems to be low.\");\r\n        burnToSaveFee = value;\r\n        emit protocolUpdated(0x6275726e00000000000000000000000000000000000000000000000000000000, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the burn gsve:claim gastoken ratio\r\n     */\r\n    function updateBurnClaimFee(uint256 value) public onlyOwner{\r\n        require(value > 10**17, \"GSVE: Value seems to be low.\");\r\n        burnToClaimGasTokens= value;\r\n        emit protocolUpdated(0x636c61696d000000000000000000000000000000000000000000000000000000, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to update the burn gsve:claim gastoken ratio\r\n     */\r\n    function updateMintingReward(uint256 value) public onlyOwner{\r\n        require(value > 10**17, \"GSVE: Value seems to be low.\");\r\n        mintingReward = value;\r\n        emit protocolUpdated(0x6d696e74696e6700000000000000000000000000000000000000000000000000, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to reassign ownership of the contracts that this contract owns. \r\n     /* Enabling future smartcontract upgrades without the complexity of proxy/proxy upgrades.\r\n     */\r\n    function transferOwnershipOfSubcontract(address ownedContract, address newOwner) public onlyOwner{\r\n        Ownable(ownedContract).transferOwnership(newOwner);\r\n    }\r\n\r\n    /**\r\n     * @dev the constructor allows us to set the gsve token\r\n     * as the token we are using for staking and other protocol features\r\n     * also lets us set the vault address.\r\n     */\r\n    constructor(address _tokenAddress, address _vaultAddress, address wchi, address wgst2, address wgst1) {\r\n        GSVEToken = _tokenAddress;\r\n        GSVEVault = _vaultAddress;\r\n        tierThreshholds[1] = 250*(10**18);\r\n        tierThreshholds[2] = 1000*(10**18);\r\n        _claimable[_tokenAddress] = false;\r\n\r\n        _claimable[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = true;\r\n        _mintingType[0x0000000000004946c0e9F43F4Dee607b0eF1fA1c] = 1;\r\n\r\n        _claimable[0x0000000000b3F879cb30FE243b4Dfee438691c04] = true;\r\n        _mintingType[0x0000000000b3F879cb30FE243b4Dfee438691c04] = 1;\r\n\r\n        _claimable[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = true;\r\n        _mintingType[0x88d60255F917e3eb94eaE199d827DAd837fac4cB] = 1;\r\n        \r\n\r\n        _claimable[wchi] = true;\r\n        _mintingType[wchi] = 2;\r\n\r\n        _claimable[wgst2] = true;\r\n        _mintingType[wgst2] = 2;\r\n\r\n        _claimable[wgst1] = true;\r\n        _mintingType[wgst1] = 2;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to stake tokens. \r\n     * If they have a rewards from a stake already, they must claim this first.\r\n     */\r\n    function stake(uint256 value) public nonReentrant() {\r\n\r\n        if (value == 0){\r\n            return;\r\n        }\r\n        require(IERC20(GSVEToken).transferFrom(msg.sender, address(this), value));\r\n        userStakes[msg.sender] = userStakes[msg.sender].add(value);\r\n        userStakeTimes[msg.sender] = block.timestamp;\r\n        userClaimTimes[msg.sender] = block.timestamp;\r\n        _totalStaked = _totalStaked.add(value);\r\n        emit Staked(msg.sender, value);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to fully unstake.\r\n     */\r\n    function unstake() public nonReentrant() {\r\n        uint256 stakeSize = userStakes[msg.sender];\r\n        if (stakeSize == 0){\r\n            return;\r\n        }\r\n        userStakes[msg.sender] = 0;\r\n        userStakeTimes[msg.sender] = 0;\r\n        userClaimTimes[msg.sender] = 0;\r\n        _totalStaked = _totalStaked.sub(stakeSize);\r\n        require(IERC20(GSVEToken).transfer(msg.sender, stakeSize));\r\n        emit Unstaked(msg.sender, stakeSize);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to calculate the total rewards a user has not claimed yet.\r\n     */\r\n    function calculateStakeReward(address rewardedAddress) public view returns(uint256){\r\n        if(userStakeTimes[rewardedAddress] == 0){\r\n            return 0;\r\n        }\r\n\r\n        if(rewardsEnabled == false){\r\n            return 0;\r\n        }\r\n\r\n        uint256 initialTime = Math.max(userStakeTimes[rewardedAddress], rewardEnableTime);\r\n        uint256 timeDifference = block.timestamp.sub(initialTime);\r\n        uint256 rewardPeriod = timeDifference.div((60*60*6));\r\n        uint256 rewardPerPeriod = userStakes[rewardedAddress].div(4000);\r\n        uint256 reward = rewardPeriod.mul(rewardPerPeriod);\r\n\r\n        return reward;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to collect the stake reward entitled to them\r\n     * in the situation where the rewards pool does not have enough tokens\r\n     * then the user is given as much as they can be given.\r\n     */\r\n    function collectReward() public nonReentrant() {\r\n        uint256 remainingRewards = totalRewards();\r\n        require(remainingRewards > 0, \"GSVE: contract has ran out of rewards to give\");\r\n        require(rewardsEnabled, \"GSVE: Rewards are not enabled\");\r\n\r\n        uint256 reward = calculateStakeReward(msg.sender);\r\n        if(reward == 0){\r\n            return;\r\n        }\r\n\r\n        reward = Math.min(remainingRewards, reward);\r\n        userStakeTimes[msg.sender] = block.timestamp;\r\n        userTotalRewards[msg.sender] = userTotalRewards[msg.sender] + reward;\r\n        IGSVEVault(GSVEVault).transferToken(GSVEToken, msg.sender, reward);\r\n        emit Reward(msg.sender, reward);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to burn some GSVE to avoid paying the protocol mint/wrap fee.\r\n     */\r\n    function burnDiscountedMinting(address gasTokenAddress, uint256 value) public nonReentrant() {\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType != 0, \"GSVE: Unsupported Token\");\r\n        IGSVEProtocolToken(GSVEToken).burnFrom(msg.sender, burnToSaveFee);\r\n\r\n        if(mintType == 1){\r\n            convenientMinting(gasTokenAddress, value, 0);\r\n        }\r\n        else if (mintType == 2){\r\n            IGasTokenMint(gasTokenAddress).discountedMint(value, 0, msg.sender);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows a user to benefit from a lower protocol fee, based on the stake that they have.\r\n     */\r\n    function discountedMinting(address gasTokenAddress, uint256 value) public nonReentrant(){\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType != 0, \"GSVE: Unsupported Token\");\r\n        require(userStakes[msg.sender] >= tierThreshholds[1] , \"GSVE: User has not staked enough to discount\");\r\n\r\n        if(mintType == 1){\r\n            convenientMinting(gasTokenAddress, value, 1);\r\n        }\r\n        else if (mintType == 2){\r\n            IGasTokenMint(gasTokenAddress).discountedMint(value, 1, msg.sender);\r\n        }\r\n    }\r\n    \r\n    /**\r\n     * @dev A function that allows a user to be rewarded tokens by minting or wrapping\r\n     * they pay full fees for this operation.\r\n     */\r\n    function rewardedMinting(address gasTokenAddress, uint256 value) public nonReentrant(){\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType != 0, \"GSVE: Unsupported Token\");\r\n        require(totalRewards() > 0, \"GSVE: contract has ran out of rewards to give\");\r\n        require(rewardsEnabled, \"GSVE: Rewards are not enabled\");\r\n        if(mintType == 1){\r\n            convenientMinting(gasTokenAddress, value, 2);\r\n        }\r\n        else if (mintType == 2){\r\n            IGasTokenMint(gasTokenAddress).discountedMint(value, 2, msg.sender);\r\n        }\r\n\r\n        IGSVEVault(GSVEVault).transferToken(GSVEToken, msg.sender, mintingReward);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to mint non-wrapped tokens from the convenience of this smart contract.\r\n     * taking a portion of portion of the minted tokens as payment for this convenience.\r\n     */\r\n    function convenientMinting(address gasTokenAddress, uint256 value, uint256 fee) internal {\r\n        uint256 mintType = _mintingType[gasTokenAddress];\r\n        require(mintType == 1, \"GSVE: Unsupported Token\");\r\n\r\n        uint256 userTokens = value.sub(fee);\r\n        require(userTokens > 0, \"GSVE: User attempted to mint too little\");\r\n        IGasTokenMint(gasTokenAddress).mint(value);\r\n        IERC20(gasTokenAddress).transfer(msg.sender, userTokens);\r\n        if(fee > 0){\r\n            IERC20(gasTokenAddress).transfer(GSVEVault, fee);\r\n        }\r\n    }\r\n\r\n    \r\n    /**\r\n     * @dev public entry to the convenient minting function\r\n     */\r\n    function mintGasToken(address gasTokenAddress, uint256 value) public {\r\n        convenientMinting(gasTokenAddress, value, 2);\r\n    }\r\n\r\n\r\n    /**\r\n     * @dev A function that allows a user to claim tokens from the pool\r\n     * The user burns 1 GSVE for each token they take.\r\n     * They are limited to one claim action every 6 hours, and can claim up to 5 tokens per claim.\r\n     */\r\n    function claimToken(address gasTokenAddress, uint256 value) public nonReentrant() {\r\n\r\n        bool isClaimable = _claimable[gasTokenAddress];\r\n        require(isClaimable, \"GSVE: Token not claimable\");\r\n        require(userStakes[msg.sender] >= tierThreshholds[2] , \"GSVE: User has not staked enough to claim from the pool\");\r\n        require(block.timestamp.sub(userClaimTimes[msg.sender]) > 60 * 60 * 6, \"GSVE: User cannot claim the gas tokens twice in 6 hours\");\r\n\r\n        uint256 tokensGiven = value;\r\n\r\n        uint256 tokensAvailableToClaim = IERC20(gasTokenAddress).balanceOf(GSVEVault);\r\n        tokensGiven = Math.min(Math.min(5, tokensAvailableToClaim), tokensGiven);\r\n\r\n        if(tokensGiven == 0){\r\n            return;\r\n        }\r\n\r\n        IGSVEProtocolToken(GSVEToken).burnFrom(msg.sender, tokensGiven * burnToClaimGasTokens);\r\n        IGSVEVault(GSVEVault).transferToken(gasTokenAddress, msg.sender, tokensGiven);\r\n        userClaimTimes[msg.sender] = block.timestamp;\r\n        emit Claimed(msg.sender, gasTokenAddress, tokensGiven);\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to enable gas tokens for use with this contract.\r\n     */\r\n    function addGasToken(address gasToken, uint256 mintType, bool isClaimable) public onlyOwner{\r\n        _mintingType[gasToken] = mintType;\r\n        _claimable[gasToken] = isClaimable;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to easily check claim type of the token.\r\n     */\r\n    function claimable(address gasToken) public view returns (bool){\r\n        return _claimable[gasToken];\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to check the mint type of the token.\r\n     */\r\n    function mintingType(address gasToken) public view returns (uint256){\r\n        return _mintingType[gasToken];\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see the total stake of everyone in the protocol.\r\n     */\r\n    function totalStaked() public view returns (uint256){\r\n        return _totalStaked;\r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see the stake size of a specific staker.\r\n     */\r\n    function userStakeSize(address user)  public view returns (uint256){\r\n        return userStakes[user]; \r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see how much rewards the vault has available right now.\r\n     */    \r\n     function totalRewards()  public view returns (uint256){\r\n        return IERC20(GSVEToken).balanceOf(GSVEVault); \r\n    }\r\n\r\n    /**\r\n     * @dev A function that allows us to see how much rewards a user has claimed\r\n     */\r\n    function totalRewardUser(address user)  public view returns (uint256){\r\n        return userTotalRewards[user]; \r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get a tier threshold\r\n    */\r\n    function getTierThreshold(uint256 tier)  public view returns (uint256){\r\n        return tierThreshholds[tier];\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the time rewards where enabled\r\n    */\r\n    function getRewardEnableTime()  public view returns (uint256){\r\n        return rewardEnableTime;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the time rewards where enabled\r\n    */\r\n    function getRewardEnabled()  public view returns (bool){\r\n        return rewardsEnabled;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the burnToSaveFee \r\n    */\r\n    function getBurnToSaveFee()  public view returns (uint256){\r\n        return burnToSaveFee;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the burnToClaimGasTokens \r\n    */\r\n    function getBurnToClaimGasTokens()  public view returns (uint256){\r\n        return burnToClaimGasTokens;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the burnToClaimGasTokens \r\n    */\r\n    function getMintingReward()  public view returns (uint256){\r\n        return mintingReward;\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the stake times\r\n    */\r\n    function getStakeTimes(address staker)  public view returns (uint256){\r\n        return userStakeTimes[staker];\r\n    }\r\n\r\n    /**\r\n    * @dev A function that allows us to get the claim times\r\n    */\r\n    function getClaimTimes(address staker)  public view returns (uint256){\r\n        return userClaimTimes[staker];\r\n    }\r\n    \r\n    event Claimed(address indexed _from, address indexed _token, uint256 _value);\r\n\r\n    event Reward(address indexed _from, uint256 _value);\r\n\r\n    event Staked(address indexed _from, uint256 _value);\r\n\r\n    event Unstaked(address indexed _from, uint256 _value);\r\n\r\n    event TierUpdate(uint256 _tier, uint256 _value);\r\n\r\n    event protocolUpdated(bytes32 _type, uint256 _value);\r\n}\r\n",
   "sourcePath": "C:/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol",
   "ast": {
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol",
     "exportedSymbols": {
       "Context": [
-        6138
+        5791
       ],
       "GSVECore": [
         1851
       ],
       "IERC20": [
-        5819
+        5472
       ],
       "IGSVEProtocolToken": [
         558
@@ -57,16 +57,16 @@
         544
       ],
       "Math": [
-        6211
+        5864
       ],
       "Ownable": [
-        5120
+        4773
       ],
       "ReentrancyGuard": [
-        5240
+        4893
       ],
       "SafeMath": [
-        6523
+        6176
       ]
     },
     "id": 1852,
@@ -91,7 +91,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 6212,
+        "sourceUnit": 5865,
         "src": "60:53:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -103,7 +103,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 6524,
+        "sourceUnit": 6177,
         "src": "115:57:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -115,7 +115,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 5820,
+        "sourceUnit": 5473,
         "src": "174:56:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -127,7 +127,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 5121,
+        "sourceUnit": 4774,
         "src": "232:52:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -139,7 +139,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 5241,
+        "sourceUnit": 4894,
         "src": "286:62:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -641,7 +641,7 @@
               "id": 570,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5120,
+              "referencedDeclaration": 4773,
               "src": "999:7:2"
             },
             "id": 571,
@@ -653,7 +653,7 @@
               "id": 572,
               "name": "ReentrancyGuard",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5240,
+              "referencedDeclaration": 4893,
               "src": "1008:15:2"
             },
             "id": 573,
@@ -667,9 +667,9 @@
         "id": 1851,
         "linearizedBaseContracts": [
           1851,
-          5240,
-          5120,
-          6138
+          4893,
+          4773,
+          5791
         ],
         "name": "GSVECore",
         "nameLocation": "987:8:2",
@@ -681,7 +681,7 @@
               "id": 574,
               "name": "SafeMath",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 6523,
+              "referencedDeclaration": 6176,
               "src": "1036:8:2"
             },
             "nodeType": "UsingForDirective",
@@ -1822,7 +1822,7 @@
                   "id": 639,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2018:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -2123,7 +2123,7 @@
                   "id": 667,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2394:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -2458,7 +2458,7 @@
                   "id": 696,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2799:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -2827,7 +2827,7 @@
                   "id": 725,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "3120:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3169,7 +3169,7 @@
                   "id": 752,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "3501:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3511,7 +3511,7 @@
                   "id": 779,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "3889:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3622,10 +3622,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5120,
+                          "referencedDeclaration": 4773,
                           "src": "4444:7:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5120_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$4773_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -3640,7 +3640,7 @@
                         "src": "4444:22:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$5120",
+                          "typeIdentifier": "t_contract$_Ownable_$4773",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -3651,7 +3651,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5119,
+                      "referencedDeclaration": 4772,
                       "src": "4444:40:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -3697,7 +3697,7 @@
                   "id": 808,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "4424:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -4841,7 +4841,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "31",
+                      "hexValue": "32",
                       "id": 914,
                       "isConstant": false,
                       "isLValue": false,
@@ -4851,10 +4851,10 @@
                       "nodeType": "Literal",
                       "src": "5527:1:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
                       },
-                      "value": "1"
+                      "value": "2"
                     },
                     "src": "5506:22:2",
                     "typeDescriptions": {
@@ -4985,7 +4985,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "31",
+                      "hexValue": "32",
                       "id": 926,
                       "isConstant": false,
                       "isLValue": false,
@@ -4995,10 +4995,10 @@
                       "nodeType": "Literal",
                       "src": "5598:1:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
                       },
-                      "value": "1"
+                      "value": "2"
                     },
                     "src": "5576:23:2",
                     "typeDescriptions": {
@@ -5129,7 +5129,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "31",
+                      "hexValue": "32",
                       "id": 938,
                       "isConstant": false,
                       "isLValue": false,
@@ -5139,10 +5139,10 @@
                       "nodeType": "Literal",
                       "src": "5669:1:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
                       },
-                      "value": "1"
+                      "value": "2"
                     },
                     "src": "5647:23:2",
                     "typeDescriptions": {
@@ -5539,10 +5539,10 @@
                               "name": "IERC20",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5819,
+                              "referencedDeclaration": 5472,
                               "src": "5977:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                                 "typeString": "type(contract IERC20)"
                               }
                             },
@@ -5557,7 +5557,7 @@
                             "src": "5977:17:2",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IERC20_$5819",
+                              "typeIdentifier": "t_contract$_IERC20_$5472",
                               "typeString": "contract IERC20"
                             }
                           },
@@ -5568,7 +5568,7 @@
                           "lValueRequested": false,
                           "memberName": "transferFrom",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5800,
+                          "referencedDeclaration": 5453,
                           "src": "5977:30:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -5771,7 +5771,7 @@
                         "lValueRequested": false,
                         "memberName": "add",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6387,
+                        "referencedDeclaration": 6040,
                         "src": "6078:26:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6057,7 +6057,7 @@
                         "lValueRequested": false,
                         "memberName": "add",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6387,
+                        "referencedDeclaration": 6040,
                         "src": "6247:16:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6193,7 +6193,7 @@
                   "id": 947,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "5883:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -6727,7 +6727,7 @@
                         "lValueRequested": false,
                         "memberName": "sub",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6402,
+                        "referencedDeclaration": 6055,
                         "src": "6707:16:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6840,10 +6840,10 @@
                               "name": "IERC20",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5819,
+                              "referencedDeclaration": 5472,
                               "src": "6753:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                                 "typeString": "type(contract IERC20)"
                               }
                             },
@@ -6858,7 +6858,7 @@
                             "src": "6753:17:2",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IERC20_$5819",
+                              "typeIdentifier": "t_contract$_IERC20_$5472",
                               "typeString": "contract IERC20"
                             }
                           },
@@ -6869,7 +6869,7 @@
                           "lValueRequested": false,
                           "memberName": "transfer",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5768,
+                          "referencedDeclaration": 5421,
                           "src": "6753:26:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -7036,7 +7036,7 @@
                   "id": 1017,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "6432:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -7357,10 +7357,10 @@
                         "name": "Math",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6211,
+                        "referencedDeclaration": 5864,
                         "src": "7259:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                          "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                           "typeString": "type(library Math)"
                         }
                       },
@@ -7371,7 +7371,7 @@
                       "lValueRequested": false,
                       "memberName": "max",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6159,
+                      "referencedDeclaration": 5812,
                       "src": "7259:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -7485,7 +7485,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6402,
+                      "referencedDeclaration": 6055,
                       "src": "7354:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -7673,7 +7673,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6432,
+                      "referencedDeclaration": 6085,
                       "src": "7420:18:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -7802,7 +7802,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6432,
+                      "referencedDeclaration": 6085,
                       "src": "7486:31:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -7902,7 +7902,7 @@
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6417,
+                      "referencedDeclaration": 6070,
                       "src": "7551:16:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -8522,10 +8522,10 @@
                           "name": "Math",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6211,
+                          "referencedDeclaration": 5864,
                           "src": "8266:4:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                            "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                             "typeString": "type(library Math)"
                           }
                         },
@@ -8536,7 +8536,7 @@
                         "lValueRequested": false,
                         "memberName": "min",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6177,
+                        "referencedDeclaration": 5830,
                         "src": "8266:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -9069,7 +9069,7 @@
                   "id": 1155,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "7901:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -9801,7 +9801,7 @@
                   "id": 1240,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "8770:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -10629,7 +10629,7 @@
                   "id": 1299,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "9431:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -11637,7 +11637,7 @@
                   "id": 1361,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "10149:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -11986,7 +11986,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6402,
+                      "referencedDeclaration": 6055,
                       "src": "11224:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12304,10 +12304,10 @@
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5819,
+                          "referencedDeclaration": 5472,
                           "src": "11379:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                             "typeString": "type(contract IERC20)"
                           }
                         },
@@ -12322,7 +12322,7 @@
                         "src": "11379:23:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$5819",
+                          "typeIdentifier": "t_contract$_IERC20_$5472",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -12333,7 +12333,7 @@
                       "lValueRequested": false,
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5768,
+                      "referencedDeclaration": 5421,
                       "src": "11379:32:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -12479,10 +12479,10 @@
                                 "name": "IERC20",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 5819,
+                                "referencedDeclaration": 5472,
                                 "src": "11472:6:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                                  "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                                   "typeString": "type(contract IERC20)"
                                 }
                               },
@@ -12497,7 +12497,7 @@
                               "src": "11472:23:2",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IERC20_$5819",
+                                "typeIdentifier": "t_contract$_IERC20_$5472",
                                 "typeString": "contract IERC20"
                               }
                             },
@@ -12508,7 +12508,7 @@
                             "lValueRequested": false,
                             "memberName": "transfer",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 5768,
+                            "referencedDeclaration": 5421,
                             "src": "11472:32:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -13275,7 +13275,7 @@
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6402,
+                            "referencedDeclaration": 6055,
                             "src": "12365:19:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -13581,10 +13581,10 @@
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5819,
+                          "referencedDeclaration": 5472,
                           "src": "12572:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                             "typeString": "type(contract IERC20)"
                           }
                         },
@@ -13599,7 +13599,7 @@
                         "src": "12572:23:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$5819",
+                          "typeIdentifier": "t_contract$_IERC20_$5472",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -13610,7 +13610,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5758,
+                      "referencedDeclaration": 5411,
                       "src": "12572:33:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -13705,10 +13705,10 @@
                               "name": "Math",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6211,
+                              "referencedDeclaration": 5864,
                               "src": "12650:4:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                                "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                                 "typeString": "type(library Math)"
                               }
                             },
@@ -13719,7 +13719,7 @@
                             "lValueRequested": false,
                             "memberName": "min",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6177,
+                            "referencedDeclaration": 5830,
                             "src": "12650:8:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -13770,10 +13770,10 @@
                           "name": "Math",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6211,
+                          "referencedDeclaration": 5864,
                           "src": "12641:4:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                            "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                             "typeString": "type(library Math)"
                           }
                         },
@@ -13784,7 +13784,7 @@
                         "lValueRequested": false,
                         "memberName": "min",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6177,
+                        "referencedDeclaration": 5830,
                         "src": "12641:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -14410,7 +14410,7 @@
                   "id": 1516,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "12088:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -14656,7 +14656,7 @@
                   "id": 1637,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "13275:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -15328,10 +15328,10 @@
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5819,
+                          "referencedDeclaration": 5472,
                           "src": "14441:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                             "typeString": "type(contract IERC20)"
                           }
                         },
@@ -15346,7 +15346,7 @@
                         "src": "14441:17:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$5819",
+                          "typeIdentifier": "t_contract$_IERC20_$5472",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -15357,7 +15357,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5758,
+                      "referencedDeclaration": 5411,
                       "src": "14441:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -16906,13 +16906,13 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVECore.sol",
     "exportedSymbols": {
       "Context": [
-        6138
+        5791
       ],
       "GSVECore": [
         1851
       ],
       "IERC20": [
-        5819
+        5472
       ],
       "IGSVEProtocolToken": [
         558
@@ -16924,16 +16924,16 @@
         544
       ],
       "Math": [
-        6211
+        5864
       ],
       "Ownable": [
-        5120
+        4773
       ],
       "ReentrancyGuard": [
-        5240
+        4893
       ],
       "SafeMath": [
-        6523
+        6176
       ]
     },
     "id": 1852,
@@ -16958,7 +16958,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 6212,
+        "sourceUnit": 5865,
         "src": "60:53:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -16970,7 +16970,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 6524,
+        "sourceUnit": 6177,
         "src": "115:57:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -16982,7 +16982,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 5820,
+        "sourceUnit": 5473,
         "src": "174:56:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -16994,7 +16994,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 5121,
+        "sourceUnit": 4774,
         "src": "232:52:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -17006,7 +17006,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1852,
-        "sourceUnit": 5241,
+        "sourceUnit": 4894,
         "src": "286:62:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -17508,7 +17508,7 @@
               "id": 570,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5120,
+              "referencedDeclaration": 4773,
               "src": "999:7:2"
             },
             "id": 571,
@@ -17520,7 +17520,7 @@
               "id": 572,
               "name": "ReentrancyGuard",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5240,
+              "referencedDeclaration": 4893,
               "src": "1008:15:2"
             },
             "id": 573,
@@ -17534,9 +17534,9 @@
         "id": 1851,
         "linearizedBaseContracts": [
           1851,
-          5240,
-          5120,
-          6138
+          4893,
+          4773,
+          5791
         ],
         "name": "GSVECore",
         "nameLocation": "987:8:2",
@@ -17548,7 +17548,7 @@
               "id": 574,
               "name": "SafeMath",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 6523,
+              "referencedDeclaration": 6176,
               "src": "1036:8:2"
             },
             "nodeType": "UsingForDirective",
@@ -18689,7 +18689,7 @@
                   "id": 639,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2018:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -18990,7 +18990,7 @@
                   "id": 667,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2394:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -19325,7 +19325,7 @@
                   "id": 696,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "2799:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -19694,7 +19694,7 @@
                   "id": 725,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "3120:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -20036,7 +20036,7 @@
                   "id": 752,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "3501:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -20378,7 +20378,7 @@
                   "id": 779,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "3889:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -20489,10 +20489,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5120,
+                          "referencedDeclaration": 4773,
                           "src": "4444:7:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5120_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$4773_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -20507,7 +20507,7 @@
                         "src": "4444:22:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$5120",
+                          "typeIdentifier": "t_contract$_Ownable_$4773",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -20518,7 +20518,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5119,
+                      "referencedDeclaration": 4772,
                       "src": "4444:40:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -20564,7 +20564,7 @@
                   "id": 808,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "4424:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -21708,7 +21708,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "31",
+                      "hexValue": "32",
                       "id": 914,
                       "isConstant": false,
                       "isLValue": false,
@@ -21718,10 +21718,10 @@
                       "nodeType": "Literal",
                       "src": "5527:1:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
                       },
-                      "value": "1"
+                      "value": "2"
                     },
                     "src": "5506:22:2",
                     "typeDescriptions": {
@@ -21852,7 +21852,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "31",
+                      "hexValue": "32",
                       "id": 926,
                       "isConstant": false,
                       "isLValue": false,
@@ -21862,10 +21862,10 @@
                       "nodeType": "Literal",
                       "src": "5598:1:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
                       },
-                      "value": "1"
+                      "value": "2"
                     },
                     "src": "5576:23:2",
                     "typeDescriptions": {
@@ -21996,7 +21996,7 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "hexValue": "31",
+                      "hexValue": "32",
                       "id": 938,
                       "isConstant": false,
                       "isLValue": false,
@@ -22006,10 +22006,10 @@
                       "nodeType": "Literal",
                       "src": "5669:1:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
                       },
-                      "value": "1"
+                      "value": "2"
                     },
                     "src": "5647:23:2",
                     "typeDescriptions": {
@@ -22406,10 +22406,10 @@
                               "name": "IERC20",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5819,
+                              "referencedDeclaration": 5472,
                               "src": "5977:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                                 "typeString": "type(contract IERC20)"
                               }
                             },
@@ -22424,7 +22424,7 @@
                             "src": "5977:17:2",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IERC20_$5819",
+                              "typeIdentifier": "t_contract$_IERC20_$5472",
                               "typeString": "contract IERC20"
                             }
                           },
@@ -22435,7 +22435,7 @@
                           "lValueRequested": false,
                           "memberName": "transferFrom",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5800,
+                          "referencedDeclaration": 5453,
                           "src": "5977:30:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -22638,7 +22638,7 @@
                         "lValueRequested": false,
                         "memberName": "add",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6387,
+                        "referencedDeclaration": 6040,
                         "src": "6078:26:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -22924,7 +22924,7 @@
                         "lValueRequested": false,
                         "memberName": "add",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6387,
+                        "referencedDeclaration": 6040,
                         "src": "6247:16:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -23060,7 +23060,7 @@
                   "id": 947,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "5883:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -23594,7 +23594,7 @@
                         "lValueRequested": false,
                         "memberName": "sub",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6402,
+                        "referencedDeclaration": 6055,
                         "src": "6707:16:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -23707,10 +23707,10 @@
                               "name": "IERC20",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5819,
+                              "referencedDeclaration": 5472,
                               "src": "6753:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                                "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                                 "typeString": "type(contract IERC20)"
                               }
                             },
@@ -23725,7 +23725,7 @@
                             "src": "6753:17:2",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IERC20_$5819",
+                              "typeIdentifier": "t_contract$_IERC20_$5472",
                               "typeString": "contract IERC20"
                             }
                           },
@@ -23736,7 +23736,7 @@
                           "lValueRequested": false,
                           "memberName": "transfer",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5768,
+                          "referencedDeclaration": 5421,
                           "src": "6753:26:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -23903,7 +23903,7 @@
                   "id": 1017,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "6432:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -24224,10 +24224,10 @@
                         "name": "Math",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6211,
+                        "referencedDeclaration": 5864,
                         "src": "7259:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                          "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                           "typeString": "type(library Math)"
                         }
                       },
@@ -24238,7 +24238,7 @@
                       "lValueRequested": false,
                       "memberName": "max",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6159,
+                      "referencedDeclaration": 5812,
                       "src": "7259:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -24352,7 +24352,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6402,
+                      "referencedDeclaration": 6055,
                       "src": "7354:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -24540,7 +24540,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6432,
+                      "referencedDeclaration": 6085,
                       "src": "7420:18:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -24669,7 +24669,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6432,
+                      "referencedDeclaration": 6085,
                       "src": "7486:31:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -24769,7 +24769,7 @@
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6417,
+                      "referencedDeclaration": 6070,
                       "src": "7551:16:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -25389,10 +25389,10 @@
                           "name": "Math",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6211,
+                          "referencedDeclaration": 5864,
                           "src": "8266:4:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                            "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                             "typeString": "type(library Math)"
                           }
                         },
@@ -25403,7 +25403,7 @@
                         "lValueRequested": false,
                         "memberName": "min",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6177,
+                        "referencedDeclaration": 5830,
                         "src": "8266:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -25936,7 +25936,7 @@
                   "id": 1155,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "7901:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -26668,7 +26668,7 @@
                   "id": 1240,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "8770:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -27496,7 +27496,7 @@
                   "id": 1299,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "9431:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -28504,7 +28504,7 @@
                   "id": 1361,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "10149:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -28853,7 +28853,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6402,
+                      "referencedDeclaration": 6055,
                       "src": "11224:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -29171,10 +29171,10 @@
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5819,
+                          "referencedDeclaration": 5472,
                           "src": "11379:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                             "typeString": "type(contract IERC20)"
                           }
                         },
@@ -29189,7 +29189,7 @@
                         "src": "11379:23:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$5819",
+                          "typeIdentifier": "t_contract$_IERC20_$5472",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -29200,7 +29200,7 @@
                       "lValueRequested": false,
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5768,
+                      "referencedDeclaration": 5421,
                       "src": "11379:32:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -29346,10 +29346,10 @@
                                 "name": "IERC20",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 5819,
+                                "referencedDeclaration": 5472,
                                 "src": "11472:6:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                                  "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                                   "typeString": "type(contract IERC20)"
                                 }
                               },
@@ -29364,7 +29364,7 @@
                               "src": "11472:23:2",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IERC20_$5819",
+                                "typeIdentifier": "t_contract$_IERC20_$5472",
                                 "typeString": "contract IERC20"
                               }
                             },
@@ -29375,7 +29375,7 @@
                             "lValueRequested": false,
                             "memberName": "transfer",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 5768,
+                            "referencedDeclaration": 5421,
                             "src": "11472:32:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -30142,7 +30142,7 @@
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6402,
+                            "referencedDeclaration": 6055,
                             "src": "12365:19:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -30448,10 +30448,10 @@
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5819,
+                          "referencedDeclaration": 5472,
                           "src": "12572:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                             "typeString": "type(contract IERC20)"
                           }
                         },
@@ -30466,7 +30466,7 @@
                         "src": "12572:23:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$5819",
+                          "typeIdentifier": "t_contract$_IERC20_$5472",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -30477,7 +30477,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5758,
+                      "referencedDeclaration": 5411,
                       "src": "12572:33:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -30572,10 +30572,10 @@
                               "name": "Math",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6211,
+                              "referencedDeclaration": 5864,
                               "src": "12650:4:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                                "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                                 "typeString": "type(library Math)"
                               }
                             },
@@ -30586,7 +30586,7 @@
                             "lValueRequested": false,
                             "memberName": "min",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6177,
+                            "referencedDeclaration": 5830,
                             "src": "12650:8:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -30637,10 +30637,10 @@
                           "name": "Math",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6211,
+                          "referencedDeclaration": 5864,
                           "src": "12641:4:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Math_$6211_$",
+                            "typeIdentifier": "t_type$_t_contract$_Math_$5864_$",
                             "typeString": "type(library Math)"
                           }
                         },
@@ -30651,7 +30651,7 @@
                         "lValueRequested": false,
                         "memberName": "min",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6177,
+                        "referencedDeclaration": 5830,
                         "src": "12641:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -31277,7 +31277,7 @@
                   "id": 1516,
                   "name": "nonReentrant",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5239,
+                  "referencedDeclaration": 4892,
                   "src": "12088:12:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -31523,7 +31523,7 @@
                   "id": 1637,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "13275:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -32195,10 +32195,10 @@
                           "name": "IERC20",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5819,
+                          "referencedDeclaration": 5472,
                           "src": "14441:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5819_$",
+                            "typeIdentifier": "t_type$_t_contract$_IERC20_$5472_$",
                             "typeString": "type(contract IERC20)"
                           }
                         },
@@ -32213,7 +32213,7 @@
                         "src": "14441:17:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$5819",
+                          "typeIdentifier": "t_contract$_IERC20_$5472",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -32224,7 +32224,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5758,
+                      "referencedDeclaration": 5411,
                       "src": "14441:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -33775,7 +33775,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-15T16:37:09.109Z",
+  "updatedAt": "2021-05-17T19:37:44.020Z",
   "devdoc": {
     "details": "Interface for interacting with the gas vault",
     "kind": "dev",

@@ -2,8 +2,8 @@ const GSVEGNOSISFACTORY = artifacts.require('./ProxyFactory.sol')
 const beaconJson = require("./../build/contracts/GSVEBeacon.json")
 
 module.exports = async(deployer) => {
-  var beaconAddress = "0x89957528E2Ff5d867C63d7D2BC44A3269646a95e"
-  var gsveAddress = "0xEf140A6c03b339A807E55EF0E6A4F56d2f1Ab724"
+  var beaconAddress = "0xca325B26106e8D9666180350104CcD553E660cAe"
+  var gsveAddress = "0xbfA202749CDf83BF4731142595e8047C4350a60e"
 
   var factory = await deployer.deploy(GSVEGNOSISFACTORY, gsveAddress, beaconAddress)
 

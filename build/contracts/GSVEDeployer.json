@@ -4493,16 +4493,16 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVEDeployer.sol",
     "exportedSymbols": {
       "Context": [
-        6138
+        5791
       ],
       "GSVEDeployer": [
         2097
       ],
       "IFreeFromUpTo": [
-        3003
+        2684
       ],
       "Ownable": [
-        5120
+        4773
       ]
     },
     "id": 2098,
@@ -4527,7 +4527,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2098,
-        "sourceUnit": 5121,
+        "sourceUnit": 4774,
         "src": "60:52:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4539,7 +4539,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2098,
-        "sourceUnit": 3004,
+        "sourceUnit": 2685,
         "src": "114:29:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4552,7 +4552,7 @@
               "id": 1857,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5120,
+              "referencedDeclaration": 4773,
               "src": "359:7:3"
             },
             "id": 1858,
@@ -4572,8 +4572,8 @@
         "id": 2097,
         "linearizedBaseContracts": [
           2097,
-          5120,
-          6138
+          4773,
+          5791
         ],
         "name": "GSVEDeployer",
         "nameLocation": "343:12:3",
@@ -5387,7 +5387,7 @@
                   "id": 1919,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "937:9:3"
                 },
                 "nodeType": "ModifierInvocation",
@@ -6342,10 +6342,10 @@
                                 "name": "IFreeFromUpTo",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3003,
+                                "referencedDeclaration": 2684,
                                 "src": "1815:13:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_IFreeFromUpTo_$3003_$",
+                                  "typeIdentifier": "t_type$_t_contract$_IFreeFromUpTo_$2684_$",
                                   "typeString": "type(contract IFreeFromUpTo)"
                                 }
                               },
@@ -6360,7 +6360,7 @@
                               "src": "1815:23:3",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IFreeFromUpTo_$3003",
+                                "typeIdentifier": "t_contract$_IFreeFromUpTo_$2684",
                                 "typeString": "contract IFreeFromUpTo"
                               }
                             },
@@ -6371,7 +6371,7 @@
                             "lValueRequested": false,
                             "memberName": "freeFromUpTo",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3002,
+                            "referencedDeclaration": 2683,
                             "src": "1815:36:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_uint256_$",
@@ -6817,10 +6817,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5120,
+                          "referencedDeclaration": 4773,
                           "src": "2453:7:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5120_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$4773_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -6835,7 +6835,7 @@
                         "src": "2453:24:3",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$5120",
+                          "typeIdentifier": "t_contract$_Ownable_$4773",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -6846,7 +6846,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5119,
+                      "referencedDeclaration": 4772,
                       "src": "2453:42:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -7397,10 +7397,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5120,
+                          "referencedDeclaration": 4773,
                           "src": "3216:7:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5120_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$4773_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -7415,7 +7415,7 @@
                         "src": "3216:24:3",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$5120",
+                          "typeIdentifier": "t_contract$_Ownable_$4773",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -7426,7 +7426,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5119,
+                      "referencedDeclaration": 4772,
                       "src": "3216:42:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -7711,16 +7711,16 @@
     "absolutePath": "/C/Users/khera/Documents/GitHub/GasSwapTokens/contracts/GSVEDeployer.sol",
     "exportedSymbols": {
       "Context": [
-        6138
+        5791
       ],
       "GSVEDeployer": [
         2097
       ],
       "IFreeFromUpTo": [
-        3003
+        2684
       ],
       "Ownable": [
-        5120
+        4773
       ]
     },
     "id": 2098,
@@ -7745,7 +7745,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2098,
-        "sourceUnit": 5121,
+        "sourceUnit": 4774,
         "src": "60:52:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -7757,7 +7757,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2098,
-        "sourceUnit": 3004,
+        "sourceUnit": 2685,
         "src": "114:29:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -7770,7 +7770,7 @@
               "id": 1857,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 5120,
+              "referencedDeclaration": 4773,
               "src": "359:7:3"
             },
             "id": 1858,
@@ -7790,8 +7790,8 @@
         "id": 2097,
         "linearizedBaseContracts": [
           2097,
-          5120,
-          6138
+          4773,
+          5791
         ],
         "name": "GSVEDeployer",
         "nameLocation": "343:12:3",
@@ -8605,7 +8605,7 @@
                   "id": 1919,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5069,
+                  "referencedDeclaration": 4722,
                   "src": "937:9:3"
                 },
                 "nodeType": "ModifierInvocation",
@@ -9560,10 +9560,10 @@
                                 "name": "IFreeFromUpTo",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3003,
+                                "referencedDeclaration": 2684,
                                 "src": "1815:13:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_IFreeFromUpTo_$3003_$",
+                                  "typeIdentifier": "t_type$_t_contract$_IFreeFromUpTo_$2684_$",
                                   "typeString": "type(contract IFreeFromUpTo)"
                                 }
                               },
@@ -9578,7 +9578,7 @@
                               "src": "1815:23:3",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IFreeFromUpTo_$3003",
+                                "typeIdentifier": "t_contract$_IFreeFromUpTo_$2684",
                                 "typeString": "contract IFreeFromUpTo"
                               }
                             },
@@ -9589,7 +9589,7 @@
                             "lValueRequested": false,
                             "memberName": "freeFromUpTo",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3002,
+                            "referencedDeclaration": 2683,
                             "src": "1815:36:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_uint256_$",
@@ -10035,10 +10035,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5120,
+                          "referencedDeclaration": 4773,
                           "src": "2453:7:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5120_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$4773_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -10053,7 +10053,7 @@
                         "src": "2453:24:3",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$5120",
+                          "typeIdentifier": "t_contract$_Ownable_$4773",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -10064,7 +10064,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5119,
+                      "referencedDeclaration": 4772,
                       "src": "2453:42:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -10615,10 +10615,10 @@
                           "name": "Ownable",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5120,
+                          "referencedDeclaration": 4773,
                           "src": "3216:7:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Ownable_$5120_$",
+                            "typeIdentifier": "t_type$_t_contract$_Ownable_$4773_$",
                             "typeString": "type(contract Ownable)"
                           }
                         },
@@ -10633,7 +10633,7 @@
                         "src": "3216:24:3",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Ownable_$5120",
+                          "typeIdentifier": "t_contract$_Ownable_$4773",
                           "typeString": "contract Ownable"
                         }
                       },
@@ -10644,7 +10644,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5119,
+                      "referencedDeclaration": 4772,
                       "src": "3216:42:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -10930,6 +10930,51 @@
     "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {
+        "0x33c981baba081f8fd2c52ac6ad1ea95b6814b4376640f55689051f6584729688": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "creator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "deploymentAddress",
+              "type": "address"
+            }
+          ],
+          "name": "ContractDeployed",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0067685401377A50aB785086d90A90eB5835B3c6",
+      "transactionHash": "0x0b042bb72035cbabe822c8a7b6c59ca9b3897b58f67eca9c19094e0c72b586fa"
+    },
     "5777": {
       "events": {
         "0x33c981baba081f8fd2c52ac6ad1ea95b6814b4376640f55689051f6584729688": {
@@ -10972,12 +11017,12 @@
         }
       },
       "links": {},
-      "address": "0x69d918D604bC07512ACeA3daB8Ea3ba50Fda49A6",
-      "transactionHash": "0xed0a2e3f868282d4c30abfa83bd88c221bd7ace35bd7de2245e86c5235f4d406"
+      "address": "0xd561a719fc93BB2B4D887C809e122cf76871e708",
+      "transactionHash": "0xf12e356ca21d1783d9df161c7dae9c4ac5c9e2e3051f247a4304e9694e27c515"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-15T16:48:45.785Z",
+  "updatedAt": "2021-05-17T20:29:40.912Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "the gsve deployer has two purposes it deploys gsve smart wrappers, keeping track of the owners it allows users to deploy smart contracts using create and create2",
