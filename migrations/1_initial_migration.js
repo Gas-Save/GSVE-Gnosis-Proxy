@@ -1,5 +1,6 @@
 const GSVEGNOSISFACTORY = artifacts.require('./ProxyFactory.sol')
 const beaconJson = require("./../build/contracts/GSVEBeacon.json")
+const ownable = artifacts.require("Ownable.sol")
 
 module.exports = async(deployer) => {
   var beaconAddress = "0xf9830eAE8e249dA1E805eda7B44390B3E554BE8D"
@@ -7,8 +8,7 @@ module.exports = async(deployer) => {
 
   var factory = await deployer.deploy(GSVEGNOSISFACTORY, gsveAddress, beaconAddress)
 
-  var beacon = await new web3.eth.Contract(beaconJson['abi'], beaconAddress);
-  var account = await web3.eth.getAccounts()
-  await beacon.methods.transferOwnership(GSVEGNOSISFACTORY.address).send({from:account[0]})
+  var beacon = await ownable.at(beaconAddress)
+  await beacon.transferOwnership(GSVEGNOSISFACTORY.address)
   console.log("gnois factory: " + GSVEGNOSISFACTORY.address)
 };
