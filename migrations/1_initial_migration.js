@@ -8,7 +8,12 @@ module.exports = async(deployer) => {
 
   var factory = await deployer.deploy(GSVEGNOSISFACTORY, gsveAddress, beaconAddress)
 
-  var beacon = await ownable.at(beaconAddress)
-  await beacon.transferOwnership(GSVEGNOSISFACTORY.address)
+  try{
+    var beacon = await ownable.at(beaconAddress)
+    await beacon.transferOwnership(GSVEGNOSISFACTORY.address)
+  }
+  catch{
+    console.log("error with transfering ownership of beacon")
+  }
   console.log("gnois factory: " + GSVEGNOSISFACTORY.address)
 };
