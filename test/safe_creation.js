@@ -2,7 +2,7 @@ var abi = require('ethereumjs-abi')
 const { BN, expectRevert, send, ether } = require('@openzeppelin/test-helpers');
 const { web3 } = require('@openzeppelin/test-helpers/src/setup');
 const factoryDetails = artifacts.require('./ProxyFactory.sol')
-const GSVE_helper = artifacts.require("./test_helpers/GSVE_helper.sol");
+//const GSVE_helper = artifacts.require("./test_helpers/GSVE_helper.sol");
 const TokenJson = require("./../build/contracts/GSVEToken.json")
 const GnosisSafe = require('@gnosis.pm/safe-contracts/build/contracts/GnosisSafe.json')
 const WrappedGasToken = require("./../build/contracts/WrappedGasToken.json")
@@ -16,12 +16,12 @@ contract('GSVE Gnosis Safe Factory', function(accounts) {
     var helper
     var gasToken
 
-    var beaconAddress = "0x5cb89C0cba029eb4337d47546bd2a5e329Fc6575"
-    var gsveAddress = "0x62Cd8986021C8875f0dfeb510D67689f4F78f1d8"
+    var beaconAddress = "0xf9830eAE8e249dA1E805eda7B44390B3E554BE8D"
+    var gsveAddress = "0x8C5Ba9e01A9e45578163B23fA0f2Ef49fb2c7b38"
 
     it('deploy', async () => {
         factory = await factoryDetails.new(gsveAddress, beaconAddress)
-        helper = await GSVE_helper.new();
+        //helper = await GSVE_helper.new();
         console.log(factory.address)
     })
 
@@ -36,7 +36,7 @@ contract('GSVE Gnosis Safe Factory', function(accounts) {
 
         var receipt = await factory.createProxyWithNonce("0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F", creationdata, accounts[0])
         console.log(`GasUsed: ${receipt.receipt.gasUsed}`);
-        assert.equal(false, true)
+        //assert.equal(false, true)
         //var deployedAddress = await beacon.methods.getDeployedAddress(accounts[0])
         //var deployed = false;
         //if (deployedAddress !== "0x0000000000000000000000000000000000000000"){

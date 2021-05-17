@@ -9,6 +9,7 @@ interface IProxyCreationCallback {
 
 /// @title IProxy - Helper interface to access masterCopy of the Proxy on-chain
 /// @author Richard Meissner - <richard@gnosis.io>
+/// @author Gas Save - <GasSave.org>
 interface IProxy {
     function masterCopy() external view returns (address);
 }
@@ -29,11 +30,13 @@ interface IGSVEBeacon {
 
 /// @title Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.
 /// @author Stefan George - <stefan@gnosis.pm>
+/// @author Gas Save - <GasSave.org>
 contract ProxyFactory {
     address public GSVEToken;
     address public GSVEBeacon;
     event ProxyCreation(Proxy proxy);
     
+    /// @dev sets the addresses of the GSVE token AND GSVE Beacon. Used in the creation process
     constructor (address _GSVEToken, address _GSVEBeacon) public {
         GSVEToken = _GSVEToken;
         GSVEBeacon = _GSVEBeacon;
@@ -89,6 +92,7 @@ contract ProxyFactory {
     /// @param _mastercopy Address of master copy.
     /// @param initializer Payload for message call sent to new proxy contract.
     /// @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.
+    /// BURNS GSVE IN THE PROCESS OF CREATING THE PROXY AND ADDS THE CREATED SAFE TO THE BEACON
     function createProxyWithNonce(address _mastercopy, bytes memory initializer, uint256 saltNonce)
         public
         returns (Proxy proxy)
