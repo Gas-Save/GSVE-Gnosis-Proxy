@@ -3,8 +3,8 @@ const beaconJson = require("./../build/contracts/GSVEBeacon.json")
 const ownable = artifacts.require("Ownable.sol")
 
 module.exports = async(deployer) => {
-  var beaconAddress = "0xf9830eAE8e249dA1E805eda7B44390B3E554BE8D"
-  var gsveAddress = "0x8C5Ba9e01A9e45578163B23fA0f2Ef49fb2c7b38"
+  var beaconAddress = "0x1370CAf8181771871cb493DFDC312cdeD17a2de8"
+  var gsveAddress = "0x000000000000e01999859eebfE39ECd039f67a54"
 
   var factory = await deployer.deploy(GSVEGNOSISFACTORY, gsveAddress, beaconAddress)
 
