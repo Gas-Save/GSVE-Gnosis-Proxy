@@ -2,5 +2,7 @@
 	"mnemonic1": "",
 	"mnemonic2": "",
 	"mnemonic3": "",
-	"etherscan": ""
+	"etherscan": "",
+	"infura": 	 "",
+	"alchemy": 	 ""
 }

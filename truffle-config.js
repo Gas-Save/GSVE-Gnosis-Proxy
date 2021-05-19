@@ -35,19 +35,19 @@ module.exports = {
     },  
 	ropsten: {
 		provider: function() {
-		  return new HDWalletProvider([json['mnemonic1'], json['mnemonic2'], json['mnemonic3']], "wss://ropsten.infura.io/ws/v3/9af22c382b3142389625451f5193fc76");
+		  return new HDWalletProvider([json['mnemonic1'], json['mnemonic2'], json['mnemonic3']], "wss://ropsten.infura.io/ws/v3/" + json['infura']);
 		},
     network_id: '3',
   },
   	rinkeby: {
 		provider: function() {
-		  return new HDWalletProvider([json['mnemonic1'], json['mnemonic2'], json['mnemonic3']], "wss://eth-rinkeby.ws.alchemyapi.io/v2/dkUwNqnpIVoIl-gVvAx9ICAa3yANIZKm");
+		  return new HDWalletProvider([json['mnemonic1'], json['mnemonic2'], json['mnemonic3']], "wss://eth-rinkeby.ws.alchemyapi.io/v2/" + json['alchemy']);
 		},
     network_id: '4',
   },
     mainnet: {
       provider: function() {
-        return new HDWalletProvider(json['mnemonic1'], "https://mainnet.infura.io/v3/df6f0e663e6d433397f2b2c3308ab5f5")
+        return new HDWalletProvider(json['mnemonic1'], "https://mainnet.infura.io/v3/" + json['infura'])
       },
       network_id: 1
     },
@@ -70,7 +70,7 @@ module.exports = {
   // Configure your compilers
  compilers: {
     solc:{
-		version: "^0.5.7",
+		version: "^0.8.0",
 		settings: {
 		optimizer: {
 			  enabled: true,
