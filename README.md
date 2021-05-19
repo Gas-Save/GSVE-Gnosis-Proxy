@@ -68,4 +68,6 @@
 
 "GSVE Gnosis Proxy Factory":		  [0x92Ee9A22f45B41C4B0F06bd89999465138187190](https://etherscan.io/address/0x92Ee9A22f45B41C4B0F06bd89999465138187190)
 
+## License
 
+This Smart Contract Repository makes use of Gnosis-safe smart contracts, which are LGPL. Specifically, the smart contract presented in this work, constituets a combined works as it is a derived modification of the Proxy and Proxy Factory gnosis contracts. The Non-Gnosis elements are licensed under MIT.
